@@ -1,0 +1,180 @@
+\documentclass[../main.tex]{subfile}
+
+%page 2 (postulats de la meca q)
+
+\begin{document}
+\part{Chapitre 2 : Espaces vectoriels}
+Soit $\KK$, un corps ($\RR$, $\CC$, ou autre)
+
+\section{Notion d'espace vectoriel}
+\subsection{Définitions}
+\begin{defi}{vague}
+	Un $\KK$-espace vectoriel est un ensemble d'éléments appelés vecteurs tels qu'on puisse les additionner entre eux et les multiplier par des scalaires, c'est-à-dire des éléments de $\KK$
+	avec des relations naturelles de compatibilité
+\end{defi}
+
+\begin{defi}
+	Un $\KK$-espace vectoriel est un ensemble $E$ muni de deux lois:\\
+\begin{itemize}
+	\item une loi de composition interne:
+	$$
+\begin{aligned}
+	+ : E \times E &\to E \\
+	(u,v) &\mapsto u + v
+\end{aligned}
+	$$
+
+	\item une loi de composition externe:
+	$$
+\begin{aligned}
+	\cdot : \KK \times E &\to E \\
+	(\lambda, u) &\mapsto \lambda \cdot v
+\end{aligned}
+	$$
+\end{itemize}
+	Ces lois vérifient:
+\begin{itemize}
+	\item $\forall u, v, w \in E, \ (u + v) + w = u + (v + w)$ \\
+	la loi $+$ est donc associative
+
+	\item $\forall u, v \in E, \ u + v = v + u$\\
+	la loi $+$ est donc commutative
+
+	\item $\exists 0_E \in E, \ \forall u \in E, \ u + 0_E = 0_E + u = u$\\
+	la loi $+$ admet un élément neutre
+
+	\item $\forall u \in E, \ \exists v \in E, \ u+v = v+u = 0_E$\\
+	chaque élément de $E$ admet, par $+$, un inverse ou opposé
+
+	\item $\forall \lambda, \mu \in \KK, \ \forall u \in E, \ \lambda \cdot (\mu \cdot u) = (\lambda \cdot \mu) \cdot u$\\
+	la loi $\cdot$ est associative
+
+	\item $\forall \lambda, \mu \in \KK, \ \forall u \in E, \ (\lambda + \mu) \cdot u = \lambda \cdot u + \mu \cdot u$\\
+	la loi $\cdot$ est distributive à gauche
+
+	\item $\forall \lambda \in \KK, \ \forall u, v \in E, \ (u + v) \cdot \lambda = \lambda \cdot u + \lambda \cdot v $\\
+	la loi $\cdot$ est distributive à droite
+
+	\item $\forall u \in E, \ 1 \cdot u = u$\\
+	la loi $\cdot$ admet un élément neutre
+\end{itemize}
+\end{defi}
+
+\begin{rema}
+	Dans le troisième axiome, l'élément neutre est unique.\\
+	Dans le quatrième axiome, le vecteur $v$ est en fait unique, on le note $-u$.
+\end{rema}
+
+\begin{prop}
+	On a également, $\forall u \in E, \ \forall \lambda \in \KK$:
+\begin{enumerate}
+	\item $\lambda \cdot 0_E = 0_E$
+	\item $0_{\KK} \cdot u = 0_E$
+	\item $\lambda \cdot u = 0_E \Rightarrow \lambda = 0_\KK \ \text{ou} \ u = 0_E$
+	\item $(-\lambda) \cdot u = \lambda \cdot (-u) = - (\lambda \cdot u)$
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\begin{enumerate}
+	\item 
+$$
+\begin{aligned}
+	\lambda \cdot 0_E &= \lambda \cdot (0_E + 0_E)\\
+	&= \lambda \cdot 0_E + \lambda \cdot 0_E
+\end{aligned}
+$$
+\end{enumerate}
+\end{proof}
+
+\begin{nota}
+	On note souvent :
+\begin{itemize}
+	\item $0_E = 0$ et $0_\KK = 0$
+	\item $u - v = u + (-v)$
+\end{itemize}
+\end{nota}
+
+\begin{lemme}
+	$\forall u, v, w \in E, u + w = v + w \Rightarrow u = v$
+\end{lemme}
+
+\begin{proof}
+	$$
+\begin{aligned}
+	v &= (u + w) - w\\
+	&= u + (w - w)\\
+	&= u + 0_E\\
+	&= u
+\end{aligned}
+	$$
+	donc $v = u$
+\end{proof}
+
+
+
+
+
+\begin{rema}
+\begin{itemize}
+	\item Pour $\lambda \in \KK$ et $u \in E$
+	$u \cdot \lambda$ ne veut rien dire.
+
+	\item Pour $u, v \in E$
+	$u \cdot v$ ne veut rien dire
+\end{itemize}
+\end{rema}
+
+\begin{ex}
+	1/ Pour les lois de compositions internes et externes usuelles, 
+\begin{itemize}
+	\item $\KK$ est un $\KK$-espace vectoriel
+	\item $\KK^n$ est un $\KK$-espace vectoriel 
+	\item plus généralement, si $E_1$ et $E_2$ sont des $E_1 \times E_2$ est un $\KK$-espace vectoriel
+\end{itemize}
+	2/ Soit $E$, un $\KK$-espace vectoriel et $A$, un ensemble qualconque, 
+\begin{itemize}
+	\item $\mathcal{F}(A, E)$, l'ensemble des applications de $A$ dans $E$, est un $\KK$-espace vectoriel
+	\item 
+\end{itemize}
+\end{ex}
+
+
+
+\subsection{Sous-espace vectorel}
+
+\begin{defi}
+	Soit $E$, un $\KK$-espace vectoriel, et $F \subset E$.\\
+	$F$ est un sous espace vectoriel de $E$ s'il s'agit d'un $\KK$-espace vectoriel pour les lois $+$ et $\cdot$ de $E$.
+\begin{itemize}
+	\item $\forall u, v \in F, \ u + v \in F$
+	\item $\forall \lambda \in \KK, \ \forall u \in F, \ \lambda \cdot u \in F$
+	\item $+$ et $\cdot$ vérifient les propriétés des lois de composition interne et externe des espaces vectoriels
+\end{itemize}
+\end{defi}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

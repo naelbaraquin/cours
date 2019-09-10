@@ -1,0 +1,112 @@
+\documentclass[../main.tex]{subfile}
+
+%page 2 (postulats de la meca q)
+
+\begin{document}
+\part{Les postulats de la mécanique quantique}
+La mécanique quantique se base sur six postulats qui ont toujours été vérifiés. Nous n'en verrons et utiliserons seulement quatre dans ce cours.
+
+\section{Postulat 1}
+L'état d'un système à un instant $t$ est complètement défini par la conaissance de sa fonction d'onde, notée $\Psi (\vec{r}, t)$.
+
+\begin{itemize}
+	\item Dans $\Psi (\vec{r}, t)$, $\vec{r}$ désigne la variable de l'espace tandis que $t$ désigne la variable du temps.
+	\item La fonction d'onde $\Psi(\vec{r}, t)$ n'a aucun sens physique.
+	\item $dP(\vec{r}, t) = \Psi^*(\vec{r}, t) \cdot \Psi(\vec{r}, t) dV = |\Psi(\vec{r}, t)|^2 dV$ est une probabilité infinitésimale.
+	\\($\Psi^*(\vec{r}, t)$ est la fonction conjuguée de la fonction $\Psi(\vec{r}, t)$)
+	\item $\frac{dP(\vec{r}, t)}{dV}$ est une densité de probabilité.
+	\item La fonction d'onde est normée : $P(t) = \int\limits_{x}\int\limits_{y}\int\limits_{z} dP(\vec{r}, t) = 1$
+	\item La fonction d'onde est une fonction continue, dérivable et de carré sommable. Sa dérivée première doit aussi être continue et dérivable.
+	\item La notation de Dirac : \\
+	\begin{itemize}
+		\item à $\Psi(\vec{r}, t)$, on associe un "ket" $|\Psi(t)>$
+		\item à $\Psi^*(\vec{r}, t)$, on associe un "bra" $<\Psi(t)|$
+	\end{itemize}
+	\item On définit ainsi le produit scalaire de deux fonctions d'ondes par :
+	$$\int\limits_{x}\int\limits_{y}\int\limits_{z} \Psi^*(\vec{r}, t) \cdot \Theta(\vec{r}, t) dV = <\Psi(t) | \Theta(t)>$$
+\end{itemize}
+
+
+\section{Postulat 2}
+\`A toute grandeur $A$ mesurable, on associe en mécanique quantique un opérateur linéaire et hermitique, noté $\hat{A}$.
+
+\subsection{généralités sur les opérateurs}
+\begin{itemize}
+	\item Les opérateurs agissent sur les fonctions : $\hat{A}\Psi(\vec{r}, t) = \Theta(\vec{r}, t)$
+	\item Cas particulier : l'opérateur est un scalaire : $\hat{A}\Psi(\vec{r}, t) = \lambda \Psi(\vec{r}, t)$
+	On dit alors que :\\
+	\begin{itemize}
+		\item $\lambda$ est une valeur propre de $\hat{A}$
+		\item $\Psi(\vec{r}, t)$ est un vecteur propre de $\hat{A}$ associé à la valeur propre $\lambda$
+		\item on parle alors d'équation aux valeurs propres.\\
+		L'équation de Schrödinger est une équation aux valeurs propres.
+	\end{itemize}
+	\item Notion de dégénéréscence : \\
+	Si deux fonctions différentes donnent, pour un opérateur donné, la même valeur propre, elles sont dites dégénérées.
+\end{itemize}
+\subsection{Propriétés des opérateurs}
+\begin{itemize}
+	\item Somme : $\hat{S} = \hat{A} + \hat{B}$
+	$$\hat{S}\Psi(\vec{r}, t) = \hat{A} \Psi(\vec{r}, t) + \hat{B} \Psi(\vec{r}, t)$$
+	\item Produit (ou composition) : $\hat{P} = \hat{A} \cdot \hat{B}$
+	$$\hat{P}\Psi(\vec{r}, t) = \hat{A}(\hat{B} \Psi(\vec{r}, ))$$
+	\begin{itemize}
+		\item Le produit n'est pas commutatif
+		\item On introduit alors le commutateur (un autre opérateur) : 
+		$$[\hat{A}, \hat{B}] = \hat{A} \cdot \hat{B} - \hat{B} \cdot \hat{A}$$
+		\item Les opérateurs $\hat{A}$ et $\hat{B}$ commutent si et seulement si $[\hat{A}, \hat{B}]$ est nul.
+		\item Deux opérateurs qui commutent admettent le même ensemble de fonctions propres.
+	\end{itemize}
+	\item Linéarité : $\hat{A}(\alpha \Psi(\vec{r}, t) + \beta \Theta(\vec{r}, t)) = \alpha \hat{A} \Psi (\vec{r}, t) + \beta \hat{A} \Theta(\vec{r}, t)$
+	\begin{itemize}
+		\item Démontrons que toute combinaison linéaire de fonctions propres dégénérées d'un opérateur est également fonction propre de cet opérateur avec la même valeur propre.
+		\begin{proof}
+			Pour $\hat{A}$, un opérateur,
+			$$
+			\begin{aligned}
+				\hat{A} \cdot \sum\limits_{i} \alpha_i \Psi_i &= \sum\limits_i \alpha_i \hat{A} \Psi_i\\
+				&= \sum\limits_i \alpha_i \lambda \Psi_i \ \ \ \text{ les fonctions $\Psi_i$ ayant toutes la même valeur propre $\lambda$}\\
+				&= \lambda \sum\limits_i \alpha_i \Psi_i
+			\end{aligned}
+			$$
+		\end{proof}
+	\end{itemize}
+	\item Hermiticité : ces valeurs valeurs propres sont réelles et ses vecteurs propres sont orthogonaux.
+\end{itemize}
+\subsection{Principe de correspondance}
+
+	En mécanique quantique, tout opérateur peut être construit à partir des opérateurs position et quantité de mouvement:
+\begin{itemize}
+	\item opérateur position : associé à la coordonnée $q_i$ d'une particule, il consiste à multiplier par la variable $q_i$, $\hat{q_i} = q_i \cdot$:
+	$$
+	\left\{
+\begin{array}{l}
+	\hat{x} = x \cdot \\
+	\hat{y} = y \cdot \\
+	\hat{z} = z \cdot 
+\end{array}
+	\right .
+	$$
+	\item opérateur quantité de mouvement : associé à la coordonnée $p_i$ d'une particule, il consiste à dériver par rapport à cette coordonnée et à multiplier par $-i\hbar$ : $\hat{p_i} = -i\hbar \cdot \frac{\partial}{\partial q_i}$
+	$$
+	\left\{
+\begin{array}{l}
+	\hat{p_x} = -i\hbar \cdot \frac{\partial}{\partial x}\\
+	\hat{p_y} = -i\hbar \cdot \frac{\partial}{\partial y}\\
+	\hat{p_z} = -i\hbar \cdot \frac{\partial}{\partial z}
+\end{array}
+	\right.
+	$$
+\end{itemize}
+
+
+\section{Postulat 3}
+L'évolution d'un système est régie par l'équation de Schrödinger dépendante du temps.
+
+
+\section{Postulat 4}
+Les valeurs de $A$ mesurées expérimentalement ne peuvent être que des valeurs propres de son opérateur $\hat{A}$.
+
+
+
+\end{document}

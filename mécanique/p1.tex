@@ -1,0 +1,129 @@
+\documentclass[../main.tex]{subfile}
+
+%page 1
+
+\begin{document}
+\part{Introduction}
+
+La mécanique consiste à décrire le mouvement et le prédire.
+La cinématique consiste à décrire le mouvement tandis que la dynamique consiste à le prédire.
+chap 1: rappels
+chap 2: cinématique
+chap 3: dynamique
+
+
+\begin{defi}
+	
+un solide est un ensemble de points.
+On s'interesse plus particulièrement au modèle du solide indéformable.
+
+\end{defi}
+
+\subsection{différence entre le mouvement d'un point et le mouvement d'un solide}
+on ajoute des degrès de liberté dû au fait que le point d'application de la force influe sur le mouvement.
+
+
+\section{Rappels de mécanique du point}
+
+\subsection{Objectif}
+On veut décrire et prédire le mouvement d'un point.
+
+\subsection{referentiel}
+Il nous faut alors un réferentiel (repère d'espace et du temps)
+\subsubsection{repère d'espace}
+repère d'espace: une origine et une base
+\begin{itemize}
+	\item coordonnées cartésiennes 
+	$\vec{OM} = x\vec{u_x} + y\vec{u_y} + z\vec{u_z}$
+	\item coordonnées cylindriques
+	$\vec{OM} = r\vec{u_r} + z\vec{u_z}$
+	\item coodrdonnées sphériques
+	$\vec{OM} = r\vec{u_r}$
+\end{itemize}
+
+\subsubsection{repère de temps}
+on a la même horloge dans tous les réferentiels (on est en mécanique classique)
+
+\subsection{degrès de liberté}
+nombre de données indépendantes nécessaires pour définir de manière univoque la position d'un système.
+pour déterminer le nombre de degrès de liberté d'un système, on somme les ddl de chaque point auxquels on soustrait le nombre de contraintes.
+
+\subsection{cinématique du point}
+on souhaite décrire le mouvement $\vec{OM}(t)$
+la vitesse $v = \frac{d\vec{OM}}{dt}_\mathcal{R}$
+quantité de mouvement $\vec{p} = m \cdot \vec{v}$
+l'expression de la vitesse dépend du réferentiel.
+en cartésien : $\vec{v} = $%###
+en cylindrique : $\vec{v} = \dot{r}\vec{u_r} + r\dot{theta}\vec{u_\theta} +\dot{z}\vec{u_z}$
+en sphérique : $\vec{v} = \dot{r}\vec{u_r} + r\dot{theta}\vec{u_\theta} + r\dot{\varphi}\vec{u_\varphi}$
+
+expression de l'accélération:
+
+%###
+
+On introduit alors la ...:
+$\vec{d} = m \cdot \vec{a}$
+
+le moment cinétique:
+moment cinétique du point $M$ par rapport au point $A$.
+$\vec{L_A} = \vec{AM} \wedge \vec{p}$
+
+
+\subsection{dynamique du point}
+principe fonda de la dynamique:
+$\sum\limits_i F_i = \frac{d\vec{p}}{dt}$
+où les forces $F_i$ sont les forces appliquées au point.
+uniquement quand $\mathcal{R}$ est galiléen
+
+th du moment cinétique:
+$\frac{d\vec{L_A}}{dt} = \sum\limits_i \vec{\mathcal{M}_A}(\vec{F_i})$
+
+attention, ces équations sont des équations vectorielles
+quand on peut ne pas projeter, on ne projète pas
+
+
+remarque: projection
+d'abord on écrit les équation vectorielles 
+puis dans un second temps, si nécessaire, on projète
+
+remarque:
+le PFD produit trois équations scalaires
+un point materiel possède trois degrès de libertés
+on peut alors décrire le mouvement d'un point avec le PFD
+
+idem pour le th du moment cinétique (qui produit aussi trois équations scalaires)
+
+ramarque:
+dans le théorème du moment cinétique, on fait aparaitre le moment des force, on peut le décrire formellemnt comme suit:
+$\vec{\mathcal{M}_A} (\vec{F_i}) = \vec{AM} \wedge \vec{F_i}$
+
+remarque: l'intéret du th du moment cinétique:
+le moment en $A$ est nul
+permet de montrer qu'une orbite est contenue dans un plan contenant lui même le centre de gravité.
+
+\subsection{l'aspect énergétique de la mécanique du point}
+$$
+\begin{aligned}
+	\frac{d\vec{p}}{dt} &=\sum\limits_i F_i\\
+	\vec{v} \cdot \frac{d\vec{p}}{dt} &= \vec{v} \cdot \sum\limits_i F_i\\
+	\frac{d}{dt}(\frac{1}{2} m \vec{v}^2) &= \cdot \sum\limits_i F_i \cdot \frac{d}{dt}\vec{l}\\
+	\frac{d}{dt}(\frac{1}{2} m \vec{v}^2) &= \cdot \sum\limits_i F_i \cdot \frac{d}{dt}\vec{l}\\
+\end{aligned}
+dF_C = \delta W\\
+F_C = 1 \over 2 m v^2\\
+\delta W = \sum\limits_i \vec{F_i} d\vec{l}
+$$
+
+%###
+
+jusqu'à la fin de l'exemple du pendule
+
+\section{en mécanique du solide}
+pour résoudre des problèmes:
+d'abord, la cinématique
+puis soit de la dynamique avec le pfd
+soit un étude énergétique
+
+
+
+\end{document}

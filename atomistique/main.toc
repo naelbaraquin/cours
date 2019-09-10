@@ -1,0 +1,15 @@
+\babel@toc {french}{}
+\contentsline {part}{I\hspace {1em}Introduction \IeC {\`a} la chimie quantique}{2}% 
+\contentsline {section}{\numberline {1}Les insuffisances de la m\IeC {\'e}canique classique}{2}% 
+\contentsline {section}{\numberline {2}Les bases de la m\IeC {\'e}canique quantique}{2}% 
+\contentsline {section}{\numberline {3}Domaine de la chimie quantique}{2}% 
+\contentsline {section}{\numberline {4}Applications dans les recherches r\IeC {\'e}centes}{2}% 
+\contentsline {section}{\numberline {5}Objectifs de ce cours}{2}% 
+\contentsline {part}{II\hspace {1em}Les postulats de la m\IeC {\'e}canique quantique}{4}% 
+\contentsline {section}{\numberline {6}Postulat 1}{4}% 
+\contentsline {section}{\numberline {7}Postulat 2}{4}% 
+\contentsline {subsection}{\numberline {7.1}g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s sur les op\IeC {\'e}rateurs}{4}% 
+\contentsline {subsection}{\numberline {7.2}Propri\IeC {\'e}t\IeC {\'e}s des op\IeC {\'e}rateurs}{5}% 
+\contentsline {subsection}{\numberline {7.3}Principe de correspondance}{5}% 
+\contentsline {section}{\numberline {8}Postulat 3}{6}% 
+\contentsline {section}{\numberline {9}Postulat 4}{6}% 

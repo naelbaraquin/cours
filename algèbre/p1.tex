@@ -1,0 +1,90 @@
+\documentclass[../main.tex]{subfile}
+
+%page 1
+
+\begin{document}
+\part{Systèmes d'équations linéaires}
+
+Soit $\KK$, un corps.
+\begin{defi}
+	Un système d'équtions linéaires à $n$ inconnues et $p$ équations est un système d'équations de la forme :
+	$$
+	(S)
+	\left\{
+	\begin{array}{l}
+		a_{1,1}x_1 + ... + a_{1,n}x_n = b_1\\
+		...\\
+		a_{n,1}x_{n,1} + ... + a_{n, n}x_{n,n} = b_n
+	\end{array}
+	\right.
+	$$
+	avec avec $a_{i,j}$ et $b_i$ des éléments de $\KK$\\
+	et $x_j$ sont les inconnues.
+\end{defi}
+
+\begin{defi}
+	Une solution est le $n$-uplet $(x_1, ..., x_n)$ tel que x... sont solutions de toutes les équations.
+\end{defi}
+
+\begin{defi}
+	Les $b_1, ..., b_p$ sont appelés seconds membres.
+\end{defi}
+
+\begin{rema}
+	à priori, $n \neq p$ 
+\end{rema}
+
+
+\section{Résolution}
+\subsection{\'Equivalence de systèmes}
+Pour résoudre, on se ramène à un système équivalent plus simple :
+$$
+(S) \Leftrightarrow (S') 
+%mettre un système
+$$
+
+$(S) \Leftrightarrow (S')$ signifie que les deux systèmes ont les mêmes solutions.
+
+\subsection{Méthode du pivot de Gauss}
+On ne change pas les solutions en faisant une des trois opérations suivantes:
+\begin{itemize}
+	\item changer l'ordre des équations
+	\item multiplier une équation par un élément $\lambda \in \KK \backslash \{0\}$
+	\item Ajouter à une équation un multiple d'une autre
+\end{itemize}
+ou toute opération qui peut se décomposer en une série de telles opérations
+
+%reprendre l'exemple
+
+%\begin{ex}
+%	$$
+%	\left\{
+%	\begin{array}{l}
+%		
+%	\end{array}
+%	\right.
+%	$$	
+%\end{ex}
+
+%reprendre "erreur possible"
+
+Méthode du pivot de Gauss:\\
+\begin{itemize}
+	\item Si $a_{1,1} \neq 0$\\
+	\begin{nota}
+		$a_{1,1}$ est alors appelé le pivot
+	\end{nota}
+	pour tout $i$ strictement supérieur à 1, on remplace la ligne $L_i$ par $L_i - \frac{a_{i,1}}{a_{1,1}}$
+\end{itemize}
+
+\`A la fin, on obtient un système dit échelonné, c'est-à-dire de la forme:\\
+	$$
+	\left\{
+	\begin{array}{r}
+		a'_{1, j_1}x_{j_1} + ... + a'_{1, n}x_n = b'1\\
+
+	\end{array}
+	\right.
+	$$
+
+\end{document}
