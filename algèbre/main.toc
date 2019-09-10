@@ -6,4 +6,4 @@
 \contentsline {part}{II\hspace {1em}Chapitre 2 : Espaces vectoriels}{3}% 
 \contentsline {section}{\numberline {2}Notion d'espace vectoriel}{3}% 
 \contentsline {subsection}{\numberline {2.1}D\IeC {\'e}finitions}{3}% 
-\contentsline {subsection}{\numberline {2.2}Sous-espace vectorel}{4}% 
+\contentsline {subsection}{\numberline {2.2}Sous-espace vectorel}{5}% 

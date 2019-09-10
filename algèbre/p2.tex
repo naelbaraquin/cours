@@ -81,9 +81,23 @@ Soit $\KK$, un corps ($\RR$, $\CC$, ou autre)
 $$
 \begin{aligned}
 	\lambda \cdot 0_E &= \lambda \cdot (0_E + 0_E)\\
-	&= \lambda \cdot 0_E + \lambda \cdot 0_E
+	&= \lambda \cdot 0_E + \lambda \cdot 0_E\\
+	&= \lambda \cdot 0_E + 0_E\\
+	\lambda \cdot 0_E = O_E
 \end{aligned}
 $$
+\item 
+$$
+\begin{aligned}
+	0_\KK \cdot u &=   (0_\KK + 0_\KK) \cdot u\\
+	&= 0_\KK \cdot u + 0_\KK \cdot u\\
+	&= 0_\KK \cdot u + 0_\KK\\
+	0_\KK \cdot u = O_\KK
+\end{aligned}
+$$
+\item Si $\lambda = 0_\KK$, cf. 2\\
+Si $\lambda \neq 0$, alors $\lambda^{-1} \in \KK$,\\
+$$0 = \lambda^{-1} \cdot 0 = \lambda^{-1} (\lambda \cdot u) = (\lambda^{-1} \cdot \lambda) \cdot u = 1 \cdot u = u$$
 \end{enumerate}
 \end{proof}
 
@@ -111,10 +125,6 @@ $$
 	donc $v = u$
 \end{proof}
 
-
-
-
-
 \begin{rema}
 \begin{itemize}
 	\item Pour $\lambda \in \KK$ et $u \in E$
@@ -135,11 +145,32 @@ $$
 	2/ Soit $E$, un $\KK$-espace vectoriel et $A$, un ensemble qualconque, 
 \begin{itemize}
 	\item $\mathcal{F}(A, E)$, l'ensemble des applications de $A$ dans $E$, est un $\KK$-espace vectoriel
-	\item 
+		$$
+		\forall f_1, f_2 \in \mathcal{F}(A, E), \ \forall \lambda \in \KK,
+		$$
+		$$
+		\begin{aligned}
+			f_1 + f_2 : A &\to E\\
+			a &\mapsto f_1(a) + f_2(a)
+		\end{aligned}
+		$$
+		$$
+		\begin{aligned}
+			\lambda \cdot f_1 : A &\to E\\
+			a &\mapsto \lambda \cdot f_1(a) 
+		\end{aligned}
+		$$
+	\item Si $\KK = \RR$ et $A = I \subset \RR$, un intervalle, on peut avoir $\mathcal{F}(I, \RR)$
+	\item Si $\KK = \RR$ et $A = \NN$, on a $\mathcal{F}(\NN, \RR)$, l'ensemble des suites numériques
 \end{itemize}
+	3/ $\KK[X]$, l'ensemble des polynômes\\
+	4/ $M_{n,p}(\KK)$, l'ensemble des matrices à coefficient dans $\KK$, à $n$ lignes et $p$ colonnes.
 \end{ex}
 
-
+\begin{rema}
+	$\RR^2$, munit de la loi $+$ usuelle et $\lambda \cdot (x_1, x_2) = (\lambda \cdot x_1, 0)$\\
+	n'est pas un $\KK$-espace vectoriel, pourquoi?
+\end{rema}
 
 \subsection{Sous-espace vectorel}
 
@@ -152,29 +183,5 @@ $$
 	\item $+$ et $\cdot$ vérifient les propriétés des lois de composition interne et externe des espaces vectoriels
 \end{itemize}
 \end{defi}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \end{document}
