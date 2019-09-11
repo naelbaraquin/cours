@@ -137,6 +137,111 @@ On peut alors faire les deux remarques suivantes:
 	Le groupe $\RR^n$ est $(\RR^n, +)$.\\
 \end{rema}
 
+\begin{defi}
+	On dit qu'un groupe $G$ est commutatif (ou abélien) si:
+	$$\forall g, h \in G, \ \Rightarrow g*h = h*g$$
+\end{defi}
+
+\begin{ex}
+	$(\ZZ, +)$, $(\RR^*, \cdot)$, $(\CC^*, \cdot)$, $(\RR^n, +)$ sont des groupes abéliens.
+\end{ex}
+
+\begin{ctex}
+	$S_n$ pour $n \geq 3$, $GL_n(\RR)$ pour $n \geq 2$ ne sont pas des groupes abléliens
+\end{ctex}
+
+\begin{ex}
+	Soit $n > 0$, un entier fixé.\\
+	$\ZZ / n\ZZ$, l'ensemble des entiers $a \in \ZZ$ considéré modulo n:\\
+	$$\bar{a} = \{a + kn \ | \ k \in \RR^n\} \in \ZZ / n\ZZ$$
+	Pour $a, b \in \ZZ, \ \bar{a} = \bar{b}$ si et seulement si, pour $k \in \ZZ$, $a-b = kn$
+\begin{ex}	
+	Dans $\ZZ / 3\ZZ$, \\
+	$\bar{1} = \bar{4} = \bar{10} = \bar{-2}$ mais $\bar{1} \neq \bar{2}$\\
+	$$\ZZ / 3\ZZ = \{\bar{0}, \bar{1}, \bar{2}\}$$
+	$$\bar{0} = \{3k \ | \ k \in \ZZ\}$$
+	$$\bar{1} = \{1 + 3k \ | \ k \in \ZZ\}$$
+	$$\bar{2} = \{2 + 3k \ | \ k \in \ZZ\}$$
+	$$\bar{0} \cup \bar{1} \cup \bar{2} = \ZZ$$
+\end{ex}
+	On définit l'addition sur $\ZZ / n\ZZ$ telle que : $\bar{a} + \bar{b} = \bar{a+b}$.\\
+	On vérifie que cette définition ne dépend pas du choix des représentants.\\
+	$$
+\begin{aligned}
+	\bar{a} + \bar{b} &= \bar{a+k_1n} + \bar{b+k_2n}\\
+	&= \bar{a+k_1n + b+k_2n}\\
+	&= \bar{a+b+(k_1+k_2)n}\\
+	&= \bar{a+b}
+\end{aligned}
+	$$
+\begin{rema}	
+	Sur $\ZZ/2\ZZ = \{\bar{0}, \bar{1}\}$\\
+	$\bar{0} = \{2k \ |\ k \in \ZZ\}$, l'ensemble des nombres pairs\\
+	$\bar{1} = \{1 + 2k \ |\ k \in \ZZ\}$, l'ensemble des nombres impairs\\
+	%compléter avec les liens somme / parité (quatre lignes)$$
+\end{rema}
+	$(\ZZ / n\ZZ, +)$ est un groupe abélien.\\
+\begin{rema}	
+	Comment définir une multiplication sur $\ZZ / n\ZZ$?
+\end{rema}
+\end{ex}
+
+\begin{nota}
+	Un groupe est noté $G$
+\end{nota}
+
+\begin{nota}{notation multiplicative}
+	Il s'agit de la notation par défaut, \\
+	"produit" du $g$ et $h$ : $gh$\\
+	élément neutre : $e$, $1$ ou $1_G$\\
+	l'inverse de $g$ : $g^{-1}$ (et jamais $1 \over g$)
+%###compléter l'exemple
+\end{nota}
+
+\begin{nota}{notation additive}
+	Il s'agit de la notation préférée pour les groupes abéliens, \\
+	"somme" de $a$ et $b$ : $a+b$\\
+	élément neutre : $0$ ou $0_G$\\
+	l'inverse de $a$ : $-a$
+\end{nota}
+
+\section{Les sous-groupes}
+\begin{defi}
+	Soit $G$, un groupe.\\
+	Un sous-ensemble $H \subset G$ est appelé sous-groupe de $G$ et noté $H < G$ si la loi sur $G$ induit une structure de groupe sur $H$, c'est-à-dire:\\
+\begin{itemize}	
+	\item $\forall h_1, h_2 \in H, \ h_1h_2 \in H$ (la loi est interne)
+	\item l'élément neutre $e$ de $G$ est dans $H$
+	\item $\forall h \in H$, $h$ admet un symétrique $h^{-1} \in H$ (on dit que $H$ est stable par passage au symétrique)
+\end{itemize}
+\end{defi}
+
+\begin{ex}
+\begin{itemize}	
+	\item $n \ZZ = \{nk \ |\ k \in \ZZ\} < \ZZ$
+	\item $\RR_{> 0} = \{x \in \RR \ |\ x > 0\} < \RR^*$
+	\item Le cercle unité $U = \{x \ | \ |z| = 1\} < \CC^*$\\
+	Le groupe des racines n-ièmes de l'unité $U_n = \{z \in \CC \ | \ z^n = 1\} < \CC^*$
+\begin{rema}	
+	$\forall n, \ U_n \subset U$ mais $\forall n, \ U_n \neq U$
+\end{rema}
+	\item Soit $P$ un polygone.\\
+	$Isom(P)$, le groupe d'isométries préservant $P$ (rotations et symétries).\\
+	$Isom^+(P)$, les isométries de $Isom(P)$ qui préservent l'orientation du plan (ici, seulement les rotation).\\
+	On a $Isom^+(P) < Isom(P)$
+	\item $Diff(\RR) < Bij(\RR)$, le sous-groupe des bijections de $\RR$ de classe $\CC^\infty$
+	\item $SL_n(\RR) = \{M \in GL_n(\RR) \ |\ det(M) = 1\} < GL_n(\RR)$
+\end{itemize}
+\end{ex}
+
+\begin{prop}
+	Soit $G$, un groupe.\\
+	Un sous-ensemble $H$ de $G$ est un sous-groupe si et seulement si les deux consitions suivantes sont satisfaites:
+\begin{itemize}	
+	\item $H \neq \emptyset$
+	\item $\forall h_1, h_2 \in H, h_1h_2^{-1} \in H$
+\end{itemize}
+\end{prop}
 
 
 

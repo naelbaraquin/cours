@@ -1,0 +1,260 @@
+\documentclass[../main.tex]{subfile}
+
+\begin{document}
+\part{Relation d'équivalence et relation d'ordre}
+
+\section{Relation d'équivalence}
+Soit $E$ un ensemble (théorie ZF).
+\begin{defi}[Produit cartésien]
+	On définit le produit cartésien de deux ensembles $A$ et $B$ tel que:
+	$$A \times B = \{ (x, y) \ | \ x \in A, \ y \in B\}$$
+\end{defi}
+
+\begin{defi}[Relation d'équivalence]
+	Une relation d'équivalence sur $E$ est une partie du produit cartésien $E \times E$, notée $\mathcal{R}$.\\
+	Lorsqu'un couple $(x, y) \in E$ est en relation par $\mathcal{R}$, on écrit $x \mathcal{R} y$.\\
+	Une relation d'équivalence répond aux conditions suivantes:
+	\begin{itemize}
+		\item $\mathcal{R}$ est \emph{réflexive} : $\forall x \in E, \ x \mathcal{R} x$
+		\item $\mathcal{R}$ est \emph{symétrique} : $\forall (x, y) \in E^2, \ x \mathcal{R} y \Rightarrow y \mathcal{R} x$
+		\item $\mathcal{R}$ est \emph{transitive} : $\forall (x, y, z) \in E^3, \ x \mathcal{R} y \text{ et } y \mathcal{R} z \Rightarrow x \mathcal{R} z$
+	\end{itemize}
+\end{defi}
+
+\begin{ex}
+	$\phantom{a}$\\
+	\begin{itemize}
+		\item Sur n'importe quel ensemble, la relation d'égalité est une relation d'équivalence.
+		\item Dans l'ensemble des entiers relatifs, $\forall (x, y) \in \mathbb{Z}^2$, on pose la relation d'équivalence suivante : $x \mathcal{R} y \Leftrightarrow 2 | x - y $ .
+		\begin{proof}
+			$\phantom{a}$\\
+
+			Soit $x \in \mathbb{Z}$.\\
+			$x-x = 0$ est divisible par 2.\\
+			$\mathcal{R}$ est donc réflexive.
+			$$\phantom{a}$$
+
+			Soient $x, y \in \mathbb{Z}$ tels que $x \mathcal{R} y$,\\
+			On a donc $x - y$ divisible par 2.\\
+			$\exists k \in \mathbb{Z} \ / \ x -y = 2 k$\\
+			Donc, $y -x = -(y-x) = -2k$\\
+			Donc, $2|y-x$\\
+			Donc, $y \mathcal{R} x$\\
+			Donc, $\mathcal{R}$ est donc symétrique\\
+			$$\phantom{a}$$
+
+			Soient $x, y, z \in \mathbb{Z}$ tels que $x \mathcal{R} y$ et $y \mathcal{R} z$\\
+			$x - z = x-y + y-z$\\
+			Or, $\exists k \in \mathbb{Z}, \ x - y = 2k$\\
+			et, $\exists k' \in \mathbb{Z}, \ y - z = 2k'$\\
+			Donc, $x-y+y-z = 2(k+k')$ est divisible par 2, par conséquent, $x \mathcal{R} z$ et $\mathcal{R}$ est transitive.
+		\end{proof}
+	\end{itemize}
+\end{ex}
+
+\begin{defi}[Classe d'équivalence]
+	Soit $\mathcal{R}$ une relation d'équivalence sur $E$.\\
+	Soit $x \in E$, on appelle \emph{classe d'équivalence} l'ensemble $\mathcal{C}(x) = \{ y \in E \ | \ x \mathcal{R} y \}$
+\end{defi}
+
+\begin{ex}
+	Sur $\mathbb{Z}, \ x \mathcal{R} y \Leftrightarrow 2 | x-y$\\
+	\begin{itemize}
+		\item $\mathcal{C}(0) = \{y \in \mathbb{Z} \ | \ 0 \mathcal{R} y\}$
+		\item $\mathcal{C}(0) = \{y \in \mathbb{Z} \ | \ -y \text{ divisible par } 2\}$
+		\item $\mathcal{C}(0) = \{\text{nombres pairs}\}$
+		\item $\mathcal{C}(2) = \{y \in \mathbb{Z} \ | \ 2 \mathcal{R} y\}$
+		\item $\mathcal{C}(2) = \{y \in \mathbb{Z} \ | \ \exists k \in \mathbb{Z} , \ 2-y = 2 k\}$
+		\item $\mathcal{C}(2) = \{\text{nombres pairs}\}$
+		\item $\mathcal{C}(1) = \{y \in \mathbb{Z} \ | \ 1 \mathcal{R} y\}$
+		\item $\mathcal{C}(1) = \{y \in \mathbb{Z} \ | \ \exists k \in \mathbb{Z} , \ 1-y = 2 k\}$
+		\item $\mathcal{C}(1) = \{\text{nombres impairs}\}$
+	\end{itemize}
+\end{ex}
+
+\begin{prop}
+	$\forall (x, y) \in E^2$, \\
+	\begin{itemize}
+		\item $x \mathcal{R} y \Rightarrow \mathcal{C}(x) = \mathcal{C}(y)$
+		\begin{proof}
+			Supposons $x \mathcal{R} y$, \\
+			Montrons que $\mathcal{C}(x) \cap \mathcal{C}(y)$\\
+			Soit $z \in \mathcal{C}(x)$, on a donc $x \mathcal{R} z$\\
+			Or $y \mathcal{R} x$ (par symétrie de $\mathcal{R}$)\\
+			Donc $y \mathcal{R} z$ (par transitivité de $\mathcal{R}$)\\
+			Donc $z \in \mathcal{C}(y)$\\
+			Donc $\mathcal{C}(x) \subset \mathcal{C}(y)$\\
+			On montre de la même manière que $\mathcal{C}(y) \subset \mathcal{C}(x)$
+			Par conséquent, $x \mathcal{R} y \Rightarrow \mathcal{C}(x) = \mathcal{C}(y)$
+		\end{proof}
+		\item $(\mathcal{C}(x) \cup \mathcal{C}(y) = \emptyset) \Rightarrow \mathcal{C}(x) = \mathcal{C}(y)$
+		\begin{proof}
+			Soit $z \in \mathcal{C}(x) \cup \mathcal{C}(y)$\\
+			On a $x \mathcal{R} z$ et $z \mathcal{R} y$\\
+			Donc, par transitivité, $x \mathcal{R} y$ \\
+			Par conséquent, $\mathcal{C}(x) = \mathcal{C}(y)$
+		\end{proof}
+		\item Les classes d'équivalence forment une partition de $E$.
+	\end{itemize}
+\end{prop}
+
+\begin{defi}[Ensemble quotient]
+	Soit $\mathcal{R}$, une relation d'équivalence sur $E$.\\
+	L'ensemble quotient, noté $\frac{E}{\mathcal{R}}$ est l'ensemble dont les éléments sont les classes d'équivalence.\\
+	Il existe une application de passage au quotient:
+	$$\Pi : \left\{
+		\begin{array}{l}
+			E \to \frac{E}{\mathcal{R}}\\
+			x \mapsto \mathcal{C}(x)
+		\end{array}
+		\right .$$
+\end{defi}
+
+\begin{ex}
+	$(x, y) \in \mathbb{Z}^2, \ x \mathcal{R} y \Leftrightarrow 2 \ | \ x -y$\\
+	$\frac{\mathbb{Z}}{\mathcal{R}} = \{\mathcal{C}(0), \mathcal{C}(1)\} = \{\bar{0}, \bar{1}\} = \frac{\mathbb{Z}}{2 \mathbb{Z}}$
+\end{ex}
+
+\section{Relations d'ordre}
+
+\begin{defi}[Relation d'ordre]
+	Une \emph{relation d'ordre} $\prec$ sur $E$ est une partie de $E \times E$ qui vérifie les propriétés suivantes:
+	\begin{itemize}
+		\item \emph{Réflexivité :} $\forall x \in E, \ x \prec x$
+		\item \emph{Anti-symétrie :} $\forall x, y \in E, \ (x \prec y) \text{ et } (y \prec x) \Rightarrow x = y$
+		\item \emph{Transitivité :} $\forall x, y, z \in E, \ (x \prec y) \text{ et } (y \prec z) \Rightarrow (x \prec z)$
+	\end{itemize}
+\end{defi}
+
+\begin{defi}
+	Une relation d'ordre est dite totale lorsque $\forall (x, y) \in E^2, \ x \prec y \text{ ou } y \prec x$
+\end{defi}
+
+\begin{defi}
+	Soit $A$ une partie de $(E, \prec)$, 
+	\begin{itemize}
+		\item Un \emph{majorant} de $A$ est un élément $M \in E$ tel que $\forall a \in A, \ a \prec M$
+		\item Un \emph{minorant} de $A$ est un élément $m \in E$ tel que $\forall a \in A, \ m \prec a$
+		\item $A$ est \emph{bornée} lorsqu'elle admet à la fois un majorant et un minorant.
+		\item On dit que $A$ admet un \emph{plus grand élément (ou maximum)} s'il existe un majorant $M$ de $A$ tel que $M \in A$.
+		\item On dit que $A$ admet un \emph{plus petit élément (ou minimum)} s'il existe un minorant $m$ de $A$ tel que $m \in A$.
+		\item $A$ admet une \emph{borne supérieure} $B \in E$ si $B$ est un majorant de $A$ et si pour tout majorant de $A$, on a $B \prec M$
+		\begin{rema}
+			Quand il existe, $B$ est le plus petit des majorants.
+		\end{rema}
+		\item $A$ admet une \emph{borne inférieure} $b \in E$ si $b$ est un minorant de $A$ et si pour tout minorant de $A$, on a $m \prec b$
+		\begin{rema}
+			Quand il existe, $b$ est le plus grand des minorants.
+		\end{rema}
+	\end{itemize}
+\end{defi}
+
+\begin{ex}
+	$\phantom{a}$\\
+
+	$E = \mathbb{R}$, doté de l'ordre standard $\leq$\\
+	$A = [0; 1[$\\
+	$A$ est bornée par -42 (en tant que minorant) et 1,1 (en tant que majorant)\\
+	$A$ admet un plus petit élément 0 \\
+	$A$ n'admet pas de plus grand élément mais admet en revanche une borne supérieure 1.\\
+	$$\phantom{a}$$
+
+	$E = \mathbb{Q}$, doté de l'ordre standard $\leq$\\
+	$A = \{x \in \mathbb{Q} | \ x^2 < 2\}$\\
+	$A$ est majorée par 24 mais n'a pas de borne supérieure car $\sqrt{2} \notin \mathbb{Q}$
+	$$\phantom{a}$$
+
+	$E = \mathbb{N}^*$, doté de la relation d'ordre $\prec$ telle que $\forall a \prec b \Leftrightarrow a | b$\\
+	On montre qu'il s'agit d'une relation d'ordre:\\
+	\begin{itemize}
+		\item $\forall a \in \NN^{*2}, \ a|a$\\
+		Par conséquent, $a \prec a$ et $\prec$ est transitive.
+
+		\item Soient $a \in \NN^*$ et $b \in \NN^*$\\
+		$a|b \Rightarrow \exists k \in \NN, \ ka=b$\\
+		$b|a \Rightarrow \exists k' \in \NN, \ kb=a$\\
+		Donc, $a = kk'a$\\
+		Donc, $kk' = 1$\\
+		Donc, $k = k' = 1$\\
+		Donc, $a = b$\\
+		Par conséquent, $\prec$ est anti-symétrique.
+
+		\item Soient $a, b, c \in \NN^{*}$\\
+		$a|b \Rightarrow \exists k \in \NN, \ ka=b$\\
+		$b|c \Rightarrow \exists k' \in \NN, \ k'b=c$\\
+		Donc, $c = k'ka$\\
+		Donc $a|c$,\\
+		$\prec$ est par conséquent transitive.\\
+
+		$\phantom{a}$\\
+		Pour cette même relation d'ordre,\\
+		On pose $A = \{2; 3; 5\}$.
+		120 est un majorant de $A$.\\
+		$A$ n'a pas de plus grand élément.\\
+		$A$ admet 30 comme borne supérieure (avec $30 = PPCM(2;3;5)$)
+		$A$ admet pour minorant 1.
+		$A$ admet aussi 1 comme borne inférieure
+		\begin{rema}
+			$\prec$ n'est pas un ordre total.
+		\end{rema}
+	\end{itemize}
+\end{ex}
+
+\section{Construction de $\RR$}
+
+\begin{axiome}
+	Il existe un ensemble $\NN$ muni d'une relation d'ordre $\leq$ telle que :
+	\begin{enumerate}
+		\item $\leq$ est totale.
+		\item Toute partie non vide admet un plus petit élément.
+		\item Toute partie majorée non vide admet un plus grand élément.
+		\item L'ensemble n'a pas de plus grand élément.
+	\end{enumerate}
+\end{axiome}
+
+\begin{theo}
+	Soit $(\mathcal{N}, \prec)$, un ensemble munit d'une relation d'ordre vérifiant les propriétés précédentes, alors, il existe une bijection croissante de $\mathcal{N}$ dans $\NN$.
+	$$(\forall x, y \in \mathcal{N}, \ x \prec y \Rightarrow f(x) \leq f(y))$$
+
+\end{theo}
+
+\emph{Qui est $\mathbb{Z}$?}
+On définit sur $\NN^2$ la relation d'équivalence $\mathcal{R}$ définie par 
+$$(m,n) \mathcal{R} (m', n') \Leftrightarrow m + n' = m' + n$$
+Ainsi, on définit alors l'ensemble des entiers relatifs tel que :
+$$\mathbb{Z} = \frac{\mathbb{N} \times \mathbb{N}}{\mathcal{R}}$$
+
+\emph{Qui est $\mathbb{Q}$?}
+On définit sur $\mathbb{Z} \times \mathbb{Z}^*$ la relation d'équivalence $\mathcal{R}'$ définie par:
+$$(p, q) \mathcal{R}' (p', q') \Leftrightarrow pq' = p'q$$
+Ainsi, on définit alors l'ensemble des rationnels tel que :
+$$\mathbb{Q} = \frac{\mathbb{Z} \times \mathbb{Z}^*}{\mathcal{R}'}$$
+
+\emph{Qui est $\mathbb{R}$?}
+Soit $\mathcal{P}_M(\mathbb{Q})$, l'ensemble des parties majorées non vides de $\mathbb{Q}$. 
+On le munit de la relation d'équivalence $\mathcal{R}''$ définie par:
+$$A \mathcal{R}'' B \Leftrightarrow \text{A et B ont le même ensemble de majorants dans} \mathbb{Q}$$
+Ainsi, on définit alors l'ensemble des réels tel que :
+$$\mathbb{R} = \frac{\mathbb{Q} \times \mathbb{Q}}{\mathcal{R}''}$$
+
+\begin{ex}
+	$\phantom{a}$\\
+	$A = \{1\}$\\
+	$B = \{-2, 0, 1\}$\\
+	$A \mathcal{R}'' B$\\
+	$$\phantom{a}$$
+	$A= \{x \in \mathbb{Q} | x^2 \leq 2\}$\\
+	On appelle $\sqrt{2}$ la classe d'équivalence de $A$
+\end{ex}
+
+\section{Caractérisation de $\mathbb{R}$}
+
+\begin{theo}
+	Tout corps totalement ordonné, complet et archémédien est isomorphe à $\mathbb{R}$.
+\end{theo}
+
+\begin{theo}[de la borne supérieure]
+	Toutes parties de $\mathbb{R}$ majorée et non vide admet une borne supérieure.
+\end{theo}
+
+\end{document}

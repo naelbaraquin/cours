@@ -1,0 +1,329 @@
+\documentclass[../main.tex]{subfile}
+
+%partie 3
+
+\begin{document}
+\part{Suites réelles}
+
+\begin{defi}
+	Une suite numérique est une fonction de $\NN$ dans $\RR$. 
+\end{defi}
+
+\begin{nota}
+	On la note $\left( u_n \right)_{n \in \NN}$ plutôt que 
+	$$f: \NN \to \RR$$
+	$$f: n \mapsto f(n)$$
+\end{nota}
+
+\begin{defi}
+	L'ensemble $\{u_n, \ n \in \NN\}$ est appelé ensemble image de la suite.
+\end{defi}
+
+\begin{defi}
+	Lorsque l'ensemble image est majoré, minoré, ou borné dans une partie de $(\mathcal{R}, \leq)$, on dit que la suite est majorée, minorée, ou bornée.
+\end{defi}
+
+\begin{defi}
+	On dit de plus que $(u_n)$ est \emph{convergente} si:
+	$$\exists \lambda \in \RR \ / \ \forall \varepsilon > 0, \ \exists N \in \NN, \ n \geq N \Rightarrow |u_n - \lambda| < \varepsilon$$
+\end{defi}
+
+\section{Théorèmes fondamentaux} 
+
+\begin{theo}
+	Toute suite convergente est bornée.
+\end{theo}
+
+\begin{proof}
+	On sait qu'il existe un réel $l$ tel que :
+	$$\forall \varepsilon > 0, \ \exists N_{\varepsilon} \in \NN, \ n \geq N_{\varepsilon}$$
+	Prenons $\varepsilon = 1$\\
+	$\exists N_1 \in \NN , \ n \geq N_1 \Rightarrow |u_n -l| < 1$\\
+	Posons $M = \max \{\{u_0, ..., u_{N_{\varepsilon}-1}\} \cup \{1+l\}\}$\\
+	et $m = \max \{\{u_0, ..., u_{N_{\varepsilon}}\} \cup \{l-1\}\}$\\
+	Soit $n \in \NN$\\
+	Nous procédons alors par disjonction de cas.
+	\begin{itemize}
+		\item Pour $n < N_1$, \\
+		Alors $u_n \leq \max\{u_0, ..., u_{N_1 -1}\}$\\
+		Par conséquent, $u_n \leq M$.
+
+		\item pour $n \geq N_1$, \\
+		$|u_n -l| \leq 1$\\
+		Donc, $-1 \leq u_n -l \leq 1$\\
+		$\Rightarrow l-1 \leq u_n \leq l +1 \leq M$\\
+		Par conséquent, $\forall n \in \NN, \ u_n \leq M$, et $(u_n)$ est majorée par $M$.\\
+	\end{itemize}
+	On montre de la même manière que $(u_n)$ est minorée par $m$.
+	Ainsi, la suite $(u_n)$ est bornée.
+\end{proof}
+
+\begin{theo}
+	Si la limite existe, elle est unique.
+\end{theo}
+
+\begin{proof}
+	On démontre ce théorème par l'absurde.\\
+	Soit $l$ et $l'$ deux limites distinctes.\\
+	Prenons $\varepsilon = \frac{|l-l'|}{4}$\\
+	$\exists N_l \in \NN, \ n \geq N_l \Rightarrow |u_n-l| \leq \varepsilon$\\
+	$\exists N_{l'} \in \NN, \ n \geq N_{l'} \Rightarrow |u_n-l'| \leq \varepsilon$\\
+	Soit $N = \max\{N_l, N_{l'}\}$\\
+	\begin{align}
+		|l-l'| &= |l- u_N + u_N -l'|\\
+		&\leq |l -u_N| + |u_N -l'|\\
+		&\leq \varepsilon + \varepsilon\\
+		&\leq 2 \varepsilon\\
+		&= \frac{|l-l'|}{2}
+	\end{align}
+	$$\Rightarrow |l-l'| \leq \frac{|l-l'|}{2}$$
+	Cette affirmation étant absurde, la limite d'une suite ne peut être qu'unique.
+\end{proof}
+
+\begin{theo}
+	Toute suite croissante et majorée converge.
+\end{theo}
+
+\begin{proof}
+	Soit $A = \{u_n | n \in \NN\} \subset \RR$\\
+	$A$ est majorée et non vide, par conséquent elle admet une borne supérieure que nous noterons $l$.\\
+	Soit $\varepsilon > 0$, \\
+	$l-\varepsilon$ n'est donc pas un majorant de $A$, 
+	$$\exists N \in \NN , \ l- \varepsilon \leq u_N$$
+	$$\forall n > N, \ u_n \geq u_N$$
+	$$\forall n > N, \ l + \varepsilon \geq l \geq u_n \geq u_N \geq l - \varepsilon$$
+	$$\forall n > N, \ \varepsilon \geq u_n -l \geq - \varepsilon$$
+	$$\forall n > N, \ |u_n - l| \leq \varepsilon$$
+	Par conséquent, $(u_n)$ converge vers $l$.
+\end{proof}
+
+\section{Valeurs d'adhérence}
+
+\begin{defi}
+	Une extraction $\Phi$ est une fonction strictement croissante de $\NN$ dans $\NN$.\\
+	Soit $(u_n)$, une suite.
+	On appelle suite extraite (ou sous-suite) de $(u_n)$, une suite $(v_n)$ de la forme:
+	$$\forall n \in \NN, \ v_n = u_{\Phi (n)}$$
+\end{defi}
+
+\begin{ex}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%insérer l'image page 11
+\end{ex}
+
+\begin{defi}
+	Soit $(u_n)$ une suite.\\
+	On dit qu'un réel $\lambda$ est une valeur d'adhérence de $(u_n)$ s'il existe une suite extraite de $(u_n)$ convergeant vers $\lambda$.
+\end{defi}
+
+\begin{ex}
+	$(u_n = (-1)^n)_{n \in \NN}$\\
+	admet deux valeurs d'adhérence $1$ et $-1$\\
+	$$\forall n \in \NN , \ \ v_n = u_{2n} = 1 \Rightarrow \lim\limits_{n \to + \infty} v_n = 1$$
+	$$\forall n \in \NN , \ \ w_n = u_{2n + 1} = -1 \Rightarrow \lim\limits_{n \to + \infty} w_n = -1$$
+\end{ex}
+
+\begin{theo}
+	Si $(u_n)$ converge vers $l \in \RR$, alors toute suite extraite converge vers $l$.
+\end{theo}
+
+%begin{proof}
+%       Soit $(u_n)$, une suite qui converge vers $l \in \RR$.\\
+%       Alors, soit $\varepsilon > q$, \\
+%       $\exists N_2 > 0, \ n \geq N_{\varepsilon} \Rightarrow |u_n -l| < \epilon$\\
+%       Soit $(u_{\Phi (n)})$, une suite extraite de $(u_n)$, comme $\Phi$ est une application croissante de $\NN$ dans $\NN$, on en déduit que $\lim\limits_{n \to +\infty} \Phi _n = +\infty$.
+%       On a aussi $\exists n \in \NN , \ \Phi_{n} = u_n'$
+%end{proof}
+
+\begin{prop}[Contraposée du théorème précédent]
+	Si une suite admet deux valeurs d'adhérence distinctes, alors elle diverge.
+\end{prop}
+
+\begin{theo}[de Bolzano-Weierstrass]
+	Toute suite $(u_n)$ bornée admet au moins une valeur d'adhérence.
+\end{theo}
+
+\begin{proof}
+	Soient $m$ et $M$ respectivement un minorant et un majorant de $(u_n)$.\\
+	On a $\forall n \in \NN, \ u_n \in [m; M]$\\
+	On va construire deux suites $(a_n)$ et $(b_n)$ telles que $\forall n \in \NN [a_n, b_n]$ contient une infinité de termes de la suite.
+	\begin{itemize}
+		\item On prend $a_0 = m$ et $b_0 = M$.
+		\item Soit $n \in \NN$, supposons $a_n$ et $b_n$ construites.
+	\end{itemize}
+	Comme $[a_n, b_n]$ contient une infinité de termes de la suite, alors l'un des intervalles $[a_n, \frac{a_n + b_n}{2}]$ ou $[\frac{a_n + b_n}{2}, b_n]$ contient une infinité de termes:\\
+
+	S'il s'agit de $[a_n, \frac{a_n + b_n}{2}]$, on pose : 
+	$$\left \{
+	\begin{array}{l}
+		a_{n+1} = a_n\\
+		b_{n+1} = \frac{a_n + b_n}{2}
+	\end{array}
+	\right .
+	$$
+
+	Sinon, on prend:
+	$$\left \{
+	\begin{array}{l}
+		a_{n+1} = \frac{a_n + b_n}{2}\\
+		b_{n+1} = b_n
+	\end{array}
+	\right .
+	$$
+
+	On a : $\forall n \in \NN, \ a_n \leq b_n \leq b_0$\\
+	donc $(a_n)$ est majorée.\\
+	De plus, $\forall n \in NN, \ a_0 \leq a_n \leq b_n$\\
+	donc, $(b_n)$ est minorée.\\
+	Ainsi, $(a_n)$ converge vers $l$ et $(b_n)$ converge vers $l'$.\\
+	Mais $\lim\limits_{n \to + \infty} (a_n - b_n) = 0$\\
+	et $\lim\limits_{n \to + \infty} a_n - \lim\limits_{n \to + \infty} b_n = l - l'$\\
+	Par conséquent, $l = l'$
+	$$\phantom{a}$$
+
+	On montre maintenant que $l$ est une valeur d'adhérence.\\
+	On pose $\Phi (0) = 0$, puis on suppose $\Phi (n)$ construit.\\
+	$$\exists k \in \NN, \ k > \Phi (n) \text{ et } u_k \in [a_{n+1}, b_n+1]$$
+	On pose $\Phi (n+1) = k$
+	$$\forall n \in \NN, \ a_n \leq u_{\Phi(n)} \leq b_n$$
+	Comme $(a_n)$ et $(b_n)$ tendent toutes les deux vers $l$, par le théorème des gendarmes, on a:\\
+	$\lim\limits_{n \to +\infty} u_{\Phi(n)} = l$\\
+	La suite $(u_n)$ admet donc une valeur d'adhérence.
+\end{proof}
+
+\begin{prop}
+	$\phantom{a}$\\
+	\begin{itemize}
+		\item $\forall n \in \NN, \ a_n \leq b_n$
+		\item $(a_n)$ est croissante.
+		\begin{proof}
+			Soit $n \in \NN$, \\
+			$$a_{n+1} - a_n = 
+			\left \{
+				\begin{array}{l}
+					0 \geq 0\\
+					\frac{a_n + b_n}{2} \geq 0
+				\end{array}
+			\right .
+			$$
+		\end{proof}
+
+		\item $(b_n)$ est décroissante.
+		\item $\forall n \in \NN, \ |a_n - b_n| = \frac{|m - M|}{2^n}$
+		\begin{proof}
+		$\phantom{a}$\\
+			\begin{itemize}
+				\item $|a_0 - b_0| = |m - M| = \frac{|m - M|}{2^0}$
+				\item $|a_{n+1} - b_{n+1}| = 
+				\left \{
+					\begin{array}{l}
+						|a_n - \frac{a_n + b_n}{2}| = |\frac{a_n - b_n}{2}|\\
+						|\frac{a_n + b_n}{2} - b_n| = |\frac{a_n - b_n}{2}
+					\end{array}
+				\right .
+				$\\
+				Par conséquent, $|a_{n+1} - b_{n+1}| = |\frac{m-M}{2^n}|$
+			\end{itemize}
+		\end{proof}
+		
+		\item $\lim\limits_{n \to + \infty} a_n - b_n = 0$
+	\end{itemize}
+\end{prop}
+
+\section{Suites de Cauchy}
+\begin{defi}
+	Une suite est dite de Cauchy si:
+	$$\forall \varepsilon > 0, \ \exists N \in \NN, \ (\forall p \geq N \text{ et } \forall q \NN), \ |u_p - u_q| < \varepsilon$$
+\end{defi}
+
+\begin{theo}
+	Toute suite \emph{réelle} de Cauchy est convergente.
+\end{theo}
+
+\begin{proof}
+	Soit $\lambda$, la limite de $(u_n)$\\
+	Soit $\varepsilon > 0$\\
+	$$\exists N \in \NN, \ \forall n > N, \ |u_n - \lambda| < \frac{\varepsilon}{2}$$
+	Soient $p, q \in \NN$ tels que $p>N$ et $q>N$.\\
+	\[
+	\begin{aligned}
+		|u_p -u_q| &= |u_p - \lambda - u_q + \lambda|\\
+		& \leq |u_p - \lambda| + |u_q - \lambda|\\
+		& \leq \frac{\varepsilon}{2} + \frac{\varepsilon}{2}\\
+		& = \varepsilon\\
+	\end{aligned}
+	\]
+	$$\Rightarrow |u_p - u_q| \leq \varepsilon$$
+	$(u_n)$ est donc convergente.
+\end{proof}
+
+\begin{theo}
+	Toute suite convergente est de Cauchy.
+\end{theo}
+
+\begin{proof}
+	Pour $\varepsilon = 1 , \ \exists N_1 \in \NN, \ \forall p, q \geq N_1, \ |u_p - u_q| \leq 1$\\
+	D'où $|u_p| - |u_q| \leq 1$\\
+	ou encore $|u_p| \leq 1 + |u_q|$\\
+	On a donc, $\forall p \geq N_1, \ |u_p| \leq 1 + |u_{N_1}|$\\
+	On pose $M = \max(\{|u_k|; 0 \leq k \leq N_1 ; 1 + |u_{N_1}|\})$\\
+	Donc $\forall n \in \mathbb{N}, \ |u_n| \leq M$\\
+	Du fait qu'elle soit bornée et d'après le théorème de Bolzano-Weirstrass, la suite $(u_n)$ admet au moins une valeur d'adhérence.\\
+	Par conséquent, il existe une extraction $\phi$ telle que : $\lim\limits_{n \to + \infty} u_{\phi(n)} = \lambda$\\
+	Soit $\varepsilon> 0$, \\
+	$$\exists N_2 \in \NN, \ \forall n \geq N_2, \ |u_{\Phi(n)} - \lambda| \leq \frac{\varepsilon}{2}$$
+	$$\exists N_3 \in \NN, \ \forall p, q \geq N_3, \ |u_p - u_q| \leq \frac{\varepsilon}{2}$$
+	On pose $N = \max(N_2, N_3)$\\
+	Alors, pour $n \geq N$,\\
+	\[
+	\begin{aligned}
+		|u_p - \lambda| &= |u_n - u_{\Phi(N)} + u_{\Phi(N)} - \lambda|\\
+		& \leq |u_n - u_{\Phi(N)}| + |u_{\Phi(N)} - \lambda|\\
+		& \leq \frac{\varepsilon}{2} + \frac{\varepsilon}{2}\\
+		& = \varepsilon\\
+	\end{aligned}
+	\]
+	$(u_n)$ est donc de Cauchy.
+\end{proof}
+
+\section{Équivalence de suites}
+\begin{defi}
+	Soient $(a_n)$ et $(b_n)$, deux suites.\\
+	On dit que $(a_n)$ et $(b_n)$ sont équivalentes lorsque $a_n - b_n = o(a_n)$\\
+\end{defi}
+
+\begin{rema}
+	Si $(a_n)$ ne s'annule pas, on peut remplacer cette définitions par la vérification de la condition suivante:\\
+	$$\lim\limits_{n \to + \infty} \frac{b_n}{a_n} = 1$$
+\end{rema}
+
+\begin{nota}
+	Lorsque deux suites $(a_n)$ et $(b_n)$ sont équivalentes, on note $(a_n) \sim (b_n)$
+\end{nota}
+
+\begin{ex}
+	$$n + 34 \sim n$$	
+	$$\frac{n^2 + e^n}{n \ln(n) + \sqrt{n}} \sim \frac{e^n}{n \ln(n)}$$
+	$$n! \sim \left( \frac{n}{e}^n \right) \sqrt{2 \pi n}$$
+\end{ex}
+
+\begin{rema}
+$\phantom{a}$\\
+	\begin{itemize}
+		\item Rien n'est équivalent à 0.
+		\item On ne peut pas ajouter les équivalences entre elles:\\
+		$n + 1 \sim n$ et $-n + 1 \sim -n$\\
+		Mais on n'a pas $2 \sim 0$
+		\item On ne peut pas composer les équivalences entre elles:\\
+		$n+1 \sim n$\\
+		Mais on n'a pas $e^{n+1} \sim e^n$\\
+		car $\lim\limits_{n \to + \infty} \frac{e^{n+1}}{e^n} = e \neq 1$
+	\end{itemize}
+\end{rema}
+
+\begin{theo}
+	$\phantom{a}$\\
+	Si, $a_n \sim b_n$ et $c_n \sim d_n$,\\
+	alors, $a_nc_n \sim b_nd_n$
+\end{theo}
+
+\end{document}
