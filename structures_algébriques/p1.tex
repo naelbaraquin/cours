@@ -1,0 +1,190 @@
+\documentclass[../main.tex]{subfile}
+
+%page 1
+
+\begin{document}
+\section{informations utiles}
+Slavyana GENINSKA
+Jean RAIMBAUT
+
+cours sur:
+http://www.math.univ-toulouse.fr/~jraimbau/Enseignement/theorie\_des\_groupes.html
+\part{Théories des groupes}
+
+\begin{ex}
+	Isométries préservant un triangle équilateral
+
+\begin{rap}
+	Isométrie du plan:
+	$$
+\begin{aligned}
+	f: \RR^2 &\to \RR^2\\
+	\forall x, y \in \RR^2, &\ d(x, y) = d(f(x), f(y))
+\end{aligned}
+	$$
+\begin{ex}{Isométries}
+\begin{itemize}
+	\item symétrie
+	\item rotation
+	\item translation
+	\item symétrie glissée
+\end{itemize}
+\end{ex}
+\end{rap}
+
+\begin{rema}
+	L'identité, notée $Id$, peut être vue comme une rotation (d'angle 0) ou comme une translation (par le vecteur nul). 
+\end{rema}
+
+Soit $T$, un triangle équilatéral.\\
+$$Isom(T) \ = \ \{f:\RR^2 \to \RR^2, \ \text{isométrie} \ \| f(T) = T\}$$
+est l'ensemble des isométries du plan sui préservent T.\\
+%insérer la figure 1
+Une telle application $f$ a forcement au moins un point fixe:
+$$Isom(T) \ = \ \{Id, r_{\frac{2\pi}{3}}, r_{-\frac{2\pi}{3}}, S_A, S_B, S_C\}$$
+On peut alors faire les deux remarques suivantes:
+\begin{rema}
+\begin{itemize}	
+	\item $Isom(T)$ est stable par composition:\\
+	$S_A \circ S_B = r_{\frac{2\pi}{3}}$\\
+	$S_B \circ S_A = r_{-\frac{2\pi}{3}}$
+	\item Toute application $f \in Isom(T)$ admet une transformation inverse $f^{-1} \in Isom(T)$
+\end{itemize}
+\end{rema}
+\end{ex}
+
+\begin{ex}
+	Le groupe symétrique:\\
+	Soit $E$, un ensemble de $n$ objets, $S_n$ est l'ensemble des bijection de $E$, appelé groupe symétrique.\\
+	Par exemple, le groupe symétrique $S_3$ avec $E = \{1, 2, 3\}$
+	%### compléter avec comp1
+
+\begin{rema}	
+\begin{itemize}	
+	\item $S_3$ est stable par composition
+	\item Toute bijection admet un inverse qui est encore dans $S_3$
+\end{itemize}
+\end{rema}
+
+\begin{rema}
+	Les deux exemples sont les mêmes d'un certain point de vue, il s'agit de la même structure algébrique (nous verrons plus tard qu'il s'agit d'un isomorphisme)
+\end{rema}
+\end{ex}
+
+\begin{defi}
+	Un groupe est un ensemble $G$ muni d'une application (appelée loi de groupe):
+	$$
+*: 
+\begin{aligned}
+	G \times G &\to G\\
+	(g, h) &\mapsto g * h
+\end{aligned}
+	$$
+	Cette loi vérifie les propriétés suivantes:
+\begin{itemize}	
+	\item associativité : 
+	$$\forall g, h, k \in G, \ (g*h)*k = g*(h*k)$$
+	\item présence d'un élément neutre:
+	$$\exists e \in G \ / \ \forall g \in G, \ g * e = e * g = g$$
+	\item existance de l'inverse (ou symétrique):
+	$$\forall g \in G, \ \exists h \in G \ / \ g * h = h* g = e$$
+\end{itemize}
+\end{defi}
+
+\begin{ex}
+\begin{enumerate}	
+	\item $\RR$ avec la loi $+$, l'élément neutre est alors $0$ et le symétrique est l'opposé.
+	\item $\RR^*$ avec la loi $\cdot$, l'élément neutre est alors $1$ et le symétrique est l'inverse.
+	\item Soit $P \subset \RR^2$, un polygone régulier à $n$ cotés.\\
+	On note alors $Isom(P)$, l'ensemble des isométries le concervant:
+	$$Isom(P) = \{f:\RR^2 \to \RR^2, \ \text{isométrie} \ \| \ f(P) = P\}$$
+	$Isom(P)$ est alors un groupe si on le muni de la loi de composition $\circ$.\\
+	L'élément neutre est alors l'identité : $\forall f \in Isom(P), \ f \circ Id = Id \circ f = f$.\\
+	Le symétrique est la transformation réciproque $f^{-1}$
+	\\
+	Ce groupe est alors appelé groupe diédral, on le note $D_n$ (ou $D_{2n}$ étant donné que ce groupe possède $2n$ éléments).
+	\begin{ex}	
+	\begin{itemize}	
+		\item $D_3 = Isom(T)$ est le groupe présenté dans l'exemple 1, \\
+		$D_3$ possède six éléments
+		\item $D_4$ est l'ensemble des isométries préservant le carré.\\
+		%### insérer fig2
+		$D_4 = Isom(C) = \{Id, r_{\frac{\pi}{2}}, r_{\pi}, r_{-\frac{\pi}{2}}, S_{AC}, S_{MP}, S_{BD}, S_{NQ}\}$ \\
+		$D_4$ possède donc 8 éléments
+	\end{itemize}
+	\end{ex}
+	\item Si $E$ est un ensemble, l'ensemble des bijections de $E$ dans $E$ est un groupe pour la loi $\cdot$ comme précédemment.\\
+	Si $E = \{1, ..., n\}, \ Bij(E)S_n$\\
+	Si $E = \RR, \ Bij(\RR)$ est un groupe
+	\item $\RR^n$ muni de l'addition vectorielle est un groupe.
+	Plus généralement, tout espace vectoriel $E$ est un groupe pour l'addition
+	\item $GL_n(\RR) = \{A\in M_{n,n}(\RR) \ \| \ det A \neq 0\}$
+	Pour la multiplication matricielle, voir l'exercice 1.
+\end{enumerate}
+
+\begin{ctex}
+\begin{enumerate}	
+	\item $(\NN, +)$ n'est pas un groupe car aucun élément n'admet de symétrique
+	\item $(\RR, \cdot)$ n'est pas un groupe car $0$ n'admet pas de symétrique
+	\item $(\ZZ^*, \cdot)$ n'est pas un groupe car $1$ et $-1$ sont les seuls éléments admettant un symétrique
+	\item $(\{-1, 0, 1\}, +)$ n'est pas un groupe car $1 + 1 = 2 \notin \{-1, 0, 1\}$
+\end{enumerate}
+\end{ctex}
+
+\begin{rema}
+	Le groupe $\ZZ$ est $(\ZZ, +)$.\\
+	Le groupe $\RR^*$ est $(\RR^*, \cdot)$.\\
+	Le groupe $\RR^n$ est $(\RR^n, +)$.\\
+\end{rema}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{ex}
+
+
+\end{document}
