@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}informations utiles}{2}% 
+\contentsline {part}{I\hspace {1em}Th\IeC {\'e}ories des groupes}{2}% 
+\contentsline {section}{\numberline {2}Les sous-groupes}{5}% 
