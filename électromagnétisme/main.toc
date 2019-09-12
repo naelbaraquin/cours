@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {2}Introductions}{2}% 
 \contentsline {section}{\numberline {3}R\IeC {\'e}partition de charges, densit\IeC {\'e} de charges}{2}% 
 \contentsline {subsection}{\numberline {3.1}Densit\IeC {\'e} volumique de charges}{2}% 
-\contentsline {subsection}{\numberline {3.2}Densit\IeC {\'e} surfacique de charges}{2}% 
+\contentsline {subsection}{\numberline {3.2}Densit\IeC {\'e} surfacique de charges}{3}% 
 \contentsline {subsection}{\numberline {3.3}Densit\IeC {\'e} lin\IeC {\'e}ique de charges}{3}% 
 \contentsline {subsection}{\numberline {3.4}Charges ponctuelles}{3}% 
 \contentsline {part}{II\hspace {1em}Loi de coulomb et champs et potentiels \IeC {\'e}lectrostatiques}{4}% 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  12 SEP 2019 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  12 SEP 2019 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,32 +1050,32 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--34
+Underfull \hbox (badness 10000) in paragraph at lines 32--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--37
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--47
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--57
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
@@ -1102,7 +1102,7 @@ blic/fourier/fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier
 /fourier-ms.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></us
 r/share/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/f
 onts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (5 pages, 71363 bytes).
+Output written on main.pdf (5 pages, 71290 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
