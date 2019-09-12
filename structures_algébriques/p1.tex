@@ -229,7 +229,7 @@ On peut alors faire les deux remarques suivantes:
 	$Isom(P)$, le groupe d'isométries préservant $P$ (rotations et symétries).\\
 	$Isom^+(P)$, les isométries de $Isom(P)$ qui préservent l'orientation du plan (ici, seulement les rotation).\\
 	On a $Isom^+(P) < Isom(P)$
-	\item $Diff(\RR) < Bij(\RR)$, le sous-groupe des bijections de $\RR$ de classe $\CC^\infty$
+	\item $Diff(\RR) < Bij(\RR)$, le sous-groupe des bijections de $\RR$ de classe $\CCC^\infty$
 	\item $SL_n(\RR) = \{M \in GL_n(\RR) \ |\ det(M) = 1\} < GL_n(\RR)$
 \end{itemize}
 \end{ex}
@@ -243,53 +243,68 @@ On peut alors faire les deux remarques suivantes:
 \end{itemize}
 \end{prop}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{proof}
+	On suppose que $H$ satisfait les deux points de la propriété ci-dessus.\\
+	$H \neq \emptyset$ donc $\exists h \in H$\\
+	pour vérifier que $e \in H$, \\
+	on applique la seconde propriété à h, donc $hh^{-1} = e \in H$
+	on vérifie ensuite que tout élément de $H$ possède un inverse dans $H$, \\
+	soit $h \in H$, on applique la seconde propriété à $e$ donc $eh^{-1} = h^{-1} \in H$\\
+	on vérifie enfin que le produit de tout élément de $H$ appartient à $H$\\
+	Soient $h_1, h_2 \in H$. On applique la seconde propriété à $h_1, h_2^{-1} \in H$. Donc $h_1(h_2^{-1})^{-1} = h_1h_2 \in H$
+\end{proof}
 \end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \end{document}

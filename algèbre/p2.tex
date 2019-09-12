@@ -184,14 +184,36 @@ $$0 = \lambda^{-1} \cdot 0 = \lambda^{-1} (\lambda \cdot u) = (\lambda^{-1} \cdo
 \end{itemize}
 \end{defi}
 
-\begin{prop}
+\begin{propri}
 	$F$ est un sous-espace vectoriel de $E$ si:
 \begin{itemize}
 	\item $F \neq \emptyset$
 	\item $\forall u, v \in F, \ u+v \in F$
 	\item $\forall u \in F, \ \forall \lambda \in \KK, \ \lambda \cdot u \in F$
 \end{itemize}
-\end{prop}
+\end{propri}
 
-En pratique, pour montrer qu'un ensemble est un $\KK$-espace vectoriel, on montre qu'il s'agit d'un sous-espace vectoriel d'un $\KK$-espace vectoriel connu.
+\begin{rema}
+\begin{itemize}	
+	\item On a vu que $0_E \in F$
+	\item Les deux derniers points de la définition de sous-espace vectoriel sont équivalents à :
+	$$\forall u, v \in F, \ \forall \lambda, \mu \in \KK, \ \lambda u + \mu v \in F$$
+	ou encore à:
+	$$\forall u, v \in F, \ \forall \lambda \in \KK, \ \lambda u + v \in F$$
+\end{itemize}
+\end{rema}
+
+%### reprendre l'exemple
+
+\begin{rema}
+	Dans la plupart des cas, pour montrer qu'un ensemble (avec les lois $+$, $\cdot$) est un espace vectoriel, on montre qu'il s'agit d'un sous-espace vectoriel d'un $\KK$-espace vectoriel connu.
+\end{rema}
+
+\begin{ex}
+\begin{itemize}	
+	\item $E = \KK^n$ et $a_1, ..., a_n \in \KK$\\
+	$F = \{(x_1, ..., x_n) \ | \ a_1x_1 + ... + a_nx_n = 0\}$ est un sous-espace vectoriel de $E$.
+	\item $\KK[X]$, les suites de $\KK$ nulles à partir d'un certain rang, est un sous-espace vectoriel de l'ensemble des suites de $\KK$
+\end{itemize}
+\end{ex}
 \end{document}
