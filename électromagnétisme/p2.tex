@@ -3,5 +3,66 @@
 %page 2
 
 \begin{document}
+\part{Loi de coulomb et champs et potentiels électrostatiques}
+\section{Loi de Coulomb}
+dans la charge ponctuelle:
+décrit la relation entre le potentiel, la charge et la force
+de manière empirique: on s'appercoit que 
+la force qui s'exerce entre les deux charges est inversement proportionnelle au carré de la distance
+la force est portée par la droite donnée par les deux charges
+additivité vectorielle des forces
+si deux charges de meme nature, elles s'attirent
+de nature différentes, elle se repoussent
+
+vrai truc:
+repose sur des constatations experimentales:
+\begin{itemize}
+	\item on a additivité vectorielle des actions entre charges ponctuelles:\\
+	Si $F_{A \to C}$ est la force exercée par $q_A$ sur $q_C$\\
+	Si $F_{B \to C}$ est la force exercée par $q_B$ sur $q_C$\\
+	alors $\vec{F_{A \to C} + \vec{F_{B \to C}}}$ est l'action simulténée de $q_A$ et $q_B$ sur $q_C$
+	\item on a opposition des actions réciproques
+	$$\vec{F_{A \to B}} = -\vec{F_{B \to A}}$$
+	\item experimentalement, on met en évidence que $||\vec{F_{A \to B}}|| = \frac{\varphi(AB)}{AB^2}$ où $\varphi(AB)$ est un scalaire indépendant des positions de $A$ et $B$
+	\item experimentalement, on met en évidence que $\vec{F_{A \to B}}$ est porté par $\vec{AB}$
+	$$\vec{F_{A \to B}} = \frac{\varphi(AB)}{AB^2} \frac{\vec{AB}}{||\vec{AB}||}$$
+	le dernier rapport est alors $\vec{u}$, vecteur unitaire de $\vec{AB}$
+	\item on montre experimentalement que 
+	$$\frac{F_{A \to B}}{q_A} = \frac{F_{A' \to B}}{q'_A}$$
+	La comparaison des forces permet la mesure des charges
+	\item on a l'expression de la force de Coulomb, force électrostatique qui s'exerce entre deux charges $q_A$ et $q_B$ placées dans le vide aux points $A$ et $B$:
+	$$\vec{F_{A \to B}} = \frac{q_A \cdot q_B}{4 \pi \varepsilon_0} \frac{\vec{u}}{AB^2}$$
+	où $\varepsilon_0$ est la permittivité électrique du vide\\
+	$\frac{1}{4 \pi \varepsilon_0} \approx 9\cdot 10^9$ dans le SI
+\end{itemize}
+
+La force electrique est très grande devant la force gravitationnelle à très petite échelle
+
+\section{Champs électrostatique}
+\subsection{Champs créé par une charge ponctuelle}
+Soit $q_A$ au point $A$, si on approche $q_{B_1}, q_{B_2}, ...$ du point $B$:
+$$\frac{\vec{F_{A \to B_1}}}{q_{B_1}} = \frac{\vec{F_{A \to B_2}}}{q_{B_2}} = ...$$
+Ce rapport dépend de $q_A$ et du point $B$.\\
+Ce rapport est appelé charmps électrostatique (ou champs électrique) créé par la charge $q_A$ au point $B$.
+
+$$\vec{E_A}(\vec{B}) = \frac{1}{4 \pi \varepsilon_0} \frac{q_A}{AB^2} \vec{u}$$
+est l'expression du champs électrostatique, son unité est le $V \cdot m^{-1}$
+$$[E] = V \cdot m^{-1}$$
+en général, on a la notation suivante:\\
+avec $P$, le point où se trouve la charge\\
+et $M$, le point dans lequel on observe le champ
+$$\vec{E_P}(M) = \frac{q}{4\pi \varepsilon_0} \frac{\vec{PM}}{PM^3}$$
+avec $\frac{\vec{PM}}{PM^3} = \frac{1}{PM^2} \frac{\vec{PM}}{PM}$\\
+
+\begin{rema}
+	Si $q_M$ se trouve en $M$\\
+	et $\vec{F_{P \to M}} = q_M \vec{E_P}(M)$, l'expression de la loi de Coulomb\\
+	La mesure de la force correspond à la mesure du champs électrostatique
+\end{rema}
+
+\begin{rema}
+	$E_P(M)$ n'est pas définit en sa source car $\frac{1}{PM^2} \to \infty$
+	Correspond à la limite de validité du concept de charge ponctuelle
+\end{rema}
 
 \end{document}
