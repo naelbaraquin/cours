@@ -1,0 +1,262 @@
+\documentclass[../main.tex]{subfile}
+
+%page 1
+
+\begin{document}
+\section{informations utiles}
+\part{Rappels sur les espaces vectoriels normés}
+
+\section{Rappels de topologie}
+Soit $E$, un $\RR$-espace vectoriel.\\
+\begin{defi}
+	Une norme sur $E$ est une application $|| ||_E: E \to \RR$ vérifiant:
+\begin{itemize}	
+	\item $\forall x \in E, \ \forall \lambda \in \RR, \ ||\lambda x||_E = |\lambda| ||x||_E$
+	\item $\forall x, y \in E, \ $$||x + y|| \leq ||x|| + ||y||$, il s'agit de l'inégalité triangulaire
+	\item $\forall x \in E, \ ||x|| = 0 \Leftrightarrow x = 0_E$ 
+\end{itemize}
+\end{defi}
+
+\begin{ex}
+	Pour $E = \RR^n$, \\
+	$$||x||_2 = \sqrt{\sum\limits_i x_i^2}$$
+	$$||x||_\Delta = \sum\limits_i |x_i|$$
+	$$||x||_\infty = \max\limits_{1 \leq i \leq n} |x_i|$$
+\end{ex}
+
+\subsection{Distance associée à la norme}
+\begin{defi}
+	La distance associée à cette norme est :\\
+	$$
+\begin{aligned}
+	E \times E &\to \RR\\
+	(x, y) &\mapsto d(x, y) := ||x-y||
+\end{aligned}
+	$$
+\end{defi}
+
+\begin{ex}
+	Pour $A = (1, 0)$, $B = (0, 1)$, \\
+	$$d_2 = \sqrt{2}$$
+	$$d_\Delta = 2$$
+	$$d_\infty = 1$$
+\end{ex}
+
+\begin{defi}
+	Deux normes $||\cdot||$ et $||\cdot||'$ sont dites équivalentes s'il existe deux constantes $C > 0$ et $C' > 0$ telles que:
+	$$\forall x \in E, \ C'||x|| \leq ||x||' \leq C||x||$$
+\end{defi}
+
+\begin{exerc}
+	Montrer qu'il s'agit effectivement d'une relation d'équivalence.
+\end{exerc}
+
+\begin{theo}
+	Si  $\dim E < + \infty$, \\
+	toutes les normes sont équivalentes.
+\end{theo}
+
+\begin{ex}
+	Sur $\RR^2$, \\
+	$$
+\begin{aligned}
+	||x
+\end{aligned}
+	$$
+	%###reprendre l'exemple
+\end{ex}
+
+\begin{rap}
+	$$<x, y> = ||x||_2||y||_2$$
+\end{rap}
+
+%### finir l'exemple
+
+Sur les espaces de dimension infinie, les choses peuvent être plus compliquées.
+\begin{ex}
+	Dans $E = C^0([0, 1], \RR)$, pour $f \in E$, on note, \\
+	$$||f||_2 = \sqrt{\int\limits_0^1 f^2(t)dt}$$
+	$$||f|| = \int\limits_0^1 f(t)dt$$
+	$$||f||_\infty = \sup\limits_{0 \leq t \leq 1} |f(t)|$$
+	Soit 
+	$$f_n:
+\begin{aligned}
+	[0, 1] &\to \RR\\
+	t &\mapsto t^n
+\end{aligned}
+	$$
+	$$||f_n||_1 = \int\limits_0^1 t^ndt$$
+	$$||f_n||_\infty = 1$$
+	Si $||\cdot||_1$ et $||\cdot||_\infty$ étaient équivalents, on aurait une constate $C$ telle que:\\
+	$$\forall n \in \NN, \ ||f_n||_\infty \leq C ||f_n||_1$$
+	or, 
+	$$\forall n \in \NN, \ ||f_n||_\infty = 1 \text{ et } C ||f_n||_1 = 0$$
+	On arrive donc à une contradiction.
+\end{ex}
+
+\subsection{rappels de topologie des espaces vectoriels normés}
+\begin{defi}
+	Une boule ouverte est un ensemble $B_{(x, r)}$ de la forme : 
+	$$B_{(x, r)} = \{y \in E \ | \ ||x - y|| < r\}$$
+\end{defi}
+
+\begin{defi}
+	Un sous-ensemble $\Omega$ est un ouvert si :
+	$$\forall x \in \Omega, \ \exists r > 0, \ | \ B_{(x, r)} \subset \Omega$$
+\end{defi}
+\begin{rema}
+	Une conséquence de cette définition est que $\emptyset$ est un ouvert.
+\end{rema}
+
+\begin{defi}
+	Une partie $V \subset E$ est un voisinage de $x_0 \in E$ si : 
+	$$\exists r > 0 \ | \ B_{(x_0, r)} \subset V$$
+\end{defi}
+
+\begin{defi}
+	Une partie $F \subset E$ est dite fermée si le complémentaire de $F$ $E \backslash F$ est un ouvert.
+\end{defi}
+
+\begin{ex}
+	Dans $\RR^2$, \\
+	$O = \{(x, y) \in \RR^2 \ | \ x > 0\}$ est un ouvert\\
+	$F = \{(x, y) \in \RR^2 \ | \ x \geq 0\}$ est un fermé\\
+	%### insérer fig 2
+\end{ex}
+
+\begin{defi}
+	Pour $E$ de dimension finie ($\dim E < + \infty$), une partie $X \subset E$ est un compact si elle est fermée et bornée.
+\end{defi}
+
+\subsection{Norme d'opérateur}
+
+$(E, ||\cdot||_E)$ est un espace vectoriel normé de dimension finie;\\
+$(F, ||\cdot||_F)$ est un espace vectoriel normé de dimension finie;\\
+$\mathcal{L}(E, F)$ est aussi un espace vectoriel normé\\
+Pour $u \in \mathcal{L}(E, F)$, on définit la norme triple:
+$$|||u||| = \sup\limits_{u \in \mathcal{L}(E, F)} \frac{||u(x)||_F}{||x||_E}$$
+
+\begin{prop}
+	En dimension finie, 
+	$$\forall u \in \mathcal{L}(E, F), \ |||u||| < + \infty$$
+\end{prop}
+
+\begin{rema}
+	$$
+\begin{aligned}
+	\frac{||u(x)||}{||x||} &= \frac{1}{||x||} ||u(x)||\\
+	&= ||\frac{1}{||x||} u(x)||\\
+	&= ||u(\frac{x}{||x||})||\\
+\end{aligned}
+	$$
+	Par conséquent, $|||u||| = \sup \frac{u(x)}{x}$
+\end{rema}
+
+\begin{prop}
+	$|||\cdot||| : \mathcal{L}(E, F) \to \RR$ est une norme
+\end{prop}
+
+%###reprendre toute la démo
+
+\begin{propri}
+\begin{itemize}
+	
+	\item $\forall u \in \mathcal{L}(E, F), \ \forall x \in E$\\
+	$$||u(x)|| \leq |||u||| \cdot ||x||$$
+
+	\item $\forall u \in \mathcal{L}(E, F), \ \forall v \in \mathcal{L}(F, G)$, \\
+	$$|||v \circ u||| \leq |||v||| \cdot |||u|||$$
+\end{itemize}
+\end{propri}
+
+\begin{rema}
+	$\mathcal{L}(E, E)$ est une algèbre, i.e. possède un produit :\\
+	$$(u, v) \mapsto u \circ v$$
+	et
+	$$|||u\cdot v||| \leq |||u||| \cdot |||v|||$$
+	On dit que $|||\cdot|||$ est une norme d'algèbre
+\end{rema}
+
+\begin{exerc}
+%### compléter l'exercice	
+\end{exerc}
+
+\section{Limite et continuité}
+
+\begin{defi}
+	Soit $x_n$, une suite de $E$, soit $l \in E$, \\
+	on dit que $(x_n)$ converge vers $l$ et on note $\lim\limits_{n \to \infty} x_n = l$ si
+	$$\forall \epsilon > 0 , \ \exists N \in \NN, \ \forall n \geq N, \ ||x_n - l|| < \epsilon$$
+\end{defi}
+
+\begin{rap}
+	Les notions d'ouverts, de fermés, etc... se caractérisent en terme de suites convergentes.
+\end{rap}
+
+\begin{ex}
+\begin{itemize}	
+	\item $\Omega \in E$ est un ouvert si et seulement si $\forall l \in \Omega, \ \forall (x_n), \text{ suite de $E$, } \ / \ \lim\limits_{n \to + \infty} x_n = l$, on a : \\
+	$\exists N \in \NN \ / \ \forall n > N, \ x_n \in \Omega$
+	\item $F \subset E$ est fermée si :
+	$\forall (x_n) \text{ suite de $F$ }, \ \forall l \in E, \ \lim\limits_{n \to + \infty} x_n = l$, on a $l \in F$
+	(i.e. $F$ contient toutes les limites de ses suites)
+	\item $K \subset E$ est compact si toute suite de $K$ a une valeur d'adhérence dans $K$.
+\end{itemize}
+\end{ex}
+
+\begin{rap}
+	Une valeur d'adhérence de $(x_n)$ est une limite d'une suite extraite.\\
+	Une suite extraite de $(x_n)$ est une suite de la forme $(x_{\phi(n)})_{x \in \NN}$ où $\phi : \NN \to \NN$ est strictement croissante
+\end{rap}
+
+\begin{defi}
+	Soit $\Omega \in E$, un ouvert.\\
+	Soit $f$, une application telle que $f : \Omega \to \RR$,\\
+	Soit $x_0 \in E$ et $l \in F$\\
+	On dit que $f$ a pour limite sur $x_0$ si :
+	$\forall \epsilon > 0, \ \exists r > 0, \ \forall x \in \Omega, \ ||x - x_0|| < r \Rightarrow ||f(x) - f(x_0)|| < \varepsilon$
+	On note alors $\lim\limits_{x \to x_0} f(x) = l$
+\end{defi}
+
+\begin{defi}
+	Soit $f : \Omega \to F$, et $x_0 \in \Omega$\\
+	$f$ est continue en $x_0$ si $f$ a pour limite $f(x_0)$ quand $x$ tend vers $x_0$
+	(i.e. $f$ est continue en $x_0$ si $\lim\limits_{x \to x_0}$ existe et $\lim\limits_{x \to x_0} = f(x_0)$)
+\end{defi}
+
+\begin{rema}
+	Avec la définition de la limite, \\
+	si $\lim\limits_{x \to x_0} f(x)$ existe, alors cette limite est nécessairement $f(x_0)$
+\end{rema}
+
+\begin{defi}
+	$f$ est continue si $f$ est continue sur $\Omega$ si $f$ est continue en tout point de $\Omega$ 
+\end{defi}
+
+\begin{ex}
+	$$f:
+\begin{aligned}
+	\RR^2 &\to \RR\\
+	(x, y) &\mapsto 
+	\left\{
+	\begin{array}{l}	
+		\frac{x^3 - y^3}{x^2 + y^2} \text{ si } (x, y) \neq (0, 0)\\
+		0 \text{ si } (x, y) = (0, 0)
+	\end{array}
+	\right.
+\end{aligned}
+	$$
+	%### finir la rédaction de l'exemple
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
