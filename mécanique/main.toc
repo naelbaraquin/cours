@@ -13,3 +13,11 @@
 \contentsline {section}{\numberline {2}en m\IeC {\'e}canique du solide}{4}% 
 \contentsline {part}{II\hspace {1em}Chapitre 2 : Cin\IeC {\'e}matique du solide}{5}% 
 \contentsline {section}{\numberline {3}Syst\IeC {\`e}me de points materiels - solide ind\IeC {\'e}formable}{5}% 
+\contentsline {subsection}{\numberline {3.1}R\IeC {\'e}sultante cin\IeC {\'e}tique}{6}% 
+\contentsline {subsection}{\numberline {3.2}Moment cin\IeC {\'e}tique, torseur cin\IeC {\'e}tique}{6}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Moment cin\IeC {\'e}tique par rapport a un axe}{7}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Energie cin\IeC {\'e}tique}{7}% 
+\contentsline {section}{\numberline {4}R\IeC {\'e}ferenciel barycentrique, th\IeC {\'e}or\IeC {\`e}me de Koenig}{8}% 
+\contentsline {subsection}{\numberline {4.1}R\IeC {\'e}ferentiel Barycentrique}{8}% 
+\contentsline {subsubsection}{\numberline {4.1.1}D\IeC {\'e}finitions}{8}% 
+\contentsline {subsection}{\numberline {4.2}Resultante cin\IeC {\'e}tique et dynamique dans $(R^*)$}{8}% 

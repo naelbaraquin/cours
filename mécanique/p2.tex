@@ -32,6 +32,209 @@
 	un solide est dit indéformable si la distance entre deux quelconques de ses points est indépendante du temps.
 \end{defi}
 
+\begin{defi}
+	Centre de masse:
+	Soit un système de points matériels :
+	$$
+	G :
+\begin{aligned}
+	\vec{OG} &= \frac{\sum\limits_i m_i \vec{OM_i}}{\sum\limits_i m_i}\\
+	\sum\limits_i m_i \vec{GM_i} &= \vec{0}
+\end{aligned}
+	$$
+	Où $G$ est le centre de masse, barycentre, ou centre d'inertie
+\end{defi}
+
+\begin{rema}
+	le centre de masse est différent du centre de gravité, qui est le point d'application du poids
+\end{rema}
+
+\begin{ex}
+	sur un nuage : %###inclure fig 21
+\end{ex}
+
+\begin{defi}
+	expression du centre de masse pour un solide:
+	$$\vec{OG} = \frac{\iiint \rho(M) \vec{OM} dV}{\iiint \rho(M) dV}$$
+	où $\rho(M)$ est la masse volumique au point $M$ \\
+	la masse totale $M_t$ s'exprimant alors:
+	$$M_t = \iiint \rho(M) dV$$
+\end{defi}
+
+\begin{rema}
+	lien entre intégrale et somme: (en 1D)\\
+	$$\int\limits_a^b f(x)dx = \lim\limits_{n \to +\infty} \sum\limits_{i = 1}^n f(a+(\frac{b-a}{n})i)(\frac{b-a}{n})$$
+\end{rema}
+
+\begin{rema}
+	formule vraie pour tout $O$:
+	$$\iiint \rho(M) \vec{GM} dV = \vec{0}$$
+\end{rema}
+
+\begin{rema}
+	$G$ peut ne pas appartenir au solide 
+	%### inclure l'exemple du fer à cheval
+\end{rema}
+
+\subsection{Résultante cinétique}
+\begin{defi}
+	$$\vec{P(t)} = \iiint \rho(M) \vec{v}(M, t)_{/R} dV$$
+	pour un solide\\
+	%un truc
+\end{defi}
+
+\begin{defi}
+	Champs de vitesses:\\
+	$\vec{v(M, t)}$ est la vitesse d'un point situé en $M$ à l'instant $t$.
+\end{defi}
+
+\begin{propri}
+	propriétés de $\vec{P}$:\\
+	Pour un système de points materiels:
+	$$
+\begin{aligned}
+	\vec{P} &= \sum_i m_i \vec{v(M_i)}\\
+	&= \sum_i m_i \frac{d}{dt} \vec{OM_i}\\
+	&= \frac{d}{dt}
+\end{aligned}
+	$$
+	%a fiiiiiiiinir###
+\end{propri}
+
+\subsection{Moment cinétique, torseur cinétique}
+\begin{defi}
+	Soit un système de points materiels:\\
+	$$\vec{L_A} = \sum\limits_i \vec{AM_i} \wedge m_i \vec{v(M_i)}$$
+	$$\vec{L_A} = \iiint \vec{AM} \wedge \rho(M) \vec{v(M)} dV$$
+	$\vec{L_A}$ est alors le moment cinétique en un point $A$.\\
+	$A$ appartient ou pas au solide\\
+
+	$\vec{L_A}$ est un champ de vecteurs, à chaque point $A$ de l'espace, je peux calculer $\vec{L_A}$
+\end{defi}
+
+\begin{propri}
+	quelles relations y-a-t'il entre $\vec{L_A}$ et $\vec{L_B}$?\\
+	$$
+\begin{aligned}
+	\vec{L_B} &= \iiint \vec{BM} \wedge \rho (M) \vec{v(M)} dV\\
+	&= \iiint (\vec{BA} + \vec{AM}) \wedge \rho(M) \vec{v}(M) dV\\
+	&= \vec{BA} \wedge \iiint \rho(M) \vec{v(M)} dV + \iiint \vec{AM} \wedge \rho(M)\vec{v(M)} dV\\
+	&= \vec{BA} \wedge \vec{P} + \vec{L_A}
+\end{aligned}
+	$$
+
+	on a donc les deux formules suivantes (équivalentes, en connaitre une par coeur)
+	$$\vec{L_B} = \vec{L_A} + \vec{P} \wedge \vec{AB}$$
+	$$\vec{L_B} = \vec{L_A} + \vec{BA} \wedge \vec{P}$$
+
+	On peut calculer $\vec{L_B}$ sur tout les $B$ de l'espace en sachant $\vec{L_A}$ et $\vec{P}$
+\end{propri}
+
+\begin{defi}
+	$(\vec{L_A}, \vec{P})$ est un torseur cinétique\\
+	un torseur est un champ de vecteurs avec la propriété d'équiprojectivité:\\
+	$$\vec{L_A} \cdot \vec{AB} = \vec{L_B} \cdot \vec{AB}$$
+	$$\exists \vec{P} \ / \ \vec{L_B} = \vec{L_A} + \vec{P} \wedge \vec{AB}$$
+\end{defi}
+
+\subsubsection{Moment cinétique par rapport a un axe}
+$$L_\Delta = \vec{L_A} \cdot \vec{u_\Delta}$$
+avec $\Delta$, un axe orienté, \\
+et $\vec{u_{\Delta}}$, le vecteur unitaire de cet axe.
+%###fig 23
+%### reprendre jusqu'à
+
+\subsubsection{Energie cinétique}
+$$E_c = \iiint \frac{\rho(M)}{2} \vec{v(M)}^2 dV$$
 
 
+\begin{rema}
+	memo:
+\begin{itemize}	
+	\item barycentre:
+	$$\vec{OG} = \frac{\iiint \rho(M) \vec{OM} dV}{\iiint \rho(M) dV}$$
+	$$\vec{OG} = \iiint \rho(M) \vec{GM} dV$$
+	
+	\item torseur cinétique:
+	$$\vec{P} = \iiint \rho(M)\vec{V(\rho)}$$
+	$$\vec{L_A} = \iiint \vec{AM} \wedge \rho(M) \vec{v(M)} dV$$
+	$$\vec{L_B} = \vec{L_A} + \vec{P} \wedge \vec{AB}$$
+
+	\item torseur dynamique:
+	$$\vec{D} = \iiint \rho{M} \vec{a(M)} dV$$
+	$$\vec{\delta_A} \iiint \vec{AM} \wedge \rho(M) \vec{a(M)} dV$$
+	$$\vec{\delta_B} = \vec{\delta_A} + \vec{D} \wedge \vec{AB}$$
+
+	\item passage du torseur cinétique au torseur dynamique:
+	$$\vec{D} = \frac{d}{dt} \vec{P}$$
+	$$\vec{\delta_A} = \frac{d}{dt} \vec{L_A} + \vec{V_A} \wedge \vec{P}$$
+\end{itemize}
+\end{rema}
+
+\section{Réferenciel barycentrique, théorème de Koenig}
+notion spécifique aux systèmes de points materiels et aux solides .\\
+n'a pas d'intérêt pour un système d'un point materiel.
+
+\subsection{Réferentiel Barycentrique}
+\subsubsection{Définitions}
+\begin{defi}
+	Le réferenciel barycentrique $R^*$ a pour origine, même horloge et même repère d'espace que $R$
+	%### inclure figure 24
+	$(R^*)$ possédant les mêmes axes que $(R)$, il est en translation par rapport à $(R)$
+\end{defi}
+	%###reprendre les exemples
+
+\begin{nota}	
+	La vitesse de $M$ dans le réferenciel $(R^*)$ se note $\vec{v^*(M)} = \frac{d}{dt}(\vec{GM})$
+\end{nota}
+
+\subsection{Resultante cinétique et dynamique dans $(R^*)$}
+
+\begin{defi}
+	$$
+\begin{aligned}
+	\vec{P^*} &= \iiint \rho(M) \vec{v^*(M)} dV\\
+	&= \iiint \rho(M) \frac{d}{dt} \vec{GM} dV\\
+	&= \frac{d}{dt} (\iiint \rho(M) \vec{GM} dV)\\
+	&= \vec{0}\\
+\end{aligned}
+	$$
+\end{defi}
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
