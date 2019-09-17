@@ -200,6 +200,138 @@ n'a pas d'intérêt pour un système d'un point materiel.
 \end{aligned}
 	$$
 \end{defi}
+
+\begin{propri}
+	$\vec{P^*} = \vec{0}$\\
+	$$\vec{D^*} = \iiint \rho(M) \vec{a^*(M)} dV$$
+	$$\vec{D^*} = \vec{0}$$
+\end{propri}
+
+\subsection{Moments cinétique et dynamique dans $R^*$}
+
+\begin{defi}
+	$$\vec{L_A} = \iiint \vec{AM} \wedge \rho(M) \vec{v^*(M)} dV$$
+	$$\vec{\delta^*_A} = \iiint \vec{AM} \wedge \rho(M) \vec{a^*(M)} dV$$
+\end{defi}
+
+\begin{propri}
+	$$\vec{L^*_B} = \vec{L^*_A} + \vec{P^*} \wedge \vec{AB}$$
+	$$\vec{L^*_B} = \vec{L^*_A} = \vec{L^*}$$
+	le moment cinétique est indépendant du point dans $R^*$
+
+	$$\vec{\delta^*_B} = \vec{\delta^*_A} + \vec{D^*} \wedge \vec{AB}$$
+	$$\vec{\delta^*_B} = \vec{\delta^*_A} = \vec{\delta^*}$$
+	le moment dynamique est indépendant du point dans $R^*$
+\end{propri}
+
+\subsection{Théorèmes de Koenig}
+\begin{theo}
+	Relations entre :\\
+\begin{itemize}	
+	\item $\vec{L_A |_{(R)}}$ et $\vec{L^*}$
+	\item $\vec{L_\delta |_{(R)}}$ et $\vec{\delta^*}$
+	\item $E_c |_{(R)}$ et $E_c^* = \iiint \frac{1}{2} \rho(M) \vec{v^*}(M) dV$
+\end{itemize}
+\end{theo}
+
+\subsubsection{Moment cinétique:}
+$$
+\begin{aligned}
+	\vec{L_A}|_{(R)}
+\end{aligned}
+$$
+%### jusqu'au memo
+
+
+\section{Champ des vitesses dans un solide indéformable}
+
+\begin{rap}
+	Pour connaitre le mouvement d'un solide, il faut connaitre sa trajectoire et sa vitesse en chacuns de ses points.\\
+	On définit alors le champ des vitesses
+\end{rap}
+
+\begin{defi}
+	$\vec{v(M)}$, la vitesse du point situé en $M$ au temps $t$
+\end{defi}
+
+\subsection{Degrès de liberté}
+tout solide (points matériels dont la distance entre eux est fixée) possède 6 degrès de liberté.\\
+
+on utilise la position du barycentre (qui fixe 3 degrès de liberté)
+ainsi que trois angles %###insérer fig 25
+(qui fixe les 3 autres degrès de liberté)
+
+valable uniquement pour les solides indéformables
+
+\subsection{Torseur des vitesses}
+
+définition du solide indéformable, pour tout points $A$ et $B$ du solide, \\
+la distance $AB$ étant constante, $\vec{AB}^2$ est aussi constant, d'où,
+$$\vec{AB} \cdot [\vec{v(B)} - \vec{v(A)}] = 0 \Rightarrow \vec{v(B)} \cdot \vec{AB} = \vec{v(A)} \cdot \vec{AB}$$
+Le champ des vitesses est équiprojectif, i.e. en trois dimensions, $\exits \stackrel{!} \vec{\Omega} \ / \ \vec{v(B)} = \vec{v(A)} + \vec{\Omega} \wedge \vec{AB}$
+
+\begin{defi}
+	On définit alors un couple avec le champs des vitesses et un torseur des vitesses (ou torseur cinématique)
+	$$(\vec{v(A)}, \vec{\Omega})$$
+\end{defi}
+
+\begin{rema}
+	$$\vec{v(B)} = \vec{v(A)} + \vec{\Omega} \wedge \vec{AB}$$
+	$$\vec{v(B)} \cdot \vec{AB} = \vec{v(A)}  \cdot \vec{AB}+ (\vec{\Omega} \wedge \vec{AB}) \cdot \vec{AB}$$
+\end{rema}
+
+\begin{rema}
+	Le champ des vitesses peut varier en fonction du temps, \\
+	à $t$ donné, $(\vec{v(A, t)}, \vec{\Omega(t)})$
+\end{rema}
+
+\begin{rema}
+	$\vec{\Omega}$ est homogène à l'inverse d'un temps.
+\end{rema}
+
+\subsection{Exemples de mouvements de solide}
+
+On se donne $(\vec{v(A)}, \vec{\Omega})$, on souhaite alors connaitre la nature du mouvement.
+\subsubsection{$\vec{v(A)} \neq \vec{0}, \ \vec{\Omega} = \vec{0}$, le mouvement est alors une translation}
+
+Pour tout point $B$ du solide, $\vec{v(B)} = \vec{v(A)}$, il s'agit alors d'une translation
+
+%###insérer fig 26, 27, 28
+\subsubsection{$\exists A \ / \ \vec{v(A)} = \vec{0}, \ \vec{\Omega} \neq \vec{0}$, rotation autour d'un axe fixe}
+Pour tout point $M$ du solide, $\vec{v(M)} = \vec{v(A)} + \vec{\Omega} \wedge \vec{AM} = \vec{\Omega} \wedge \vec{AM}$
+%finir l'exemple
+
+
+\subsubsection{$\vec{\Omega} \neq \vec{0}, \ \exists A \ / \ \vec{v(A)} \neq \vec{0}$ et $\vec{v(A)}$ et $\vec{\Omega}$ sont colinéaires, il s'agit alors d'un mouvement hélicoïdal}
+%###demo
+
+\subsubsection{$\vec{\Omega} \neq \vec{0}, \ \vec{v(A)} \neq \vec{0}$, le mouvement est quelconque}
+On montre qu'il existe un point $P$ tel que $\vec{v(P)}$ et $\vec{\Omega}$ sont colinéaires, de manière à se rapporter à un mouvement hélicoïdal autour d'un axe passant par $P$ appelé axe instantané de rotation.\\
+l'axe instantané de rotation peut varier dans le temps
+
+\subsection{Comment déterminer le vecteur rotation d'un solide pour un mouvement donné}
+On prend deux points quelconques $M_1$ et $M_2$.\\
+On s'intéresse alors à $\vec{M_1M_2}(t)$ et $\vec{M_1M_2}(t + dt)$\\
+S'ils sont égaux, il s'agit d'un mouvement de translation\\
+
+
+
+
+
+
+On se place alors dans $(R^*)$, \\
+$\vec{\Omega}$, est le même dans $(R)$ et $(R^*)$
+$\vec{v^*(G)} = \vec{0}$
+On tante alors de determiner un axe de rotation tel que $\{\Omega \ | \ \vec{v^*(M)} = \vec{0}\}$\\
+On prend $M_1$ dans un plan perpendiculaire à l'axe passand par $G$\\
+$$\vec{GM_1}(t + dt) - \vec{GM_1(t)} = \vec{v(M_1)}dt = \vec{\Omega} \wedge \vec{GM_1} dt$$
+
+
+
+
+
+
+
 \end{document}
 
 

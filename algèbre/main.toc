@@ -7,3 +7,8 @@
 \contentsline {section}{\numberline {2}Notion d'espace vectoriel}{3}% 
 \contentsline {subsection}{\numberline {2.1}D\IeC {\'e}finitions}{3}% 
 \contentsline {subsection}{\numberline {2.2}Sous-espace vectorel}{5}% 
+\contentsline {subsection}{\numberline {2.3}Sous espace engendr\IeC {\'e}}{6}% 
+\contentsline {subsection}{\numberline {2.4}Intersections}{6}% 
+\contentsline {subsection}{\numberline {2.5}Somme de sous espaces vefctoriels}{7}% 
+\contentsline {section}{\numberline {3}Familles libres, g\IeC {\'e}n\IeC {\'e}ratrices et bases}{7}% 
+\contentsline {subsection}{\numberline {3.1}Familles libres, g\IeC {\'e}n\IeC {\'e}ratrices}{7}% 

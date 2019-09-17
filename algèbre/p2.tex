@@ -216,4 +216,178 @@ $$0 = \lambda^{-1} \cdot 0 = \lambda^{-1} (\lambda \cdot u) = (\lambda^{-1} \cdo
 	\item $\KK[X]$, les suites de $\KK$ nulles à partir d'un certain rang, est un sous-espace vectoriel de l'ensemble des suites de $\KK$
 \end{itemize}
 \end{ex}
+
+\subsection{Sous espace engendré}
+\begin{defi}
+	Une combinaison linéaire de $v_1, ..., v_p$ est un élément de la forme $\sum\limits_{i=1}^p \lambda_i v_i = \lambda_1 v_1 + ... + \lambda_p v_p$ avec $\lambda_1, ..., \lambda_p \in \KK$.\\
+\end{defi}
+
+\begin{rema}
+	Une combinaison linéaire de $(v_i)_{i \in I}$ est une combinaison linéaire au sens précédent d'une sous famille finie.
+\end{rema}
+
+\begin{ex}
+	Dans $\KK[X] = \{1, X, X^2, ..., X^n, ...\}$, une combinaison linaire est un polynôme.
+\end{ex}
+
+\begin{defi}
+	Soient $v_1, ..., v_p \in E$\\
+	$vect(v_1, ..., v_p) = \{\text{combinaisons linéaires de $v_1, ..., v_p$}\} = \{\sum\limits_{i=1}^p \lambda_i v_i \ / \ \lambda_1, ..., \lambda_p \in \KK\}$
+\end{defi}
+
+\begin{prop}
+	$vect(v_1, ..., v_p)$ est un sous espace vectoriel de $E$.
+\end{prop}
+
+\begin{ex}
+	Cas particulier:\\
+	$p = 1$, $vect(v)$ est alors une droite vectorielle.\\
+	%### mettre une image de droite vectorielle portee par v
+	$p=2$, %### blabla compléter avec plan vectoriel
+\end{ex}
+
+\subsection{Intersections}
+\begin{prop}
+	Soient $F_1, F_2$ des sous-espaces vectoriels de $E$, 
+	alors, $F_1 \cap F_2$ est un sous espace vectoriel :
+	$$F_1 \cap F_2 = \{x \in E \ / \ x \in F_1 \ \text{ et } \ x \in F_2\}$$
+\end{prop}
+
+\begin{proof}
+\begin{itemize}	
+	\item $0 \in F_1$ et $0 \in F_2$, donc $0 \in F_1 \cap F_2$\\
+	l'intersection est donc non vide
+
+	\item Soient $u, v \in F_1 \cap F_2$ et $\lambda, \mu \in \KK$\\
+	On montre que $\lambda u + \mu v \in F_1 \cap F_2$\\
+	$\lambda u + \mu v \in F_1$ car $F_1$ est un sous espace vectoriel\\
+	$\lambda u + \mu v \in F_2$ car $F_2$ est un sous espace vectoriel\\
+%### manque la fin
+\end{itemize}
+\end{proof}
+
+application:\\
+L'ensemble des solutions d'un système d'équations linéaires homogène (sans second membre) à $n$ inconnues (et $p$ équations) est un sous espace vectoriel de $\KK^n$.\\
+
+\begin{proof}
+	Intersection des sous espaces vectoriels est solution de chaque équations
+\end{proof}
+
+\begin{rema}
+	Attention, \\
+\begin{itemize}	
+	\item En général, l'union de sous espaces vectoriels n'est pas un sous espaces vectoriels (sauf cas triviaux)
+	\item Le complémentaire d'un sous-espace vectoriel n'est jamais un sous-espace vectoriel (étant privé du $0$)
+\end{itemize}
+\end{rema}
+
+\subsection{Somme de sous espaces vefctoriels}
+\begin{defi}
+	Soient $F_1, F_2$, des sous espaces vectoriels, on définit :
+	$$F_1 + F_2 = \{f_1 + f_2 \ / \ f_1 \in F_1 , \ f_2 \in F_2\}$$
+\end{defi}
+
+\begin{rema}
+	$F_1 + F_2$ est un sous-espace vectoriel de $E$
+\end{rema}
+
+\begin{ex}
+	%### reprendre l'exemple
+\end{ex}
+
+\begin{prop}
+	Si $F_1 = vect(v_1, ..., v_{p_1})$ et $F_2 = vect(w_1, ..., w_{p_2})$, alors, \\
+	$$F_1 + F_2 = vect(v_1, ..., v_{p_1}, w_1, ..., w_{p_2})$$
+\end{prop}
+
+\begin{proof}
+	Soit $u \in F_1 + F_2$\\
+	$$\exists f_1 \in F_1, \exists f_2 \in F_2, \ / \ u = f_1 + f_2$$
+	$$\exists f_1 \in F_1, \exists f_2 \in F_2, \ / \ u = f_1 + f_2$$
+	%###finir la démo
+\end{proof}
+
+\begin{rema}
+	$F_1 - F_2$ n'est pas intéressant: $\{f_1 + (-f_2)\ / \ f_1 \in F_1, \ f_2 \in F_2\} = F_1 + F_2$ 
+\end{rema}
+
+\begin{rema}
+	$F_1 + F_2 \neq F_1 \cup F_2$
+\end{rema}
+
+\section{Familles libres, génératrices et bases}
+\subsection{Familles libres, génératrices}
+
+\begin{defi}
+	On dit que $(v_1, ..., v_p)$ est une famille génératrice de $E$ si $vect(v_1, ..., v_p) = E$
+\end{defi}
+
+\begin{vocab}
+	$E$ est dit finiement engendré s'il existe une famille génératrice finie.
+\end{vocab}
+
+\begin{rema}
+	intuitivement, $(v_1, ..., v_p)$ est génératrice si elle "voit" tous les éléments de $E$.
+\end{rema}
+
+\begin{rema}
+	A priori, il peut y avoir plusieurs manières d'écrire un élément de $E$
+\end{rema}
+
+\begin{ex}
+	Pour $E = \RR^2$, $e_1 = (1, 0)$, $e_2=(0, 1)$, $e_3 = (1, 1)$, \\
+	on a $e_3 = e_1 + e_2$
+	la famille $\{e_1, e_2, e_3\}$ est génératrice.
+\end{ex}
+
+calcul pratique:\\
+trouver une famille génératrice d'un sous espace vectoriel défini par des équations.\\
+\begin{ex}
+	$(x, y, z) \in \RR^3 \ / \ x + y + z = 0$\\
+	On résoud le système %###finir le calcul pratique
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
