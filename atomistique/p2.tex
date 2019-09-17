@@ -99,13 +99,93 @@ L'état d'un système à un instant $t$ est complètement défini par la conaiss
 	$$
 \end{itemize}
 
+\begin{ex}
+	Pour une onde de matière mono-dimensionnelle : $\Psi (x, t) = \Psi_0 e^{i(bx - \omega t)}$
+\begin{proof}	
+	$$
+\begin{aligned}
+	\hat{p_x} \Psi (x, t) &= - i \hbar \frac{d}{dt} \Psi_0 e^{i(bx - \omega t)}\\
+	&= -i \hbar i k \Psi_0 e^{i(bx - \omega t)}\\
+	&= \hbar k \Psi (x, t)
+\end{aligned}
+	$$
+	On a donc $\hat{p_x} = \hbar k$
+\end{proof}
+	On cherche alors à retrouver l'énergie cinétique d'une particule de masse $m$:\\
+	Sachant $E_C = \frac{1}{2} m v^2$ et $p = mv$, on a :
+	$$E_C = \frac{p^2}{2m} = \frac{(\hbar k)^2}{2m}$$
+	On tante alors de retrouver l'opérateur associé :\\
+	$$
+\begin{aligned}
+	-\frac{\hbar^2}{2m} \frac{d^2}{dx^2} \Psi_0 e^{i(bx - \omega t)} &= -\frac{\hbar^2}{2m} i^2k^2 \Psi_0e^{i(bx - \omega t)}\\
+	&= \frac{\hbar^2k^2}{2m} \Psi (x, t)
+\end{aligned}
+	$$
+	On a donc l'opérateur quantité de mouvement $\hat{T} = \frac{\hat{p}^2}{2m}$.
+	%on prend les équations de mécanique classique et on "remplasse par des opérateurs"
+\end{ex}
+Cas tridimensionnel:\\
+avec $\hat{T}$, l'opérateur énergie cinétique, 
+$$\hat{T} = -\frac{\hbar^2}{2m} (\frac{d^2}{dx^2} + \frac{d^2}{dy^2} + \frac{d^2}{dz^2}) = -\frac{\hbar^2}{2m}\nabla$$
+
+
+\begin{ex}
+	Donnons l'expression de l'opérateur énergie d'une particule de masse $m$ qui se déplace dans les trois direciton de l'espace et possédant une énergie potentielle $V(\vec{r})$:
+	$$\hat{H} = \hat{T} + \hat{V}$$
+	$$\hat{H} = -\hat{\hbar^2}{2m}\nabla + \hat{V}(\vec{r})$$
+	On a alors une expression de l'opérateur hamiltonien
+\end{ex}
+
+
 
 \section{Postulat 3}
-L'évolution d'un système est régie par l'équation de Schrödinger dépendante du temps.
 
+L'évolution d'un système est régie par l'équation de Schrödinger dépendante du temps.
+$$\hat{H} \Psi(\vec{r}, t) = ih\frac{\partial \Psi(\vec{r}, t)}{\partial t}$$
+
+Lorsque le potentiel agissant sur le système $V(r)$ ne dépend pas du temps, la fonction d'onde qui décrit le système ne dépend pas du temps. Le système est alors dans un état dit stationnaire.\\
+La fonction d'onde (caractérisant l'état stationnaire) est alorzs obtenue par al résolution due l'équation de Schrödinger indépendante du temps:
+$$\hat{H} \Psi(\vec{r}) = E\Psi(\vec{r})$$
+
+Les états stationnaires d'un système sont aussi appelés états propres de ce système, ils sont en effet les vecteurs propres associés à l'opérateur Hamiltonien.
+
+Dès qu'un système quantique est soumis à une perturbation dépendante du temps, il n'est plus dans un état propre. Il se retrouve, par exemple, dans un état superposé qui est une combinaison linéaire des états propres.
 
 \section{Postulat 4}
 Les valeurs de $A$ mesurées expérimentalement ne peuvent être que des valeurs propres de son opérateur $\hat{A}$.
+
+Soit une grandeur physique $A$ associée à l'opérateur $\hat{A}$ tel que :
+$$\hat{A} \Psi_n(\vec{r}) = a_n\Psi_n(\vec{r})$$
+Alors, seules les valeurs propres $a_n$ peuvent être mesurées pour la propriété $A$.\\
+
+Soit un système décrit par $\Psi(\vec{r})$, une fonction d'onde qualconque : \\
+\begin{itemize}
+	\item Si $\Psi(\vec{r})$ est fonction propre de $\hat{A}$ associé à la valeur propre $\lambda$, alors toute mesure de la propriété $A$ conduira à $\lambda$
+	\item Si $\Psi(\vec{r})$ n'est pas fonction propre de $\hat{A}$, alors la valeur moyenne d'une série de mesures expérimentales sur la grandeur physique sera :
+	$$<A> = \frac{\iiint\limits_{espace} \Psi^*(\vec{r})\hat{A}\Psi(\vec{r})dv}{\iiint_{espace} \Psi^*(\vec{r}) \Psi(\vec{r}) dv} = \frac{<\Psi | \hat{A} | \Psi >}{<\Psi | \Psi>}$$
+\end{itemize}
+
+Ayant défini la valeur moyenne d'une mesure, nous pouvons également définir la dispersion des résultats de la mesure :
+$$\Delta A = \sqrt{<A^2> - <A>^2}$$
+
+\begin{ex}
+	Pour le cas $\hat{A} \Psi(x) = \lambda \Psi(x)$, 
+	$$
+\begin{aligned}
+	<A> &= \frac{\int \Psi^*(x) \hat{A} \Psi(x) dx}{\int \Psi^*(x) \Psi(x) dx}\\
+	&= \int \Psi^*(x) \lambda \Psi(x) dx \ \text{condition de normalisation}\\
+	&= 
+\end{aligned}
+	$$
+	On clacule alors la dispersion 
+	$$
+\begin{aligned}
+	%<A> &= \frac{\int \Psi^*(x) \hat{A} \Psi(x) dx}{\int \Psi^*(x) \Psi(x) dx}\\
+	%&= \int \Psi^*(x) \lambda \Psi(x) dx \ \text{condition de normalisation}\\
+	%### à finir
+\end{aligned}
+	$$
+\end{ex}
 
 
 

@@ -11,5 +11,5 @@
 \contentsline {subsection}{\numberline {7.1}g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s sur les op\IeC {\'e}rateurs}{4}% 
 \contentsline {subsection}{\numberline {7.2}Propri\IeC {\'e}t\IeC {\'e}s des op\IeC {\'e}rateurs}{5}% 
 \contentsline {subsection}{\numberline {7.3}Principe de correspondance}{5}% 
-\contentsline {section}{\numberline {8}Postulat 3}{6}% 
-\contentsline {section}{\numberline {9}Postulat 4}{6}% 
+\contentsline {section}{\numberline {8}Postulat 3}{7}% 
+\contentsline {section}{\numberline {9}Postulat 4}{7}% 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  9 SEP 2019 21:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  16 SEP 2019 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,20 +1064,35 @@ Overfull \hbox (23.63106pt too wide) detected at line 71
 [][]
  []
 
-[5]) 
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+[7]) 
 AED: lastpage setting LastPage
-[6] (./main.aux)
+[8] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 18084 strings out of 492623
- 311403 string characters out of 6135670
- 448615 words of memory out of 5000000
- 21739 multiletter control sequences out of 15000+600000
- 635812 words of font info for 134 fonts, out of 8000000 for 9000
+ 18087 strings out of 492623
+ 311444 string characters out of 6135670
+ 449615 words of memory out of 5000000
+ 21741 multiletter control sequences out of 15000+600000
+ 644010 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,63p,281b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
@@ -1087,10 +1102,10 @@ rier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb>
 </usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-di
 st/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe
 /utopia/putri8a.pfb>
-Output written on main.pdf (6 pages, 71591 bytes).
+Output written on main.pdf (8 pages, 81730 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
