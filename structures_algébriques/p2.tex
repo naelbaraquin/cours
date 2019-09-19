@@ -4,4 +4,36 @@
 
 \begin{document}
 
+\subsection{Produit de groupes}
+
+Soient $G_1$ et $G_2$, deux groupes.\\
+Le groupe produit $G = G_1 \times G_2$ est défini par l'ensemble $\{(g_1, g_2) \ | \ g_1 \in G_1,\ g_2 \in G_2\}$\\
+avec l'opération $* : G \times G \to G$ définie par 
+$$(g_1, g_2) \times (h_1, h_2) = (g_1h_1, g_2h_2)$$
+On définit de manière similaire le produit d'une famille de groupes.\\
+
+\begin{rema}
+	$$G_1 \times (G_2 \times G_3) = (G_1 \times G_2) \times G_3 = G_1 \times G_2 \times G_3$$
+\end{rema}
+
+\begin{ex}
+\begin{itemize}	
+	\item $$\ZZ^2 = \ZZ \times \ZZ = \{(m, n) \ | \ m, n \in \ZZ\}$$
+	$$\RR^2 = \RR \times \RR$$
+
+	\item
+	$$
+\begin{aligned}	
+	\frac{\ZZ}{2\ZZ} \times \frac{\ZZ}{2\ZZ} &= \{(a, b) \ | \ a \in \frac{\ZZ}{2\ZZ} , \ b \in \frac{\ZZ}{3\ZZ}\}\\
+	&= \{(\bar{0}, \bar{0}), (\bar{0}, \bar{1}), (\bar{0}, \bar{2}), (\bar{1}, \bar{0}), (\bar{1}, \bar{1}), (\bar{1}, \bar{2})\}\\
+	&= <(\bar{1}, \bar{1})> \ \text{qui est un groupe cyclique d'ordre 6}
+\end{aligned}
+	$$
+
+	\item $\frac{\ZZ}{2\ZZ} \times \frac{\ZZ}{2\ZZ}$ n'est pas cyclique:\\
+	$\{(\bar{0}, \bar{0}), (\bar{0}, \bar{1}), (\bar{1}, \bar{0}), (\bar{1}, \bar{1})\}$ contient un élément d'ordre $1$ et trois éléments d'ordre $2$.\\
+	$\frac{\ZZ}{2\ZZ} \times \frac{\ZZ}{2\ZZ}$ ne contient pas d'élément d'ordre $4$ et n'est donc pas cyclique.
+\end{itemize}
+\end{ex}
+
 \end{document}
