@@ -1,0 +1,244 @@
+\documentclass[../main.tex]{subfile}
+
+%page 1
+
+\begin{document}
+
+\part{Séries numériques}
+On considère une suite (réelle ou complexe) $(u_n)_{n\in \NN}$ et on étudie la somme infinie $\sum\limits_{n = 0}^{+\infty} u_n$.\\
+\begin{rema}
+	Question:\\
+	Est-ce que cette somme est bien définie, c'est-à-dire appartient à $\RR$ ou $\CC$.
+\end{rema}
+
+\begin{ex}
+\begin{itemize}
+	\item $u_n = 1$, $\sum\limits_{n = 0}^\infty u_n = +\infty$
+	\item $u_n = n$, $\sum\limits_{n = 0}^\infty u_n = +\infty$
+	%### trouver un moyen d'écrire une factorielle \item $u_n = \frac{1}{\fact(n)}$, $\sum\limits_{n = 0}^\infty u_n = e$
+	\item $u_n = \frac{1}{n}$, $\sum\limits_{n = 0}^\infty u_n = +\infty$
+	\item $u_n = \frac{1}{n^2}$, $\sum\limits_{n = 0}^\infty u_n = \frac{\pi^2}{6}$
+\end{itemize}
+\end{ex}
+
+\section{Quelques rappels et compléments sur les suites}
+Une suite $(u_n)_{n\in \NN}$ converge s'il existe $l \in \RR$ tel que $\forall \varepsilon > 0, \ \exists N \in \NN, \ \forall n \geq N, \ |u_n - l| < \varepsilon$.\\
+On dit que la suite $(u_n)_{n\in \NN}$ est une suite de Cauchy si $\forall \epsilon > 0, \ \exists N \in \NN, \ \forall n \geq N, \ \forall m \geq N, \ |u_n - u_m| < \epsilon$.\\
+
+\begin{prop}
+	Toute suite convergente est de Cauchy.
+\end{prop}
+
+\begin{prop}
+	Dans $\RR$ ou dans $\CC$, toute suite de Cauchy est convergente.
+\end{prop}
+
+On dit que $\RR$ (ou $\CC$) est un espace métrique complet.\\
+
+	\'Equivalents : \\
+	Si $u_n = n^2$ et $v_n = n^3$, on a $\lim\limits_{n \to \infty} u_n = + \infty$ et $\lim\limits_{n \to + \infty} v_n = + \infty$.\\
+	Cependant, $(v_n)_{n\in \NN}$ est plus rapide que $(u_n)_{n\in \NN}$. Les équivalents servent à comparer des vitesses de convergence.\\
+
+\begin{defi}
+	Deux suites $(u_n)_{n\in \NN}$ et $(v_n)_{n \in \NN}$ sont équivalentes si $\lim\limits_{n \to \infty} \frac{u_n}{v_n} = 1$.\\
+	On note $u_n \sim v_n$
+\end{defi}
+
+Dans ce cas, les deux suites ont la même vitesse de convergence.\\
+Cela n'a qucun intérêt que si $(u_n)$ tend vers $0$, $+\infty$ ou $-\infty$\\
+
+\begin{ex}
+	Si $\lim\limits_{n \to \infty} a_n = 0$, alors, \\
+\begin{itemize}
+	\item $e^{a_n} -1 \sim a_n$
+	\item $e^{a_n} -1 \sim a_n$
+	%### finir exemples et opérations
+\end{itemize}
+\end{ex}
+
+\part{Séries numériques}
+On prend une suite réelle (ou complexe) $(u_n)_{n \in \NN}$.\\
+La somme infinie $\sum\limits_{n \geq 0} u_n$ est la série de terme général $u_n$.\\
+
+On lui associe la suite des sommes partielles $(S_n)_{n \in \NN}$, définie par $S_n = \sum\limits_{k = 0}^n u_k$.\\
+On dit que la série $\sum\limits_{n \geq 0} u_n$ converge si la suite $(S_n)_{n \in \NN}$ converge dans $\RR$ (elle a une limite et cette limite est réelle). 
+Sinon, la série diverge.\\
+
+Si la série converge, son reste est la suite $(R_n)_{n \in \NN}$ définie par $R_n = \sum\limits_{k = n+1}^{+\infty} u_k$ et $\sum\limits_{k = 0}^{+\infty}$ est la somme de la série.\\
+On a $S_n + R_n = \sum\limits_{k=0}^{+\infty} u_k$.\\
+Notons que $\lim\limits_{n \to +\infty} R_n = 0$.
+
+\begin{exerc}
+	(\'A savoir), la série géométrique $u_n = a^n$ avec $a \in \RR$, \\
+	$$S_n = \sum\limits_{k = 0}^n u_k = \sum\limits_{k = 0}^n a^k = \frac{1 - a^{n + 1}}{1 - a}$$
+\begin{itemize}	
+	\item Si $a = 1$, on a $u_n = 1$ pour tout entier naturel $n$, 
+	donc $\sum\limits_{n \geq 0} u_n$ converge.
+
+	\item Si $a=-1$, $S_n = \frac{1-(-1)^{n+1}}{2}$ n'a pas de limite et donc $\sum\limits_{n \geq 0} u_n$ diverge.
+
+	\item Si $-1 < a < 1$ (ou $|a| < 1$), $S_n = \frac{1 - a^{n+1}}{1-a}$ %### finir l'exemple
+\end{itemize}
+\end{exerc}
+
+En résumé, $\sum\limits_{n \geq 0} a^n$ converge si et seulement si $|a| < 1$ et si $|a| < 1$, alors $\sum\limits_{n=0}^{+\infty} a^n = \frac{1}{1 - a}$
+
+\begin{prop}
+	Critère de Cauchy : \\
+	$\sum\limits_{n \geq 0} u_n$ converge si et seulement si la suite $(S_n)_{n \in \NN}$ converge. c'est-à-dire $\forall \varepsilon > 0, \ \exists N \in \NN, \ \forall n \geq N, \forall, \ \forall m \geq N, \ |S_n - S_m| < \varepsilon$ ou encore %###compléter
+\end{prop}
+
+Application:\\
+La série harmonique $\sum\limits_{n \geq 1} \frac{1}{n}$.\\
+On montre que cette série est divergente.\\
+On note $S_n = \sum\limits_{k = 1}^n \frac{1}{k}$\\
+
+Pour tout entier $n \geq 1$, on a : \\
+$$S_{2n} - S_n = \frac{1}{n + 1} + ... + \frac{1}{2n} \geq \frac{1}{2n} .. $$
+
+
+
+
+%### à compléter
+
+
+
+
+%cours de mercredi
+
+
+%correction d'exo
+
+\section{Séries à termes positifs}
+
+On suppose que $u_k \geq 0$ pour tout $n \in \NN$ (ou du moins à partir d'un certain rang).
+Dans ce cas, la suite des sommes partiels $(S_n)_{n \in \NN}$ est positive et croissante.
+Par conséquent, $(S_n)_{n \in \NN}$ converge si et seulement si elle est majorée.
+Dans le cas contraire, on a $\lim\limits_{n \to \infty} S_n = + \infty$.
+
+\begin{theo}
+	$\sum\limits_{k \geq 0} u_n$ converge si et seulement si $(S_n)_{n \in \NN}$ est majoré.
+\end{theo}
+
+\subsection{Comparaison entre séries et intégrales généralisées}
+
+\begin{theo}
+	Soit $f: \RR \to \RR$, une fonction décroissante et positive.
+	Alors, la suite $(U_n)_{n \in \NN}$ définie par $U_n = \sum\limits_{k = 0}^n f(k) - \int_0^n f(t)dt$ converge.\\
+	Par conséquent, la série $\sum\limits_{n \geq 0} f(n)$ et l'intégrale $\int_0^{+\infty} f(t) dt$ ont la même nature.
+\end{theo}
+
+\begin{proof}
+	Pour tout $k \in \NN$, on a :
+	%### insérer fig 31
+	$$f(k+1) \cdot 1 \leq \int_k^{k+1} f(t) dt \leq f(k) \cdot 1$$
+	On montre alors que $(U_n)_{n \in \NN}$ est minorée par $0$.\\
+	On a :
+	$$
+\begin{aligned}
+	U_n &= f(n) + \sum\limits_{k = 0}^{n-1} f(k) - \sum\limits_{k=0}^{n-1} \int_{k}^{k+1} f(t) dt\\
+	&= f(n) + \sum\limits_{k = 0}^{n-1} (f(k) - \int_{k}^{k+1} f(t) dt)\\
+\end{aligned}
+	$$
+	avec $f(n) \geq 0$ et $f(k) - \int_k^{k+1} f(t)dt \geq 0$.\\
+	Donc, $U_n \geq 0$ pour tout $n \in \NN$.\\
+	On montre maintenant que $(U_n)_{n \in \NN}$ est décroissante.\\
+	$$
+\begin{aligned}
+	U_{n+1} - U_n &= \sum\limits_{k =0}^{n+1} f(k) - \int_0^{n+1} f(t)dt - \sum\limits_{k=0}^n f(k)\\
+	&= f(n+1) - \int_n^{n+1} f(t)dt\\
+	&\leq 0
+\end{aligned}
+	$$
+	Donc $U_{n+1} \leq U_n$.\\
+
+	En résumé, on a :
+	$$\int_0^n f(t)dt + U_n = \sum\limits_{k=0}^n f(k)$$
+	avec $\lim\limits_{n \to \infty} U_n = l \in \RR$\\
+	Si $\int_0^{+\infty} f(t)dt$ converge, alors, $\lim\limits_{n\to \infty} \int_0^n f(t)dt \in \RR$ et donc $\lim\limits_{n \to \infty} \sum\limits_{k=0}^n f(k) \in \RR$
+	Si $\int_0^{+\infty} f(t)dt$ diverge, alors, $\lim\limits_{n\to \infty} \int_0^n f(t)dt = +\infty$ et donc $\lim\limits_{n \to \infty} \sum\limits_{k=0}^n f(k) = +\infty$
+
+	Réciproquement, si la somme converge, alors l'intégrale converge et si la somme diverge, alors l'intégrale diverge.\\
+\end{proof}
+
+Application:\\
+Pour les séries de Riemann, si $\alpha \in \RR$, \\
+$\sum\limits_{n \geq 1} \frac{1}{n^\alpha}$ converge si et seulement si $\alpha > 1$.\\
+
+
+
+\subsection{Critères de comparaison}
+On considère deux suites poritives $(u_n)_{n\in \NN}$ et $(v_n)_{n \in \NN}$.\\
+
+\begin{theo}
+	On suppose que $0 \leq u_n \leq v_n$ pour tout $n \in \NN$, \\
+	alors:
+\begin{itemize}	
+	\item Si $\sum_{n \leq 0}v_n$ converge alors $\sum\limits_{n \leq 0} u_n$ converge
+	\item Si $\sum_{n \leq 0}v_n$ diverge alors $\sum\limits_{n \leq 0} u_n$ diverge
+\end{itemize}
+\end{theo}
+
+\begin{proof}
+	$$S_n = \sum\limits_{k=0}^n u_k$$
+	$$S'_n = \sum\limits_{k=0}^n v_k$$
+	On a $0 \leq S_n \leq S'_n$\\
+	$$\sum$$
+	%###finir la démo
+\end{proof}
+
+\begin{corrol}
+	S'il existe $a$ et $b$ strictements positifs tels que $a \leq \frac{u_n}{v_n} \leq b$ pour tout $n \in \NN$, 
+	alors $\sum\limits_{n \geq 0} u_n$ et $\sum\limits_{n \geq 0} v_n$ ont la même nature.
+\end{corrol}
+
+\begin{proof}
+	$$av_n \leq u_n \leq bv_n$$
+\end{proof}
+
+\begin{corrol}
+	Si on a $u_n \sim v_n$, alors $\sum\limits_{n \geq 0} u_n$ et $\sum\limits_{n \geq 0} v_n$ ont la même nature.
+
+	De plus, si $\sum\limits_{n \geq 0} u_n$ et $\sum\limits_{n \geq 0} v_n$ convergent, alors les restes sont équivalents.\\
+	$R_n = \sum\limits_{k = n + 1}^\infty u_k \sim R'_n = \sum\limits_{k = n+1}^\infty v_k$\\
+	Dans le cas où elles divergent, les sommes partielles sont équivalentes:
+	$$S_n = \sum\limits_{k=0}^n u_k \sim S'_n = \sum\limits_{k=0}^n v_k$$
+\end{corrol}
+
+\begin{proof}
+	Si $u_n \sim v_n$, alors, $\lim\limits_{n \to \infty} \frac{u_n}{v_n} = 1$\\
+	Donc, $\exists N \in \NN, \ \forall n \leq N, \ 0,5 \leq \frac{u_n}{v_n} \leq 1,5$\\
+	D'où $0,5 v_n \leq u_n \leq 1,5 v_n$
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+\begin{ex}
+\begin{itemize}	
+	\item 
+\end{itemize}
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

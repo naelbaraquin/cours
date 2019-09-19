@@ -1,0 +1,7 @@
+\babel@toc {french}{}
+\contentsline {part}{I\hspace {1em}S\IeC {\'e}ries num\IeC {\'e}riques}{2}% 
+\contentsline {section}{\numberline {1}Quelques rappels et compl\IeC {\'e}ments sur les suites}{2}% 
+\contentsline {part}{II\hspace {1em}S\IeC {\'e}ries num\IeC {\'e}riques}{3}% 
+\contentsline {section}{\numberline {2}S\IeC {\'e}ries \IeC {\`a} termes positifs}{4}% 
+\contentsline {subsection}{\numberline {2.1}Comparaison entre s\IeC {\'e}ries et int\IeC {\'e}grales g\IeC {\'e}n\IeC {\'e}ralis\IeC {\'e}es}{4}% 
+\contentsline {subsection}{\numberline {2.2}Crit\IeC {\`e}res de comparaison}{5}% 
