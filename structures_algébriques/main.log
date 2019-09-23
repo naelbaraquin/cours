@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  19 SEP 2019 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  20 SEP 2019 00:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1029,17 +1029,17 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 5.
+(Font)              scaled to size 9.19998pt on input line 6.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 5.
+(Font)              scaled to size 6.99199pt on input line 6.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 5.
+(Font)              scaled to size 5.51999pt on input line 6.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 5.
+(Font)              scaled to size 9.19998pt on input line 6.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 5.
+(Font)              scaled to size 6.99199pt on input line 6.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 5.
+(Font)              scaled to size 5.51999pt on input line 6.
 )
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -1115,6 +1115,11 @@ Overfull \hbox (1.40948pt too wide) in paragraph at lines 247--255
 -fait les deux points de la pro-priété ci-dessus. 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
 ) [6] (./p2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
@@ -1124,10 +1129,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--14
 AED: lastpage setting LastPage
 [7] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18071 strings out of 492623
- 311104 string characters out of 6135670
+ 18073 strings out of 492623
+ 311127 string characters out of 6135670
  447642 words of memory out of 5000000
- 21728 multiletter control sequences out of 15000+600000
+ 21730 multiletter control sequences out of 15000+600000
  628576 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,9n,63p,271b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1138,7 +1143,7 @@ blic/fourier/fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier
 /fourier-ms.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></us
 r/share/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/f
 onts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (7 pages, 81167 bytes).
+Output written on main.pdf (7 pages, 81876 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream

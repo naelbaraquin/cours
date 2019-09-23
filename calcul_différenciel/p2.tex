@@ -3,5 +3,104 @@
 %page 2
 
 \begin{document}
+\part{Différentiabilité}
+\begin{rap}
+	Rappels en dimension 1:\\
+	$f : \RR \to \RR$ est dérivable en $x_0 \in \RR$ de dérivée $\lambda$\\
+	$\lim\limits_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0} = \lambda$\\
+
+	Une définition équivalente est la suivante:\\
+	$f$ est dérivable en $x_0$ de dérivée $\lambda$ s'il existe une fonction $\varepsilon(h)$ telle que :\\
+\begin{itemize}	
+	\item $f(x) = f(x_0) + \lambda(x-x_0)\varepsilon(x-x_0)$
+	\item $\lim\limits_{h \to 0} \varepsilon(h) = 0$
+\end{itemize}
+	Il suffit alors de poser $\varepsilon(h) = \frac{f(x-h) - f(x_0)}{h}$
+	%### fig21
+	Où on a alors la pente de $\Delta_{x_1}$ s'exprimant $\frac{f(x_1) - f(x_0)}{x_1 - x_0}$\\
+	On peut aussi voir $\Delta_{x_1}$comme le graphe d'une application affine:
+	$$u(x) = f(x_0) + \tau(x-x_0)$$
+	$$u(x_0+h) = f(x_0) + \tau h$$
+	Ces deux points de vue induisent deux points de vue si la dérivée $f'(x_0) \in \RR$ est la pente de la tangente :
+	$$f'(x_0) : \RR \to \RR$$
+	$$f'(x_0) : h \mapsto f'(x_0) h$$
+	Le second point se généralise aux dimensions superieures à 1.
+\end{rap}
+
+\section{Applications différentiables}
+$$f : \Omega \subset E \to F$$
+$$p_0 \in \Omega$$
+
+\begin{defi}
+	$f$ est différentiable en $p_0$ s'il existe une application linéaire $l : E \to F$ est une fonction $\varepsilon : \Omega \to F$ telle que:
+\begin{itemize}	
+	\item $f(p_0 + h) = f(p_0) + l(h) + ||h|| \varepsilon (h)$
+	\item $\lim\limits_{h \to 0} \varepsilon (h) = 0$
+\end{itemize}
+\end{defi}
+
+\begin{prop}
+	Si $f$ est différentiable en $p_0$, l'application linéaire de la différentielle est unique. On l'appelle différentielle de $f$ en $p_0$
+et on la note $L = D_{p_0} f$
+\end{prop}
+
+\begin{proof}
+	Si $L_1$ et $L_2$ conviennent:
+	$$
+\begin{aligned}
+	f(p_0+h) &= f(p_0) + L_1h + ||h||\varepsilon_1(h)\\
+	f(p_0+h) &= f(p_0) + L_2h + ||h||\varepsilon_2(h)\\
+\end{aligned}
+	\\
+	\Rightarrow 0 = 0 + (L_1- L_2)h + ||h||(\varepsilon_1 - \varepsilon_2)(h)
+	$$
+	fixons $h$, pour $t \in [0, 1]$:\\
+	$$
+\begin{aligned}
+	&(L_1 - L_2)(th) + ||th||(\varepsilon_1 - \varepsilon_2)(th)\\
+	&=t((L_1 - L_2)(h) + ||h||(\varepsilon_1 - \varepsilon_2)(h))\\
+	&=t0\\
+	&=0
+\end{aligned}
+$$
+	D'où $\lim\limits_{t \to 0} (\varepsilon_1 - \varepsilon_2)(th) = 0$, \\
+	Par conséquent $(L_1 - L_2)(h) = 0$\\
+	Donc, pour tout $h$ tel que $(p_0 + h) \in \Omega$, $L_1(h) = L_2(h)$\\
+	Donc $L_1 =L_2$ sur une petite boule $B(0, 1)$.\\
+	On peut alors généraliser à $L_1 = L_2$
+\end{proof}
+
+\begin{defi}
+	Si $f$ est différentiable en tout point de $\Omega$, on dit que $f$ est différentiable sur $\Omega$.\\
+	Si de plus, $
+\begin{aligned}
+	\Omega &\to \mathcal{L}(E, F)\\
+	p &\mapsto D_pf
+\end{aligned}
+	$ est continue, ont dit que $f$ est de classe $\mathcal{C}^1$.
+\end{defi}
+
+\begin{ex}
+\begin{itemize}	
+	\item $f : \RR^n \to \RR^m$ linéaire:
+	$$
+\begin{aligned}
+	f(p_0 + h) &= f(p_0) + f(h)\\
+	&= f(p_0) + f(h) + ||h||\varepsilon(h)\\
+\end{aligned}
+	$$
+	$f$ est différentiable, et $D_pf = f$
+
+	\item $
+\begin{aligned}
+	f : \RR^2 &\to \RR\\
+	(x, y) &\mapsto x^2 + y^2
+\end{aligned}$
+	$p_0 =(x_0, y_0)$\\
+	$h =(u,v)$\\
+	%###finir l'exemple
+
+\end{itemize}
+\end{ex}
 
 \end{document}

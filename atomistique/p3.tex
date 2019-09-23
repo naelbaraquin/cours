@@ -1,0 +1,39 @@
+\documentclass[../main.tex]{subfile}
+
+%page x
+
+\begin{document}
+
+\part{Atomes hydrogénoides: équation de schrodinger}
+
+\begin{defi}
+	Les atomes hydrogénoïdes ne sont constitués que d'un noyau et d'un électron
+\end{defi}
+
+Energie classique du système:
+$$E = T_e + T_N + V_{eN}$$
+
+%### reprendre les expression des energies et des opérateurs correspondant
+
+L'équation dépend du mouvement des deux particules, non solvable.
+
+Deux approches pour simplifier cette équation:
+\begin{itemize}
+	\item Problème à deux corps, le mouvement est alors décomposé en deux:
+\begin{itemize}	
+	\item un mouvement de translation de l'atome
+	\item un mouvement relatif de l'électron et du noyau
+\end{itemize}
+	\item Introduction d'une particule fictive de masse $p$ (proche de celle de l'électron)
+	\item Approximation de Born-Oppenheimer : du fait de leur large différence de masse, les électrons s'adaptent de façon instantanée et adiabatique à tout mouvement des noyaux:
+\begin{itemize}	
+	\item On considère le noyau fixe
+	\item On ne considère qu'un Hamiltonien électronique
+	$\hat{H} = -\frac{\hbar^2}{2m_e} \Delta_e - \frac{1}{4\pi\varepsilon_0}\cdot \frac{Ze^2}{\hat{r}}$
+\end{itemize}
+\end{itemize}
+
+$V(r)$ étant à symétrie sphérique, nous introduisons le système de coordonnées sphériques:
+	$\hat{H} = -\frac{\hbar^2}{2m_er^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r}) - \frac{1}{4\pi\varepsilon_0}\cdot \frac{Ze^2}{\hat{r}}$
+
+\end{document}

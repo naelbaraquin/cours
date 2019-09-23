@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  16 SEP 2019 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  23 SEP 2019 09:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1079,7 +1079,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-[7]) 
+[7]) (./p3.tex) 
 AED: lastpage setting LastPage
 [8] (./main.aux)
 
@@ -1088,8 +1088,8 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18087 strings out of 492623
- 311444 string characters out of 6135670
+ 18090 strings out of 492623
+ 311460 string characters out of 6135670
  449615 words of memory out of 5000000
  21741 multiletter control sequences out of 15000+600000
  644010 words of font info for 137 fonts, out of 8000000 for 9000
@@ -1102,7 +1102,7 @@ rier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb>
 </usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-di
 st/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe
 /utopia/putri8a.pfb>
-Output written on main.pdf (8 pages, 81730 bytes).
+Output written on main.pdf (8 pages, 84980 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
