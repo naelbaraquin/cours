@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  12 SEP 2019 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  24 SEP 2019 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1084,28 +1084,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
+
+Overfull \hbox (16.81406pt too wide) in paragraph at lines 75--75
+[]\T1/futs/b/n/14.4 Champ créé par une dis-tri-bu-tion quel-conque de charges 
+ []
+
+[5]) (./p3.tex
+Overfull \hbox (3.96922pt too wide) in paragraph at lines 9--9
+[]\T1/futs/b/n/14.4 Énergie po-ten-tielle d'in-ter-ac-tion d'une par-ti-cule ch
+ar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
+
+ []
+
 ) 
 AED: lastpage setting LastPage
-[5] (./main.aux) ) 
+[7] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18066 strings out of 492623
- 311043 string characters out of 6135670
+ 18074 strings out of 492623
+ 311111 string characters out of 6135670
  446641 words of memory out of 5000000
- 21724 multiletter control sequences out of 15000+600000
- 619874 words of font info for 117 fonts, out of 8000000 for 9000
+ 21726 multiletter control sequences out of 15000+600000
+ 620833 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,63p,271b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,63p,271b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/shar
-e/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texmf-dist/
-fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/fourier/fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier
-/fourier-ms.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></us
-r/share/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/f
-onts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (5 pages, 71290 bytes).
+e/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texmf-dist/
+fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/
+fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.p
+fb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf
+-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/ad
+obe/utopia/putri8a.pfb>
+Output written on main.pdf (7 pages, 84096 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

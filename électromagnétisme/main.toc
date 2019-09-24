@@ -11,3 +11,11 @@
 \contentsline {section}{\numberline {4}Loi de Coulomb}{4}% 
 \contentsline {section}{\numberline {5}Champs \IeC {\'e}lectrostatique}{5}% 
 \contentsline {subsection}{\numberline {5.1}Champs cr\IeC {\'e}\IeC {\'e} par une charge ponctuelle}{5}% 
+\contentsline {section}{\numberline {6}Champ cr\IeC {\'e}\IeC {\'e} par un ensemble de charges ponctuelles}{5}% 
+\contentsline {section}{\numberline {7}Champ cr\IeC {\'e}\IeC {\'e} par une distribution quelconque de charges}{6}% 
+\contentsline {section}{\numberline {8}Lignes de champ}{6}% 
+\contentsline {part}{III\hspace {1em}\IeC {\'E}nergie potentielle et Potentiel}{6}% 
+\contentsline {section}{\numberline {9}\IeC {\'E}nergie potentielle d'interaction d'une particule charg\IeC {\'e}e avec un syst\IeC {\`e}me de charges}{7}% 
+\contentsline {subsection}{\numberline {9.1}Travail \IeC {\'e}l\IeC {\'e}mentaire de la force \IeC {\'e}lectrostatique}{7}% 
+\contentsline {subsection}{\numberline {9.2}Energie potentielle associ\IeC {\'e}e}{7}% 
+\contentsline {section}{\numberline {10}qsd}{7}% 
