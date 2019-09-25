@@ -140,11 +140,11 @@ Une fois que la famille est échelonnée, le rang correspond au nombre de vecteu
 \end{rema}
 
 \subsection{Somme directe}
-Soient $F$ et $G$ des sous espaces vectoriels de $E$\\
-$$F+G = \{f+g \ | \ f \in F, \ g \in G\}$$
+	Soient $F$ et $G$ des sous espaces vectoriels de $E$\\
+	$$F+G = \{f+g \ | \ f \in F, \ g \in G\}$$
 
-a priori pour $u \in F+G$\\
-la paire $(f,g) \in F \times G \ / \ u=f+g$ n'est pas nécessairement unique.\\
+	\textit{a priori} pour $u \in F+G$
+	la paire $(f,g) \in F \times G \ / \ u=f+g$ n'est pas nécessairement unique.\\
 
 \begin{defi}
 	$F$ et $G$ sont en somme directe si et seulement si 
@@ -165,7 +165,7 @@ la paire $(f,g) \in F \times G \ / \ u=f+g$ n'est pas nécessairement unique.\\
 	Les énoncés suivants sont équivalents:
 \begin{itemize}	
 	\item $F$ et $G$ sont en somme directe
-	\item $o = f+g$ avec $f \in F$ et $g \in G$ implique $f=g=0$
+	\item $0 = f+g$ avec $f \in F$ et $g \in G$ implique $f=g=0$
 	\item $F \cap G = \{0\}$
 	\item En réunissant une base de $F$ et une base de $G$, on obtient une base de $F+G$
 	\item $\dim(F+G) = \dim F + \dim G$
@@ -176,6 +176,40 @@ la paire $(f,g) \in F \times G \ / \ u=f+g$ n'est pas nécessairement unique.\\
 \begin{proof}
 %### reprendre la démo en faisant proprement les références
 \end{proof}
+
+\begin{defi}
+	$F$ et $G$ sont supplémentaire si $F \oplus G = E$
+\end{defi}
+
+\begin{rema}
+	Il peut être intéressant de "découper" l'espace en sous espaces plus simples.
+\end{rema}
+
+\begin{rema}
+	Tout sous espace vectoriel $F$ de $E$ admet un supplémentaire.
+\end{rema}
+
+\begin{rema}
+	Les supplémentaires ne sont pas uniques, on ne parle donc pas "du" supplémentaire.
+\end{rema}
+
+Cas général:\\
+Soient $F_1, ..., F_k$, sous espaces vectoriels de $E$.\\
+$F_1, ..., F_k$ sont en somme directe si :
+$$\forall u \in F_1 + ... + F_k, \ \exists! (f_1, ..., f_k) \in F_1 \times ... \times F_k \ / \ u = f_1 + ... + f_k$$
+
+\begin{prop}
+	Les propositions suivantes sont équivalentes :
+\begin{itemize}	
+	\item $\bigoplus\limits_{i = 1}^k F_i$ 
+	\item $\forall i \in [1, k], \ f_i \in F_i, \ \sum\limits_{i = 1}^k f_i = 0 \Rightarrow \forall i, \ f_i = 0$
+	\item en réunissant un base de chaque $F_i$, on obtient une base de la somme
+	\item $\dim \sum F_i = \sum \dim F_i$
+\end{itemize}
+\end{prop}
+
+%### reprendre jusqu'à ...
+
 
 
 \end{document}

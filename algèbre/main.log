@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  25 SEP 2019 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  25 SEP 2019 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,32 +1050,49 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./p1.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-) [2] (./p2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+
+Overfull \hbox (2.0896pt too wide) in paragraph at lines 160--162
+\T1/futs/m/it/10 ap-pa-raÓtre si on Èli-mine toutes les in-con-nues avant d'ar-
+ri-ver ‡ la der-niËre Èqua-
+ []
+
+
+Overfull \hbox (6.91003pt too wide) in paragraph at lines 177--183
+\T1/futs/m/n/10 unique so-lu-tion, le sys-tËme ad-met alors une in-fi-nitÈ de s
+o-lu-tions (Seule-
+ []
+
+[4]) [5] (./p2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
-[4]
+[7]
 Overfull \hbox (11.14911pt too wide) in paragraph at lines 222--223
 \T1/futs/b/n/10 DÈfinition 7. \T1/futs/m/it/10 Une com-bi-nai-son li-nÈaire de 
 $\FML/futmi/m/it/10 v[]; :::; v[]$ \T1/futs/m/it/10 est un ÈlÈ-ment de la forme
@@ -1087,7 +1104,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
-[5]
+[8]
 Overfull \hbox (1.6474pt too wide) in paragraph at lines 230--231
 \T1/futs/b/n/10 Exemple. \T1/futs/m/it/10 Dans $\U/futm/m/n/10 K\T1/futs/m/n/10
  [\FML/futmi/m/it/10 X\T1/futs/m/n/10 ] \FMS/futm/m/n/10 Å f\T1/futs/m/n/10 1\F
@@ -1116,7 +1133,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
-[6]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
@@ -1145,7 +1162,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[7]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
@@ -1160,7 +1177,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
 
-[8]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
@@ -1170,7 +1187,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
  []
 
-[9]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
@@ -1180,9 +1197,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
-) 
+[13]) 
 AED: lastpage setting LastPage
-[10] (./main.aux)
+[14] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
@@ -1191,11 +1208,11 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  18103 strings out of 492623
  311570 string characters out of 6135670
- 449667 words of memory out of 5000000
+ 450667 words of memory out of 5000000
  21754 multiletter control sequences out of 15000+600000
  644010 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,63p,271b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,63p,271b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/fourier/fourier-bb.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/fourier/fourier-mcl.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fou
@@ -1204,10 +1221,10 @@ rier-mex.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
 exmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-dist/fonts/type
 1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putri
 8a.pfb>
-Output written on main.pdf (10 pages, 95320 bytes).
+Output written on main.pdf (14 pages, 103690 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
