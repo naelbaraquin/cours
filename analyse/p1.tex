@@ -227,7 +227,89 @@ On considère deux suites positives $(u_n)_{n\in \NN}$ et $(v_n)_{n \in \NN}$.\\
 \end{itemize}
 \end{ex}
 
+\subsection{Comparaison avec une suite géométrique}
 
+\begin{rap}
+	Si $a \in \RR$ (ou $\CC$), alors $\sum\limits_{n \geq 0} a^n$ converge si et seulement si $|a| < 1$.\\
+	Et dans ce cas, on a;
+	$$\sum\limits_{n=0}^{+\infty} a^n = \frac{1}{1 - a}$$
+\end{rap}
+
+On suppose que $u_n \geq 0$ pour tout $n \in \NN$.\\
+
+\begin{theo}{Règle de Cauchy}
+	On suppose que $\lim\limits_{n \to \infty} (u_n)^{\frac{1}{n}} = l \geq 0$.\\
+	Alors :
+\begin{itemize}	
+	\item Si $l < 1$, alors $\sum\limits_{n \geq 0} u_n$ converge
+	\item Si $l > 1$, alors $\sum\limits_{n \geq 0} u_n$ diverge grossièrement
+\end{itemize}
+\end{theo}
+
+\begin{rema}
+	Si $l=1$, tout peut arriver.\\
+	$u_n = \frac{1}{n^\alpha}$
+
+$$
+\begin{aligned}
+	(u_n)^{\frac{1}{4}} &= (\frac{1}{n^\alpha})^{\frac{1}{4}}\\
+	&= \frac{1}{n^{\frac{\alpha}{n}}}\\
+	&= \frac{1}{e^{\frac{\alpha}{n}}\ln n}\\
+	&= e^{-\frac{\alpha}{n}\ln n=}\\
+\end{aligned}
+$$
+Comme $\lim\limits_{n \to +\infty} \frac{\ln n}{n} = 0$\\
+On a $\lim\limits_{n \to +\infty} e^{-\frac{\alpha}{n}\ln n} = e^0 = 1$.
+On a $\lim\limits_{n \to +\infty} (u_n)^{\frac{1}{n}} = 1$ pour tout $\alpha$.\\
+mais si $\alpha > 1$, $\sum u_n$ converge\\
+et si $\alpha \leq 1$, $\sum u_n$ diverge\\
+
+\begin{proof}
+	On a $\lim\limits_{n \to \infty} (u_n)^{\frac{1}{n}} = l$, donc, \\
+	%### compléter la démo
+\begin{itemize}	
+	\item 
+	\item Si $l > 1$, \\
+	On prend $\varepsilon > 0$, tel que $1 < l - \varepsilon$.\\
+	Il existe $N \in \NN$ tel que $\forall n \geq N, \ 1 < l - \varepsilon <  (u_n)^{\frac{1}{n}}$\\
+	Donc $u_n > (l - \varepsilon)^n$ pour tout $n \geq N$.\\
+	Comme $l - \varepsilon > 1$, on a $\lim\limits_{n \to \infty} (l - \varepsilon)^n = +\infty$\\
+	et donc $\lim\limits_{n \to \infty} u_n = + \infty$
+\end{itemize}
+\end{proof}
+\end{rema}
+
+\begin{theo}{Règle de d'Alembert}
+	On suppose que $u_n > 0$ à partir d'un certain rang.\\
+	On suppose de plus que $\lim\limits_{n \to \infty} \frac{u_{n+1}}{u_n} = l$\\
+	Alors : 
+\begin{itemize}	
+	\item Si $l < 1$, alors $\sum u_n$ converge
+	\item Si $l > 1$, alors $\sum u_n$ diverge grossièrement
+\end{itemize}
+\end{theo}
+
+\begin{rema}
+	Si $l = 1$, on ne peut rien dire:
+	$u_n = \frac{1}{n^\alpha}$\\
+	$$\lim\limits_{n \to \infty} \frac{u_{n+1}}{u_n}$$
+\end{rema}
+
+\begin{proof}
+	$\lim\limits_{n \to \infty} \frac{u_{n+1}}{u_n} = l$\\
+	$$\forall \varepsilon > 0, \ \exists N \in \NN, \ \forall n \geq N, \ l-\varepsilon < \frac{u_{n+1}}{u_n} < l + \varepsilon$$
+\begin{itemize}	
+	\item Si $l < 1$, on prend $\varepsilon > 0$ tel que $l+ \varepsilon < 1$. 
+	Il existe $N \in \NN$ tel que $\forall n \geq N, \ 0 \leq \frac{u_{n+1}}{u_n} \leq l + \varepsilon$.
+	Si $n > N$, on a :
+	$$\prod\limits_{k = N}^{n-1} \frac{u_{k+1}}{u_k} = \frac{u_n}{u_N} < (l + \varepsilon)^{n - N}$$
+	On obtient alors 
+	$$0 \leq u_n \leq u_N$$
+	$$(l + \varepsilon)^{n - N}$$%###à finir
+	%### finir le point 1
+	\item Idem 
+\end{itemize}
+\end{proof}
 
 
 

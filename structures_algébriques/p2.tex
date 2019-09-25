@@ -51,4 +51,239 @@ On définit de manière similaire le produit d'une famille de groupes.\\
 \end{itemize}
 \end{ex}
 
+\subsection{Morphismes}
+
+\begin{defi}
+	Soient $(G, \star)$ et $(\Gamma, \diamond)$, deux groupes.\\
+	On appelle morphisme (ou homomorphisme) de groupes de $G$ vers $\Gamma$ toute application 
+	$$\varphi : G \to \Gamma$$
+	telle que $\forall g, h \in G, \ \varphi(g \star h) = \varphi(g) \diamond \varphi(h)$
+\end{defi}
+
+\begin{rema}
+	S'il n'y a pas d'ambiguïté, on utilisera la notation multiplicative pour $G$ et $\Gamma$ :
+	$$\varphi(gh) = \varphi(g) \varphi(h)$$
+\end{rema}
+
+\begin{propri}
+\begin{itemize}	
+	\item $\varphi(e_G) = e_\Gamma$
+\begin{proof}	
+	$$\varphi(e_G) = \varphi(e_Ge_G) = \varphi(e_G) \varphi(e_G)$$
+	On multiplie par $\varphi(e_G)^{-1}$ l'égalité précédente et on obtient 
+	$$\varphi(e_G)\varphi(e_G)^{-1} = \varphi(e_G) \varphi(e_G) \varphi(e_G)^{-1}$$
+	$$\Rightarrow e_\Gamma = \varphi(e_G) e_\Gamma$$
+	Donc, $e_\Gamma = \varphi(e_G)$
+\end{proof}
+
+	\item $\forall g \in G, \ \varphi(g^{-1}) = \varphi(g)^{-1}$
+	%###démo
+
+	\item $\forall n \in \ZZ, \ \forall g \in G, \ \varphi(g^n) = \varphi(g)^n$
+\begin{proof}	
+	Par récurrence pour $n > 0$, \\
+	On utilise $\varphi (g^1) = \varphi (g)$\\
+	Pour $n \geq 2$, \\
+	$$
+\begin{aligned}
+	\varphi(g^n) &= \varphi(g^{n-1} g)\\
+	&= \varphi(g^{n-1}) \varphi(g)\\
+	&= \varphi(g)^{n-1} \varphi(g)\\
+	&= \varphi(g)^n\\
+\end{aligned}
+	$$
+	Pour $n = 0$, \\
+	$g^0 = e_G$ et $\varphi(g)^0 = e_\Gamma$\\
+	Pour $n = 1$, \\
+%###finir démo
+\end{proof}
+\end{itemize}
+\end{propri}
+
+%### reprendre les exemples
+
+\begin{defi}
+	Soit $\varphi : G \to \Gamma$, un morphisme de groupes.\\
+	On appelle : \\
+\begin{itemize}	
+	\item Image de $\varphi$, l'ensemble
+	$$Im (\varphi) = \{\varphi(g) \ | \ g \in G\} = \{\gamma \in \Gamma \ | \ \exists g \in G \ / \ \varphi(g) = \Gamma\} \subset \gamma$$
+
+	\item noyau de $\varphi$, 
+%### finir les définitions
+\end{itemize}
+\end{defi}
+
+\begin{rema}
+\begin{itemize}	
+	\item Les exemples 1, 3 et 4 sont des isomorphismes
+	\item Le déterminant n'est pas bijectif pour $n > 1$
+\end{itemize}
+\end{rema}
+
+\begin{defi}
+	Soit $G$ un groupe.\\
+	Un sous-groupe $H$ de $G$ est distingué (ou normal) dans $G$ si 
+	$$\forall g \in G, \ \forall h \in H, \ ghg^{-1} \in H$$
+\begin{nota}	
+	On note alors $H \triangleleft G$
+\end{nota}
+	Un élément de type $ghg^{-1}$ est dit conjugué de $h$ par $g$.
+\end{defi}
+
+\begin{prop}
+	Soit $\varphi : G \to \Gamma$, un morphisme.\\
+\begin{itemize}	
+	\item $Im(\varphi)$ est un sous-groupe de $\Gamma$
+	\item $Ker(\varphi)$ est un sous-groupe distingué de $G$
+\end{itemize}
+\end{prop}
+
+\begin{proof}
+\begin{itemize}	
+	\item 
+\begin{itemize}	
+	\item $\varphi(e_G)= e_\Gamma$ donc $e_\Gamma \in Im(\varphi)$
+	%### finir la preuve
+\end{itemize}
+\end{itemize}
+\end{proof}
+
+
+\begin{prop}
+	Soit $\varphi : G \to \Gamma$, un morphisme.\\
+	Alors $\varphi$ est injectif si et seulement si $Ker(\varphi) = \{e_G\}$
+\end{prop}
+
+\begin{proof}
+	Dans le sens direct:\\
+	On suppose que $\varphi$, est injectif, i.e.
+	$$\forall g_1, g_2 \in G, \ \varphi(g_1) = \varphi(g_2) \Rightarrow g_1 = g_2$$
+	Soit $g \in Ker(\varphi)$.
+	On sait que $e_G \in Ker(\varphi)$\\
+	On a alors, $\varphi(g) = e_\Gamma = \varphi(e_G)$.\\
+	Par l'injectivité de $\varphi$, on a $g = e_G$.\\
+	Donc $Ker(\varphi) = \{e_G\}$
+
+	Dans le sens indirect:\\
+	On suppose que $Ker(\varphi) = \{e_G\}$\\
+	On veut montrer que $\varphi$ est injectif.\\
+	Soient $g_1, g_2 \in G$ tels que $\varphi(g_1) = \varphi(g_2)$\\
+	$$
+\begin{aligned}
+	\varphi(g_1g_2^{-1}) &= \varphi(g_1)\varphi(g_2^{-1})\\
+	&= \varphi(g_2) \varphi(g_2)^{-1}\\
+	&= e_\Gamma
+\end{aligned}
+	$$
+	Donc $g_1g_2^{-1} \in Ker(\varphi) = \{e_G\}$\\
+	Donc $g_1g_2^{-1} = e_G$\\
+	Donc $g_1 = g_2$\\
+	Donc $\varphi$ est injectif.
+\end{proof}
+
+\begin{prop}
+	Si $\varphi : G \to \Gamma$ est un morphisme bijectif, alors l'application $\varphi^{-1} : \Gamma \to G$ est un morphisme (lui aussi bijectif).\\
+	Autrement dit, si $\varphi : G \to \Gamma$ est un isomorphisme, alors $\varphi^{-1} : \Gamma \to G$ est aussi un isomorphisme.
+\end{prop}
+
+\begin{proof}
+	Soient $\gamma_1, \gamma_2 \in \Gamma$\\
+	Il existe $g_1, g_2 \in G$ tels que $\gamma_1 = \varphi(g_1)$ et $\gamma_2 = \varphi(g_2)$
+	$$
+\begin{aligned}
+	\varphi^{-1}(\gamma_1\gamma_2) &= \varphi^{-1}(\varphi(g_1)\varphi(g_2))\\
+	&= \varphi^{-1}(\varphi(g_1g_2))\\
+	&= g_1g_2\\
+	&= \varphi^{-1}(\gamma_1)\varphi^{-1}(\gamma_2)
+\end{aligned}
+	$$
+	Donc $\varphi^{-1}$ est un morphisme.
+\end{proof}
+
+\begin{defi}
+	Deux groupes $G$ et $F$ sont isomorphes s'il existe un isomorphisme $\varphi : G \to \Gamma$.
+\begin{nota}	
+	On note alors $G \cong \Gamma$
+\end{nota}
+\end{defi}
+
+\begin{rema}
+	Deux groupes sont isomorphes quand ils possèdent la même structure de groupe.
+\end{rema}
+
+\begin{ex}
+\begin{itemize}	
+	\item $exp : (\RR, +) \to (\RR_{>0}, \cdot)$ est un isomorphisme.\\
+	Donc $(\RR, +) \cong (\RR_{>0}, \cdot)$
+	\item $
+\begin{aligned}
+	f: Isom(T) &\to S_3\\
+	g &\mapsto f(g) \ / \ g(x_i) = x_{f(g)(i)}
+\end{aligned}$ est un isomorphisme\\
+	Donc $Isom(T) \cong S_3$
+
+	\item Les trois groupes suivants sont deux à deux isomorphes:\\
+	$\ZZ / n\ZZ$, les racines n-ièmes de l'unité $U_n$ et $Isom(n-\text{gônes réguliers})$
+
+	\item $\ZZ / 6\ZZ \cong \ZZ/2\ZZ \times \ZZ/3\ZZ$
+
+	\item 
+	$$
+\begin{aligned}
+	f_1: \ZZ/n\ZZ &\to U_n\\
+	\bar{k} &\mapsto e^{i\frac{2k\pi}{n}}
+\end{aligned}
+	$$
+	est un isomorphisme
+
+	\item
+	$$
+\begin{aligned}
+	f_2: U_n &\to Isom(n-\text{gônes réguliers})\\
+	e^{i\frac{2k\pi}{n}} &\mapsto r_{\frac{2k\pi}{n}}
+\end{aligned}
+	$$
+\end{itemize}
+\end{ex}
+
+\begin{prop}
+	Soit $G$ un groupe.\\
+\begin{enumerate}	
+	\item Si $\varphi : (\ZZ, +) \to G$ est un morphisme, alors il existe un unique élément de $G$ tel que $\forall n \in \ZZ, \ \varphi(n) = g^n$
+	l'élément neutre est donné par $\varphi(1) = g$.
+\begin{proof}	
+	$g=\varphi(1)$ est unique.\\
+	Puis on se sert de la troisième propriété (qui nous donne $\varphi(n) = \varphi(1)^n = g^n$)
+\end{proof}
+
+	\item Si $g$ est un élément quelconque de $G$, alors il existe un unique morphisme $\varphi_g : (\ZZ, +) \to G$, tel que $\varphi(1) = g^n$
+\begin{proof}	
+	$\varphi$ est un morphisme de groupes car
+	$$\varphi(m+n) = g^{m+n} = g^mg^n = \varphi(m)\varphi(n)$$
+\end{proof}
+\end{enumerate}
+\end{prop}
+
+
+
+
+
+
+
+
+
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+

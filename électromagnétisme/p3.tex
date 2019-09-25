@@ -35,5 +35,153 @@ Pour tout chemin $\mathcal{C}$ emprunté.
 
 $$\varepsilon_{p_e} = \frac{q}{4\pi\varepsilon_0} \sum\limits_i \frac{q_i}{||\vec{r} - \vec{r_i}} + C$$
 
-\section{qsd}
+\section{Potentiel créé par un ensemble de charges}
+\subsection{Potentiel créé par un ensemble de charges ponctuelles}
+Par définition, le potentiel créé par le système de charges $\{q_i\}$ aux points $P_i$ en un point $M$ est l'énergie potentielle par unité de charge en $M(\vec{r})$.\\
+On le note $V$ (plus précisément $V(M)$ ou $V(\vec{r})$).
+
+$$
+\begin{aligned}
+	V(\vec{r}) &= \frac{\varepsilon_{p_e}(\vec{r})}{q}\\
+	&= \frac{1}{4\pi\varepsilon_0} \sum\limits_i \frac{q_i}{||\vec{r} - \vec{r_i}||}\\
+	&= \frac{1}{4\pi\varepsilon_0} \sum\limits_i \frac{q_i}{P_iM}
+\end{aligned}
+$$
+
+$$V(M) = \frac{q}{4\pi\varepsilon_0} \frac{1}{PM}$$
+
+\begin{rema}
+	Contrairement à la mécanique du point, $\varepsilon_{p_e}$ et $V$ ne sont pas toujours du même signe (la charge peut être négative).\\
+	L'unité de potentiel est le Volt.
+\end{rema}
+
+\subsection{Cas de distribution continue de charges}
+$$V(M) = \iiint \frac{\rho_c d \vvv}{4\pi\varepsilon_0} \frac{1}{PM}$$
+Si on a une distribution volumique de charges de densité $\rho_c$
+
+$$V(M) = \iint \frac{\sigma dS}{4\pi\varepsilon_0} \frac{1}{PM}$$
+Si on a une distribution surfacique de charges de densité $\sigma$
+
+$$V(M) = \int \frac{\lambda dl}{4\pi\varepsilon_0} \frac{1}{PM}$$
+Si on a une distribution linéique de charges de densité $\lambda$
+
+\section{Surfaces équipotentielles}
+Il s'agit de l'ensemble des points de l'espace tels que $V(\vec{r})$ est constant.
+
+Par exemple, pour une charge ponctuelle, les surfaces équipotentielles sont des sphères.\\
+
+On peut noter que les lignes de champs sont perpendiculaires aux surfaces équipotentielles
+le champ $E$ est perpendiculaire aux surfaces équipotentielles 
+et que le champ est dirigé selon les potentiels décroissants
+
+\section{Relations entre $\vec{E}$ et $V$}
+\subsection{Forme intégrale}
+On a vu que $\delta \tau = \vec{F} d\vec{r} = -d \varepsilon_{p_e}$\\
+Le long d'un chemin entre deux points $A$ et $B$ : $\varepsilon_{p_e}(A) - \varepsilon_{p_e}(B) = \int_A^B \vec{F} \cdot d\vec{r}$.
+En introduisant le fait que $V = \frac{\varepsilon_{p_e}}{q}$ et $\vec{E} = \frac{\vec{F}}{q}$, on a :
+$$V(A) - V(B) \neq \int_B^A dV = \int_B^A -\vec{E}d\vec{r} = \int_A^B \vec{E}d\vec{r}$$
+$$\Rightarrow V(A) - V(B) = \int_B^A -\vec{E} d\vec{r}$$
+
+\begin{rema}
+	Si $A = B$, $\oint_\CCC \vec{E}d\vec{l} = 0$ où $\CCC$ est une courbe fermée.\\
+	$\vec{E}$ est alors dit à circulation conservative.
+\end{rema}
+
+\begin{theo}{de Stoke}
+	$$\iint \vec{r \circ t} \vec{E} dS = \oint_\CCC \vec{E} d\vec{l}$$
+	ici:  $\oint_\CCC \vec{E} d\vec{l} = 0 \Rightarrow \vec{R \circ t} \vec{E} = 0$
+\end{theo}
+
+\subsection{Forme locale}
+On a vu $U = V(A) - V(B) = \int_B^A \vec{E} d\vec{r}$\\
+D'où $dV = -\vec{E} d\vec{r}$
+$$\vec{E} 
+\left|
+\begin{array}{l}
+	E_x\\
+	E_y\\
+	E_z
+\end{array}
+\right.$$
+
+$$\vec{l} 
+\left|
+\begin{array}{l}
+	dx\\
+	dy\\
+	dz
+\end{array}
+\right.$$
+
+$$\Rightarrow dV = - E_xdx - E_ydy - E_zdz = \frac{\partial V}{\partial x}dx + \frac{\partial V}{\partial y}dy + \frac{\partial V}{\partial z}dz$$
+$$\Rightarrow 
+\left|
+\begin{array}{l}
+	E_x\\
+	E_y\\
+	E_z
+\end{array}
+\right.
+= 
+\left|
+\begin{array}{l}
+	-\frac{\partial V}{\partial x}\\
+	-\frac{\partial V}{\partial y}
+	-\frac{\partial V}{\partial z}
+\end{array}
+\right.
+= 
+-\vec{grad(V)}
+$$
+
+$$\Rightarrow \vec{E} = -\vec{grad(V)}$$
+
+\begin{rema}
+	Soit deux points $A$ et $B$ très proches\\
+	$$\int_B^A dV = \int_B^A -\vec{E} d\vec{r}$$
+	appartient au même équipotentiel que $V(A) = V(B)$
+	$$
+\begin{aligned}
+	dV &= -\vec{E} d\vec{r}\\
+	&= -\vec{E} \cdot \vec{AB}\\
+	&= 0
+\end{aligned}
+	$$
+	On en déduit que $\vec{E}$ et $\vec{AB}$ sont orthogonaux.
+\end{rema}
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

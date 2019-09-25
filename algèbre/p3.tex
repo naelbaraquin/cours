@@ -1,0 +1,181 @@
+\documentclass[../main.tex]{subfile}
+
+%page x
+
+\begin{document}
+
+\begin{prop}
+Soit $E$ de dimension finie, et $F$ sous espace vectoriel de $E$.\\
+\begin{enumerate}	
+	\item $F$ est de dimension finie et $\dim F \leq \dim E$
+	\item $\dim F = \dim E$ si et seulement si $F = E$
+\end{enumerate}
+\end{prop}
+\begin{proof}
+\begin{enumerate}	
+	\item Semble évident mais ne l'est pas.
+	\item Si $\dim F = \dim E$, \\
+	on pose $\{f_1, ..., f_n\}$, base de $F$, est aussi une famille libre de $E$ avec $n = \dim E$ éléments dans une base de $E$.\\
+	Pour la réciproque, si $\dim F \neq \dim F$, $E \neq F$
+\end{enumerate}
+\end{proof}
+
+\begin{rema}
+	$f_1, ..., f_k$ de $F$ sous espace vectoriel de $E$.\\
+	$f_1, ..., f_k$ est une famille libre de $F$ si et seulement si c'est une famille libre de $E$
+\end{rema}
+
+\begin{rema}
+	Le second point est utile en pratique pour montrer que deux espaces vectoriels $F$ et $G$ sont égaux, on montre que $F \subset G$ et que les deux sont de même dimension.
+\end{rema}
+
+\subsection{Exemples de dimensions (et bases)}
+\begin{itemize}
+	\item $\KK^n$\\
+	base canonique : $e_i = (0, ..., 0, 1, 0, ..., 0)$ ou $1$ se trouve à la i-ème place.\\
+	$(e_1, ..., e_n)$ est une base avec $\dim \KK^n = n$
+
+	\item Soient $E, F$, deux espaces vecteurs de dimensions finies \\
+	$E \times F$ est de dimension finie $\dim E + \dim F$\\
+	Soit $(e_1, ..., e_n)$ base de $E$\\
+	Soit $(f_1, ..., f_n)$ base de $F$\\
+	$$e_i^\sim = (e_i, 0) \in E \times F$$
+	$$f_j^\sim = (0, f_j) \in E \times F$$
+
+\begin{exerc}	
+	$(e_1^\sim, ..., e_n^\sim, f_1^\sim, ..., f_m^\sim)$
+	%### finir les exemples
+\end{exerc}
+\end{itemize}
+
+\begin{theo}
+	On considère un système d'équations linéaires homogène à $n$ inconnues et $k$ équations.\\
+	On suppose que ce système est échelonné, alors l'ensemble des solutions est de dimension $n-k$.
+\end{theo}
+\begin{proof}
+\begin{rema}	
+	Quitte à renommer les inconnues, on peut supposer que les inconnues principales sont $x_1, ..., x_k$, les autres sont des variables libres.\\
+	$$
+\left\{
+\begin{array}{r}
+	a_{11}x_1 + ... = 0\\
+	a_{22}x_2 + ... = 0\\
+	...\\
+	a_{kk}x_k + ... = 0
+\end{array}
+\right.
+	$$
+	Alors, les solutions sont de la forme $(x_1, ..., x_n)$ avec,
+	pour $j > k$, on pose arbitrairement $x_j = \lambda_j \in \KK$\\
+	$$x_k = \alpha_{k k+1} \lambda_{k+1} + ... + \alpha_{kn}\lambda_n$$
+	$$...$$
+	$$x_1 = \alpha_{1, k+1} \lambda_{k+1} + ... + \alpha_{1n}\lambda_n$$
+	Donc, 
+	$$
+(x_1, ..., x_n) = \lambda_{k+1}()
+%###finir la démo
+	$$
+\end{rema}
+
+\end{proof}
+
+\begin{theo}
+	Soient $F, G$, deux sous espace vectoriel de $E$ (de dimensions finies), \\
+	alors, $\dim(F + G) = \dim F + \dim G - \dim(F \cap G)$
+\end{theo}
+
+\begin{proof}
+	"Idée : construire une base sympathique de $F + G$"
+\begin{itemize}	
+	
+	\item $F\cap G$ est de dimension finie ($F \cap G$ étant sous espace vectoriel de $F$) \\
+	on pose alors $(e_1, ..., e_n)$ base de $F \cap G$.
+
+	\item $(e_1, ..., e_n)$ est une famille libre de $F$\\
+	se complète en une base $(e_1, ..., e_n, f_1, ..., f_s)$ de $F$
+%### finir la démo
+\end{itemize}
+\end{proof}
+
+\subsection{rang d'une famille de vecteurs}
+\begin{defi}
+	$$rg(v_1, ..., v_p) = \dim vect(v_1, ..., v_p)$$
+\end{defi}
+
+\begin{propri}
+	On a 
+\begin{itemize}
+	\item $rg (v_1, ..., v_p) \leq dim E$
+	\item $rg (v_1, ..., v_p) \leq p$
+	\item $rg (v_1, ..., v_p) = dim E$ si et seulement si la famille est génératrice.
+	\item $rg (v_1, ..., v_p) = 1$ si et seulement si la famille est libre.
+\end{itemize}
+\begin{proof}
+\begin{itemize}	
+	\item $vect{v_1, ..., v_p}$ est sous espace vectoriel de $E$.
+	\item par définition, $(v_1, ..., v_p)$ engendre $vect(v_1, ..., v_p)$\\
+	\item $vect (v_1, ..., v_p) = E$ si et seulement s'ils sont monodimensionels
+	\item $rg(v_1, ..., v_p) = 1$ si et seulement si $v_1, ..., v_p$ est génératrice d'un sous espace vectoriel de dimension $p$\\
+	si et seulement si $v_1, ..., v_p$ est une base de $vect(v_1, ..., v_p)$\\
+	si et seulement si $v_1, ..., v_p$ est libre
+\end{itemize}
+\end{proof}
+\end{propri}
+
+\begin{rema}
+	$vect(v_1, ..., v_p)$ ne change pas (le rang non plus) si:
+\begin{itemize}	
+	\item on permute deux vecteurs
+	\item on multiplie un vecteur par un scalaire $\lambda \in \KK^*$
+	\item on ajoute à un vecteur un multiple d'un autre
+\end{itemize}
+\end{rema}
+
+On peut alors appliquer l'algorithme de Gauss  au calcul du rang pour des vecteurs de $\KK^n$.\\
+Tout d'abord, on échelonne une famille de vecteur.\\
+Une fois que la famille est échelonnée, le rang correspond au nombre de vecteurs non nuls.\\
+
+\begin{rema}
+	Cette famille de vecteurs est une base du sous espace vectoriel initial.
+\end{rema}
+
+\subsection{Somme directe}
+Soient $F$ et $G$ des sous espaces vectoriels de $E$\\
+$$F+G = \{f+g \ | \ f \in F, \ g \in G\}$$
+
+a priori pour $u \in F+G$\\
+la paire $(f,g) \in F \times G \ / \ u=f+g$ n'est pas nécessairement unique.\\
+
+\begin{defi}
+	$F$ et $G$ sont en somme directe si et seulement si 
+	$$\forall u \in F + G, \ \exists! (f,g) \in F \times G, \ u = f+g$$
+\end{defi}
+
+\begin{nota}
+	On note alors $F \oplus G$
+\end{nota}
+
+\begin{rema}
+	$F \oplus G$ désigne à la fois le sous espace vectoriel $F+G$ et la propriété selon laquelle ils sont en somme directe.
+\end{rema}
+
+%### reprendre l'exemple et les schéma
+
+\begin{prop}
+	Les énoncés suivants sont équivalents:
+\begin{itemize}	
+	\item $F$ et $G$ sont en somme directe
+	\item $o = f+g$ avec $f \in F$ et $g \in G$ implique $f=g=0$
+	\item $F \cap G = \{0\}$
+	\item En réunissant une base de $F$ et une base de $G$, on obtient une base de $F+G$
+	\item $\dim(F+G) = \dim F + \dim G$
+\end{itemize}
+	(où les deux dernières propositions ne sont vraies qu'en dimension finie)
+\end{prop}
+
+\begin{proof}
+%### reprendre la démo en faisant proprement les références
+\end{proof}
+
+
+\end{document}
