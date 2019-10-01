@@ -4,16 +4,16 @@
 
 \begin{document}
 
-\part{Atomes hydrogénoides: équation de schrodinger}
+\part{Atomes hydrogénoïdes: équation de Schrödinger}
 
 \begin{defi}
 	Les atomes hydrogénoïdes ne sont constitués que d'un noyau et d'un électron
 \end{defi}
 
-Energie classique du système:
+Énergie classique du système:
 $$E = T_e + T_N + V_{eN}$$
 
-%### reprendre les expression des energies et des opérateurs correspondant
+%### reprendre les expression des énergies et des opérateurs correspondant
 
 L'équation dépend du mouvement des deux particules, non solvable.
 
@@ -36,4 +36,121 @@ Deux approches pour simplifier cette équation:
 $V(r)$ étant à symétrie sphérique, nous introduisons le système de coordonnées sphériques:
 	$\hat{H} = -\frac{\hbar^2}{2m_er^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r}) - \frac{1}{4\pi\varepsilon_0}\cdot \frac{Ze^2}{\hat{r}}$
 
+%###redébut de cours (30/09)
+
+	$$\hat{H}\Psi(r, \theta, \varphi) = -\frac{\hbar^2}{2m_er^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} + \Lambda)\Psi(r, \theta, \varphi) - \frac{1}{4\pi\varepsilon_0}\cdot \frac{Ze^2}{r}\Psi(r, \theta, \varphi) = E\Psi(r, \theta, \varphi)$$
+	$$\hat{H}\Psi(r, \theta, \varphi) = K\frac{1}{r^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} + \Lambda)\Psi(r, \theta, \varphi) - \frac{1}{4\pi\varepsilon_0}\cdot \frac{Ze^2}{r}\Psi(r, \theta, \varphi) = E\Psi(r, \theta, \varphi)$$
+	$$\hat{H}\Lambda = K\frac{1}{r^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} + \Lambda) - \frac{Ze^2}{4\pi\varepsilon_0}\cdot \frac{1}{r}\Lambda$$
+	$$\hat{H}\Lambda = K\frac{1}{r^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r}\Lambda + \Lambda^2) - \Lambda\frac{Ze^2}{4\pi\varepsilon_0}\cdot \frac{1}{r}$$
+	$$\hat{H}\Lambda = K\frac{1}{r^2} (\Lambda\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} + \Lambda^2) - \Lambda\frac{Ze^2}{4\pi\varepsilon_0}\cdot \frac{1}{r}$$
+	$$\hat{H}\Lambda = \Lambda K\frac{1}{r^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} + \Lambda) - \Lambda\frac{Ze^2}{4\pi\varepsilon_0}\cdot \frac{1}{r}$$
+	$$\hat{H}\Lambda = \Lambda \hat{H}$$
+
+	Par conséquent, les opérateurs $\hat{H}$ et $\Lambda$ commutent, 
+	ils admettent donc les mêmes jeux de vecteurs propres.\\
+
+	Les fonctions propres de $\lambda$ sont les $Y_{l,m}(\theta, \varphi)$, \\
+	$$\Lambda a Y_{l,m}(\theta, \varphi) = -l(l+1) a Y_{l,m}(\theta, \varphi) $$
+	$$a Y_{l,m}(\theta, \varphi)$$
+	où $a$ est une constante pour l'opérateur de Legendre, c'est à dire une fonction de $r$.\\
+	D'où:
+	$$\Psi(r, \theta, \varphi) = R(r)Y_{l,m}(\theta, \varphi)$$
+
+	On a donc:
+	$$\Psi(r, \theta, \varphi) = R(r)Y_{l,m}(\theta, \varphi)$$
+	$$-\frac{\hbar^2}{2mr^2}(\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r}+ \Lambda) R(r) Y_{l,m}(\theta, \varphi) - \frac{Ze^2}{4\pi\varepsilon_0}\frac{1}{r} R(r)Y_{lm}(\theta, \varphi) = ER(r)Y_{lm}(\theta, \varphi)$$
+	$$-\frac{\hbar^2}{2mr^2}(Y_{lm}(\theta, \varphi)\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r}R(r) - R(r) l(l+1) Y_{lm}(\theta, \varphi) -\frac{Ze^2}{4\pi\varepsilon_0})\frac{1}{r} R(r)Y_{lm}(\theta, \varphi) = ER(r)Y_{lm}(\theta, \varphi)$$
+	%###finir l'égalité et reprendre apres les propriétés des fonctions propres de l'équation radiale
+
+
+
+	\subsection{Valeurs propres de l'équation de Schrödinger}
+	Pour les hydrogénoïdes, on a, pour les solutions de l'équation radiale, 
+	$$E_n = - (\frac{m_e e^4}{(4\pi\varepsilon_0)^2\hbar^2}) \frac{Z^2}{2n^2}$$
+	L'énergie électronique ne dépend que de $n$ (ni de $l$, ni de $m$)
+
+	en considérant l'état fondamental ($n=1$):
+	$$E_1 = - (\frac{m_e e^4}{(4\pi\varepsilon_0)^2\hbar^2}) \frac{Z^2}{2} = - 13,6$$
+
+	%liens entre E_1 et l'energie de première ionisation
+
+	On introduit, pour l'atome d'hydrogène, la constate de Rydberg $\mathcal{R}_H$:
+	$$\mathcal{R}_H = ...$$
+
+	Formule de Rydberg:
+	$$\frac{1}{\lambda} = \mathcal{R}H ...$$
+
+	\subsection{système d'unité atomique}
+	$e=1$, $\hbar = 1$, $4\pi\varepsilon_0 = 1$, $c=1$, $m_e = 1$, $a_0 = 1 = 0,529 \circ{A}$
+	D'où:
+	$$E_1(H) = -\frac{1}{2} u.a.$$
+	$$E_n(Z) = -\frac{Z^2}{2n^2} u.a.$$
+
+	L'unité atomique d'énergie est aussi appelée le Hartree.\\
+
+	l'Hamiltonien pour l'atome d'hydrogène s'écrit donc:
+	$$\hat{H} = -\frac{1}{2} \Delta - \frac{Z}{r}$$
+
+
+
+
+
+
+	Les OA qui possèdent le même $l$ et le même $n$ constituent une sous couche:
+\begin{itemize}	
+	\item $l=0$ : sous couche s
+	\item $l=1$ : sous couche p
+	\item $l=2$ : sous couche d
+	\item $l=3$ : sous couche f
+	\item $l=4$ : sous couche g
+\end{itemize}
+	$m$ pouvant prendre $2l+1$ valeurs, pour une sous-couche $nl$ donnée, il y a $2l+1$ OA dans une sous-couche donnée
+
+	Les couches et sous-couches sont des ensembles de fonctions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Pour tous les $l \neq 0$, les harmoniques sphériques sont complexes!\\
+	Pour obtenir des fonctions réelles:\\
+	$$S^+_{l|m|} = \frac{Y_{l,m} + Y_{l,-m}}{\sqrt{2}}$$
+	$$S^-_{l|m|} = \frac{Y_{l,m} - Y_{l,-m}}{i\sqrt{2}}$$
+	(il s'agit d'une adaptation des formules d'Euler)
+
+	Toutes les OA de type $s$ sont à symétrie sphériques\\
+
+
+
+	Les trois harmoniques sphériques de type $p$ sont équivalentes par des rotations de $90°$, \\
+	les OA correspondantes auront donc la même forme\\
+	Seule leur orientation est différente.\\
+	Chaque fonction présente une surface nodale (un plan)\\
+
+
+
+
+	Pour les harmoniques $d$, présente deux plans nodaux ou un cône
+
+
+
+
+
+	Chaque fonction présente $n - l - 1$ points nodaux
+	
+
+
+
+
+
+
+	Pour représenter une fonction de trois variables, on a besoin de quatre dimension 
 \end{document}

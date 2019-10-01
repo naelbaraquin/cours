@@ -8,9 +8,10 @@ Soit $\KK$, un corps ($\RR$, $\CC$, ou autre)
 
 \section{Notion d'espace vectoriel}
 \subsection{Définitions}
-\begin{defi}{vague}
-	Un $\KK$-espace vectoriel est un ensemble d'éléments appelés vecteurs tels qu'on puisse les additionner entre eux et les multiplier par des scalaires, c'est-à-dire des éléments de $\KK$
-	avec des relations naturelles de compatibilité
+\begin{defi}{(non formelle)}
+	Un $\KK$-espace vectoriel est un ensemble d'éléments appelés vecteurs 
+	tels qu'on puisse les additionner entre eux et les multiplier par des scalaires, 
+	c'est-à-dire des éléments de $\KK$ avec des relations naturelles de compatibilité.
 \end{defi}
 
 \begin{defi}
@@ -33,36 +34,36 @@ Soit $\KK$, un corps ($\RR$, $\CC$, ou autre)
 	$$
 \end{itemize}
 	Ces lois vérifient:
-\begin{itemize}
-	\item $\forall u, v, w \in E, \ (u + v) + w = u + (v + w)$ \\
+\begin{description}
+	\item[A1 :] $\forall u, v, w \in E, \ (u + v) + w = u + (v + w)$ \\
 	la loi $+$ est donc associative
 
-	\item $\forall u, v \in E, \ u + v = v + u$\\
+	\item[A2 :] : $\forall u, v \in E, \ u + v = v + u$\\
 	la loi $+$ est donc commutative
 
-	\item $\exists 0_E \in E, \ \forall u \in E, \ u + 0_E = 0_E + u = u$\\
+	\item[A3 :] $\exists 0_E \in E, \ \forall u \in E, \ u + 0_E = 0_E + u = u$\\
 	la loi $+$ admet un élément neutre
 
-	\item $\forall u \in E, \ \exists v \in E, \ u+v = v+u = 0_E$\\
+	\item[A4 :] $\forall u \in E, \ \exists v \in E, \ u+v = v+u = 0_E$\\
 	chaque élément de $E$ admet, par $+$, un inverse ou opposé
 
-	\item $\forall \lambda, \mu \in \KK, \ \forall u \in E, \ \lambda \cdot (\mu \cdot u) = (\lambda \cdot \mu) \cdot u$\\
+	\item[B1 :] $\forall \lambda, \mu \in \KK, \ \forall u \in E, \ \lambda \cdot (\mu \cdot u) = (\lambda \cdot \mu) \cdot u$\\
 	la loi $\cdot$ est associative
 
-	\item $\forall \lambda, \mu \in \KK, \ \forall u \in E, \ (\lambda + \mu) \cdot u = \lambda \cdot u + \mu \cdot u$\\
+	\item[B2 :] $\forall \lambda, \mu \in \KK, \ \forall u \in E, \ (\lambda + \mu) \cdot u = \lambda \cdot u + \mu \cdot u$\\
 	la loi $\cdot$ est distributive à gauche
 
-	\item $\forall \lambda \in \KK, \ \forall u, v \in E, \ (u + v) \cdot \lambda = \lambda \cdot u + \lambda \cdot v $\\
+	\item[B3 :] $\forall \lambda \in \KK, \ \forall u, v \in E, \ (u + v) \cdot \lambda = \lambda \cdot u + \lambda \cdot v $\\
 	la loi $\cdot$ est distributive à droite
 
-	\item $\forall u \in E, \ 1 \cdot u = u$\\
+	\item[B4 :] $\forall u \in E, \ 1 \cdot u = u$\\
 	la loi $\cdot$ admet un élément neutre
-\end{itemize}
+\end{description}
 \end{defi}
 
 \begin{rema}
-	Dans le troisième axiome, l'élément neutre est unique.\\
-	Dans le quatrième axiome, le vecteur $v$ est en fait unique, on le note $-u$.
+	Dans l'axiome A3, l'élément neutre est unique.\\
+	Dans l'axiome A4, le vecteur $v$ est en fait unique, on le note $-u$.
 \end{rema}
 
 \begin{prop}
@@ -86,7 +87,7 @@ $$
 	\lambda \cdot 0_E = O_E
 \end{aligned}
 $$
-\item 
+	\item 
 $$
 \begin{aligned}
 	0_\KK \cdot u &=   (0_\KK + 0_\KK) \cdot u\\
@@ -95,8 +96,8 @@ $$
 	0_\KK \cdot u = O_\KK
 \end{aligned}
 $$
-\item Si $\lambda = 0_\KK$, cf. 2\\
-Si $\lambda \neq 0$, alors $\lambda^{-1} \in \KK$,\\
+	\item Si $\lambda = 0_\KK$, cf. 2\\
+	Si $\lambda \neq 0$, alors $\lambda^{-1} \in \KK$,\\
 $$0 = \lambda^{-1} \cdot 0 = \lambda^{-1} (\lambda \cdot u) = (\lambda^{-1} \cdot \lambda) \cdot u = 1 \cdot u = u$$
 \end{enumerate}
 \end{proof}
@@ -172,7 +173,7 @@ $$0 = \lambda^{-1} \cdot 0 = \lambda^{-1} (\lambda \cdot u) = (\lambda^{-1} \cdo
 	n'est pas un $\KK$-espace vectoriel, pourquoi?
 \end{rema}
 
-\subsection{Sous-espace vectorel}
+\subsection{Sous-espace vectoriel}
 
 \begin{defi}
 	Soit $E$, un $\KK$-espace vectoriel, et $F \subset E$.\\
@@ -193,6 +194,19 @@ $$0 = \lambda^{-1} \cdot 0 = \lambda^{-1} (\lambda \cdot u) = (\lambda^{-1} \cdo
 \end{itemize}
 \end{propri}
 
+\begin{proof}
+	Pour montrer que les sous espaces vectoriels vérifient les axiomes A1 à B4:\\
+	La vérification des axiomes A1, A2, B1, B2, B3 et B4 est immédiate.\\
+	Pour A3:\\
+	$$\exists 0_F \subset F, \ \forall u \in F, \ u+0_F = 0_F + u = u$$
+	Il suffit alors de montrer que $0_E \in F$, \\
+	or, $F \neq \emptyset$, donc, $\exists u \in F, \ 0 \cdot u = 0_E \in F$\\
+
+	Pour A4:\\
+	Il suffit alors de montrer que $\forall u \in F, \ -u \in F$:\\
+	$-u = (-1) \cdot u$ où $-u \in F$ par hypothèse.
+\end{proof}
+
 \begin{rema}
 \begin{itemize}	
 	\item On a vu que $0_E \in F$
@@ -203,14 +217,17 @@ $$0 = \lambda^{-1} \cdot 0 = \lambda^{-1} (\lambda \cdot u) = (\lambda^{-1} \cdo
 \end{itemize}
 \end{rema}
 
-%### reprendre l'exemple
-
 \begin{rema}
 	Dans la plupart des cas, pour montrer qu'un ensemble (avec les lois $+$, $\cdot$) est un espace vectoriel, on montre qu'il s'agit d'un sous-espace vectoriel d'un $\KK$-espace vectoriel connu.
 \end{rema}
 
 \begin{ex}
 \begin{itemize}	
+	\item $\{0\}$ et $E$ sont des sous-espace vectoriels de $E$.
+	\item $F = \mathcal{C}(I, \RR)$, l'ensemble des fonctions continues sur un intervalle $I$ de $\RR$.\\
+	$F$ est sous-espace vectoriel de $\mathcal{F}(I, \RR)$, l'ensemble des fonctions de $I$ sur $\RR$:\\
+	La fonction nulle est continue.\\
+	$\forall f, g \in \mathcal{C}(I, \RR), \ \forall \lambda, \mu \in \RR$, $\lambda f + \mu g$ est continue, donc $\lambda f + \mu g \in F$.
 	\item $E = \KK^n$ et $a_1, ..., a_n \in \KK$\\
 	$F = \{(x_1, ..., x_n) \ | \ a_1x_1 + ... + a_nx_n = 0\}$ est un sous-espace vectoriel de $E$.
 	\item $\KK[X]$, les suites de $\KK$ nulles à partir d'un certain rang, est un sous-espace vectoriel de l'ensemble des suites de $\KK$
@@ -221,6 +238,10 @@ $$0 = \lambda^{-1} \cdot 0 = \lambda^{-1} (\lambda \cdot u) = (\lambda^{-1} \cdo
 \begin{defi}
 	Une combinaison linéaire de $v_1, ..., v_p$ est un élément de la forme $\sum\limits_{i=1}^p \lambda_i v_i = \lambda_1 v_1 + ... + \lambda_p v_p$ avec $\lambda_1, ..., \lambda_p \in \KK$.\\
 \end{defi}
+
+\begin{ex}
+	Dans $\KK[X]$, une combinaison linéaire est un polynôme.
+\end{ex}
 
 \begin{rema}
 	Une combinaison linéaire de $(v_i)_{i \in I}$ est une combinaison linéaire au sens précédent d'une sous famille finie.

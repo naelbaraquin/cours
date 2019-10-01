@@ -13,4 +13,7 @@
 \contentsline {subsection}{\numberline {7.3}Principe de correspondance}{5}% 
 \contentsline {section}{\numberline {8}Postulat 3}{7}% 
 \contentsline {section}{\numberline {9}Postulat 4}{7}% 
-\contentsline {part}{III\hspace {1em}Atomes hydrog\IeC {\'e}noides: \IeC {\'e}quation de schrodinger}{8}% 
+\contentsline {section}{\numberline {10}S\IeC {\'e}paration des variables}{8}% 
+\contentsline {part}{III\hspace {1em}Atomes hydrog\IeC {\'e}no\IeC {\"\i }des: \IeC {\'e}quation de Schr\IeC {\"o}dinger}{8}% 
+\contentsline {subsection}{\numberline {10.1}Valeurs propres de l'\IeC {\'e}quation de Schr\IeC {\"o}dinger}{10}% 
+\contentsline {subsection}{\numberline {10.2}syst\IeC {\`e}me d'unit\IeC {\'e} atomique}{10}% 

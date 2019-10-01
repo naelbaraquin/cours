@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  25 SEP 2019 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  26 SEP 2019 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1083,68 +1083,78 @@ o-lu-tions (Seule-
  []
 
 [4]) [5] (./p2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
 [7]
-Overfull \hbox (11.14911pt too wide) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 198--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--204
+
+ []
+
+[8]
+Overfull \hbox (11.14911pt too wide) in paragraph at lines 239--240
 \T1/futs/b/n/10 Définition 7. \T1/futs/m/it/10 Une com-bi-nai-son li-néaire de 
 $\FML/futmi/m/it/10 v[]; :::; v[]$ \T1/futs/m/it/10 est un élé-ment de la forme
  $[] \FML/futmi/m/it/10 ^^U[]v[] \FMS/futm/m/n/10 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
-[8]
-Overfull \hbox (1.6474pt too wide) in paragraph at lines 230--231
+
+Overfull \hbox (1.6474pt too wide) in paragraph at lines 251--252
 \T1/futs/b/n/10 Exemple. \T1/futs/m/it/10 Dans $\U/futm/m/n/10 K\T1/futs/m/n/10
  [\FML/futmi/m/it/10 X\T1/futs/m/n/10 ] \FMS/futm/m/n/10  f\T1/futs/m/n/10 1\F
 ML/futmi/m/it/10 ; X; X[]; :::; X[]; :::\FMS/futm/m/n/10 g$\T1/futs/m/it/10 , u
 ne com-bi-nai-son li-naire est un po-ly-nôme. 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--266
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 282--287
 
  []
 
 
-Overfull \hbox (6.09949pt too wide) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
+
+ []
+
+
+Overfull \hbox (6.09949pt too wide) in paragraph at lines 294--295
 []\T1/futs/m/n/10 Intersection des sous es-paces vec-to-riels est so-lu-tion de
  chaque équa-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
 
-Overfull \hbox (6.96082pt too wide) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
+
+ []
+
+[10]
+Overfull \hbox (6.96082pt too wide) in paragraph at lines 343--344
 \T1/futs/b/n/10 Définition 10. \T1/futs/m/it/10 On dit que $\T1/futs/m/n/10 (\F
 ML/futmi/m/it/10 v[]; :::; v[]\T1/futs/m/n/10 )$ \T1/futs/m/it/10 est une fa-mi
 lle gé-né-ra-trice de $\FML/futmi/m/it/10 E$ \T1/futs/m/it/10 si $\FML/futmi/m/
@@ -1153,7 +1163,7 @@ MS/futm/m/n/10 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--345
+Underfull \hbox (badness 10000) in paragraph at lines 364--366
 
  []
 
@@ -1162,12 +1172,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[10]
+
 Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
 
-
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
@@ -1177,7 +1187,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
 
-[11]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
@@ -1187,7 +1197,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
  []
 
-[12]
+
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
@@ -1203,6 +1213,9 @@ AED: lastpage setting LastPage
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -1221,7 +1234,7 @@ rier-mex.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
 exmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-dist/fonts/type
 1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putri
 8a.pfb>
-Output written on main.pdf (14 pages, 103690 bytes).
+Output written on main.pdf (14 pages, 105860 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  58 compressed objects within 1 object stream

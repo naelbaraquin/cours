@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  23 SEP 2019 09:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  30 SEP 2019 09:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1079,33 +1079,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-[7]) (./p3.tex) 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
+
+ []
+
+) (./p3.tex [8]
+Overfull \hbox (0.44049pt too wide) in paragraph at lines 49--51
+[]\T1/futs/m/n/10 Par consÈ-quent, les opÈ-ra-teurs $[]$ et $\FML/futm/m/it/10 
+^^C$ \T1/futs/m/n/10 com-mutent, ils ad-mettent donc les mÍmes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Overfull \hbox (35.74846pt too wide) detected at line 62
+\FMS/futm/m/n/10 ^^@[]\T1/futs/m/n/10 (\FML/futmi/m/it/10 Y[]\T1/futs/m/n/10 (\
+FML/futmi/m/it/10 ^^R; '\T1/futs/m/n/10 )[]\FML/futmi/m/it/10 r[][]R\T1/futs/m/
+n/10 (\FML/futmi/m/it/10 r\T1/futs/m/n/10 ) \FMS/futm/m/n/10 ^^@ \FML/futmi/m/i
+t/10 R\T1/futs/m/n/10 (\FML/futmi/m/it/10 r\T1/futs/m/n/10 )\FML/futmi/m/it/10 
+l\T1/futs/m/n/10 (\FML/futmi/m/it/10 l \FMS/futm/m/n/10 Ä \T1/futs/m/n/10 1)\FM
+L/futmi/m/it/10 Y[]\T1/futs/m/n/10 (\FML/futmi/m/it/10 ^^R; '\T1/futs/m/n/10 ) 
+\FMS/futm/m/n/10 ^^@ []\T1/futs/m/n/10 )[]\FML/futmi/m/it/10 R\T1/futs/m/n/10 (
+\FML/futmi/m/it/10 r\T1/futs/m/n/10 )\FML/futmi/m/it/10 Y[]\T1/futs/m/n/10 (\FM
+L/futmi/m/it/10 ^^R; '\T1/futs/m/n/10 ) \FMS/futm/m/n/10 Å \FML/futmi/m/it/10 E
+R\T1/futs/m/n/10 (\FML/futmi/m/it/10 r\T1/futs/m/n/10 )\FML/futmi/m/it/10 Y[]\T
+1/futs/m/n/10 (\FML/futmi/m/it/10 ^^R; '\T1/futs/m/n/10 )
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 133.
+
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 133
+.
+(/usr/share/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+)
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 133.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--137
+
+ []
+
+) 
 AED: lastpage setting LastPage
-[8] (./main.aux)
+[11] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 18090 strings out of 492623
- 311460 string characters out of 6135670
- 449615 words of memory out of 5000000
- 21741 multiletter control sequences out of 15000+600000
- 644010 words of font info for 137 fonts, out of 8000000 for 9000
+ 18115 strings out of 492623
+ 311821 string characters out of 6135670
+ 450617 words of memory out of 5000000
+ 21762 multiletter control sequences out of 15000+600000
+ 644332 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,63p,281b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,63p,507b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/fourier/fourier-mex.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fou
-rier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb>
-</usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-di
-st/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe
-/utopia/putri8a.pfb>
-Output written on main.pdf (8 pages, 84980 bytes).
+ts/type1/public/fourier/fourier-mcl.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/fourier/fourier-mex.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fo
+urier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
+></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/t
+exmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-dist/fonts/type
+1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putri
+8a.pfb>
+Output written on main.pdf (11 pages, 99077 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

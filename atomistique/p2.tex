@@ -7,7 +7,7 @@
 La mécanique quantique se base sur six postulats qui ont toujours été vérifiés. Nous n'en verrons et utiliserons seulement quatre dans ce cours.
 
 \section{Postulat 1}
-L'état d'un système à un instant $t$ est complètement défini par la conaissance de sa fonction d'onde, notée $\Psi (\vec{r}, t)$.
+L'état d'un système à un instant $t$ est complètement défini par la connaissance de sa fonction d'onde, notée $\Psi (\vec{r}, t)$.
 
 \begin{itemize}
 	\item Dans $\Psi (\vec{r}, t)$, $\vec{r}$ désigne la variable de l'espace tandis que $t$ désigne la variable du temps.
@@ -41,7 +41,7 @@ L'état d'un système à un instant $t$ est complètement défini par la conaiss
 		\item on parle alors d'équation aux valeurs propres.\\
 		L'équation de Schrödinger est une équation aux valeurs propres.
 	\end{itemize}
-	\item Notion de dégénéréscence : \\
+	\item Notion de dégénérescence : \\
 	Si deux fonctions différentes donnent, pour un opérateur donné, la même valeur propre, elles sont dites dégénérées.
 \end{itemize}
 \subsection{Propriétés des opérateurs}
@@ -122,7 +122,7 @@ L'état d'un système à un instant $t$ est complètement défini par la conaiss
 \end{aligned}
 	$$
 	On a donc l'opérateur quantité de mouvement $\hat{T} = \frac{\hat{p}^2}{2m}$.
-	%on prend les équations de mécanique classique et on "remplasse par des opérateurs"
+	%on prend les équations de mécanique classique et on "remplace par des opérateurs"
 \end{ex}
 Cas tridimensionnel:\\
 avec $\hat{T}$, l'opérateur énergie cinétique, 
@@ -130,7 +130,7 @@ $$\hat{T} = -\frac{\hbar^2}{2m} (\frac{d^2}{dx^2} + \frac{d^2}{dy^2} + \frac{d^2
 
 
 \begin{ex}
-	Donnons l'expression de l'opérateur énergie d'une particule de masse $m$ qui se déplace dans les trois direciton de l'espace et possédant une énergie potentielle $V(\vec{r})$:
+	Donnons l'expression de l'opérateur énergie d'une particule de masse $m$ qui se déplace dans les trois direction de l'espace et possédant une énergie potentielle $V(\vec{r})$:
 	$$\hat{H} = \hat{T} + \hat{V}$$
 	$$\hat{H} = -\hat{\hbar^2}{2m}\nabla + \hat{V}(\vec{r})$$
 	On a alors une expression de l'opérateur hamiltonien
@@ -144,7 +144,7 @@ L'évolution d'un système est régie par l'équation de Schrödinger dépendant
 $$\hat{H} \Psi(\vec{r}, t) = ih\frac{\partial \Psi(\vec{r}, t)}{\partial t}$$
 
 Lorsque le potentiel agissant sur le système $V(r)$ ne dépend pas du temps, la fonction d'onde qui décrit le système ne dépend pas du temps. Le système est alors dans un état dit stationnaire.\\
-La fonction d'onde (caractérisant l'état stationnaire) est alorzs obtenue par al résolution due l'équation de Schrödinger indépendante du temps:
+La fonction d'onde (caractérisant l'état stationnaire) est alors obtenue par la résolution due l'équation de Schrödinger indépendante du temps:
 $$\hat{H} \Psi(\vec{r}) = E\Psi(\vec{r})$$
 
 Les états stationnaires d'un système sont aussi appelés états propres de ce système, ils sont en effet les vecteurs propres associés à l'opérateur Hamiltonien.
@@ -158,7 +158,7 @@ Soit une grandeur physique $A$ associée à l'opérateur $\hat{A}$ tel que :
 $$\hat{A} \Psi_n(\vec{r}) = a_n\Psi_n(\vec{r})$$
 Alors, seules les valeurs propres $a_n$ peuvent être mesurées pour la propriété $A$.\\
 
-Soit un système décrit par $\Psi(\vec{r})$, une fonction d'onde qualconque : \\
+Soit un système décrit par $\Psi(\vec{r})$, une fonction d'onde quelconque : \\
 \begin{itemize}
 	\item Si $\Psi(\vec{r})$ est fonction propre de $\hat{A}$ associé à la valeur propre $\lambda$, alors toute mesure de la propriété $A$ conduira à $\lambda$
 	\item Si $\Psi(\vec{r})$ n'est pas fonction propre de $\hat{A}$, alors la valeur moyenne d'une série de mesures expérimentales sur la grandeur physique sera :
@@ -177,7 +177,7 @@ $$\Delta A = \sqrt{<A^2> - <A>^2}$$
 	&= 
 \end{aligned}
 	$$
-	On clacule alors la dispersion 
+	On calcule alors la dispersion 
 	$$
 \begin{aligned}
 	%<A> &= \frac{\int \Psi^*(x) \hat{A} \Psi(x) dx}{\int \Psi^*(x) \Psi(x) dx}\\
@@ -186,6 +186,21 @@ $$\Delta A = \sqrt{<A^2> - <A>^2}$$
 \end{aligned}
 	$$
 \end{ex}
+
+\section{Séparation des variables}
+
+	Soit un opérateur $\hat{A}$ de deux variables, noté $\hat{A_{a,b}}$, s'il peut s'écrire comme la somme de deux opérateurs, l'un ne s'appliquant que sur la variable $a$ et l'autre, que sur la variable $b$, \textit{i.e.} $\hat{A_{a,b}}=\hat{h_a} + \hat{h_b}$, alors, le produit des vecteurs propres de $\hat{h_a}$ et $\hat{h_b}$ est vecteur propre de $\hat{A_{a, b}}$ et la somme des vecteurs propres $\hat{h_a}$ et $\hat{h_b}$ est valeur propre de $\hat{A_{a,b}}$
+
+\begin{proof}	
+	$\hat{A} = \hat{h_a} + \hat{h_b}$ avec $\hat{h_a} \Psi(a) = \alpha \Psi(a)$\\
+	et $\hat{h_b} \chi(b) = \alpha \chi(b)$\\
+
+	$$
+\begin{aligned}
+	\hat{A}\Psi(a)\chi(b)
+\end{aligned}
+	$$
+\end{proof}
 
 
 

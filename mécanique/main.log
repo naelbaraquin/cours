@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  17 SEP 2019 10:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  1 OCT 2019 07:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1041,13 +1041,13 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 3.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 4.
-)
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./p1.tex
+ [2] (./p1.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 6.
 
@@ -1056,18 +1056,18 @@ Overfull \hbox (3.41982pt too wide) in paragraph at lines 22--22
 d'un
  []
 
-[2]
+[3]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 113.
 
-) [3] [4] (./p2.tex
+) [4] [5] (./p2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-[5]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
@@ -1087,17 +1087,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
-[6]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-[7]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
-[8]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
@@ -1107,127 +1107,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
-! Undefined control sequence.
-<recently read> \exits 
-                       
-l.271 ...jectif, i.e. en trois dimensions, $\exits
-                                                   \stackrel{!} \vec{\Omega}...
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 313--316
 
-? q
-OK, entering \batchmode...
-! Argument of \mathaccentV has an extra }.
-<inserted text> 
-                \par 
-l.271 ...ois dimensions, $\exits \stackrel{!} \vec
-                                                  {\Omega} \ / \ \vec{v(B)} ...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
+ []
 
-Runaway argument?
-! Paragraph ended before \mathaccentV was complete.
-<to be read again> 
-                   \par 
-l.271 ...ois dimensions, $\exits \stackrel{!} \vec
-                                                  {\Omega} \ / \ \vec{v(B)} ...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 322--327
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.271 ...ois dimensions, $\exits \stackrel{!} \vec
-                                                  {\Omega} \ / \ \vec{v(B)} ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.271 ...ois dimensions, $\exits \stackrel{!} \vec
-                                                  {\Omega} \ / \ \vec{v(B)} ...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.271 ...ois dimensions, $\exits \stackrel{!} \vec
-                                                  {\Omega} \ / \ \vec{v(B)} ...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-<recently read> }
-                 
-l.271 ...ois dimensions, $\exits \stackrel{!} \vec
-                                                  {\Omega} \ / \ \vec{v(B)} ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.271 ...ois dimensions, $\exits \stackrel{!} \vec
-                                                  {\Omega} \ / \ \vec{v(B)} ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
- [9]
-! Limit controls must follow a math operator.
-<recently read> \limits 
-                        
-l.271 ...ois dimensions, $\exits \stackrel{!} \vec
-                                                  {\Omega} \ / \ \vec{v(B)} ...
-I'm ignoring this misplaced \limits or \nolimits command.
-
-! Extra }, or forgotten $.
-\stackrel ...>\mathrel {\mathop {#2}\limits ^{#1}}
-                                                  
-l.271 ...ois dimensions, $\exits \stackrel{!} \vec
-                                                  {\Omega} \ / \ \vec{v(B)} ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+ []
 
 ) 
 AED: lastpage setting LastPage
- [10] (./main.aux) ) 
+[12] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18080 strings out of 492623
- 311195 string characters out of 6135670
+ 18079 strings out of 492623
+ 311190 string characters out of 6135670
  448645 words of memory out of 5000000
- 21730 multiletter control sequences out of 15000+600000
+ 21729 multiletter control sequences out of 15000+600000
  622570 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,9n,63p,271b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sh
-are/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texmf-dis
-t/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texmf-dist/fonts/type1
-/public/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourie
-r/fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms
-.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/tex
-mf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/
-adobe/utopia/putri8a.pfb>
-Output written on main.pdf (10 pages, 92460 bytes).
+ 42i,9n,63p,428b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sha
+re/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texmf-dist
+/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texmf-dist/fonts/type1/
+public/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourier
+/fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.
+pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texm
+f-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/a
+dobe/utopia/putri8a.pfb>
+Output written on main.pdf (12 pages, 96584 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,12 +6,12 @@
 \contentsline {part}{II\hspace {1em}Chapitre 2 : Espaces vectoriels}{6}% 
 \contentsline {section}{\numberline {2}Notion d'espace vectoriel}{6}% 
 \contentsline {subsection}{\numberline {2.1}D\IeC {\'e}finitions}{6}% 
-\contentsline {subsection}{\numberline {2.2}Sous-espace vectorel}{8}% 
+\contentsline {subsection}{\numberline {2.2}Sous-espace vectoriel}{8}% 
 \contentsline {subsection}{\numberline {2.3}Sous espace engendr\IeC {\'e}}{9}% 
-\contentsline {subsection}{\numberline {2.4}Intersections}{9}% 
+\contentsline {subsection}{\numberline {2.4}Intersections}{10}% 
 \contentsline {subsection}{\numberline {2.5}Somme de sous espaces vefctoriels}{10}% 
-\contentsline {section}{\numberline {3}Familles libres, g\IeC {\'e}n\IeC {\'e}ratrices et bases}{10}% 
-\contentsline {subsection}{\numberline {3.1}Familles libres, g\IeC {\'e}n\IeC {\'e}ratrices}{10}% 
-\contentsline {subsection}{\numberline {3.2}Exemples de dimensions (et bases)}{11}% 
-\contentsline {subsection}{\numberline {3.3}rang d'une famille de vecteurs}{12}% 
+\contentsline {section}{\numberline {3}Familles libres, g\IeC {\'e}n\IeC {\'e}ratrices et bases}{11}% 
+\contentsline {subsection}{\numberline {3.1}Familles libres, g\IeC {\'e}n\IeC {\'e}ratrices}{11}% 
+\contentsline {subsection}{\numberline {3.2}Exemples de dimensions (et bases)}{12}% 
+\contentsline {subsection}{\numberline {3.3}rang d'une famille de vecteurs}{13}% 
 \contentsline {subsection}{\numberline {3.4}Somme directe}{13}% 
