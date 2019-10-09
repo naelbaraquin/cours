@@ -1,0 +1,103 @@
+\documentclass[../main.tex]{subfile}
+
+%page x
+
+\begin{document}
+\part{Propriétés de symétrie de $\vec{E}$}
+\section{Invariance des lois de l'électrostatique au cours d'un déplacement}
+	L'espace considéré sera homogène et isotrope.\\
+	Soit $\Sigma$, un système physique (ici, on considère un ensemble de charges)\\
+	$\Sigma$ crée $\vec{E(M)}$ en tout point $M$ de l'espace.\\
+	L'espace étant homogène homogène et isotrope, si l'on fait subir une transformation
+	géométrique $T$ à $\Sigma$ (rotation, translation, symétrie), les effets effets 
+	subissent la même transformation.\\
+	Si $\Sigma$ crée $\vec{E(M)}$ en $M$, \\
+	alors $\Sigma' = T(\Sigma)$ créera $\vec{E'(M')}$ en $M'$ où $M' = T(M)$\\
+	On écrit $\vec{E'(M')} = T(\vec{E(M)})$.\\
+	En général, $\vec{E'(M')} \neq \vec{E(M)}$
+
+\section{Influence de la symétrie de la source}
+\subsection{Principe de Curie:}
+\begin{theo}
+	"Les effets ont au moins la symétrie des causes."
+\end{theo}
+
+\begin{itemize}
+	\item
+	Dans le cas général précédent, $T$ ne laissait pas le système invariant:\\
+	$\Sigma' = T(\Sigma)$ ne coïncide pas avec $\Sigma$.
+	
+	\item En revanche, si le système $T$ laisse le système invariant, alors:\\
+	$\Sigma' = \Sigma$ et les effets de $\Sigma$ et $\Sigma'$ se recouvrent:
+	$$
+\left\{
+\begin{array}{c}
+	\forall M, \ \vec{E'(M)} = \vec{E(M)}\\
+	\vec{E'(M')} = \vec{E(M')}
+\end{array}
+\right.
+	$$
+\end{itemize}
+
+\subsection{invariances des sources par translation}
+	Il s'agit d'une distribution idéalisée:\\
+	Dans la réalité , une translation ne peut pas être une opération de recouvrement.\\
+\begin{ex}	
+	Soit un fil rectiligne infini d'axe $Oz$ chargé avec une densité volumique de charge $\rho_c$\\
+	On translate cette distribution de charges parallèlement à l'axe $Oz$ d'un vecteur $\vec{T}$ quelconque.\\
+	Le fil étant infiniment long suivant $Oz$ et la translation étant parallèle à l'axe $Oz$, les deux distributions
+	se recouvrent.\\
+	Ainsi, $\rho'_c(I) = \rho_c(I)$\\
+	$M \mapsto M'$ et $\vec{MM'} = \vec{T}$\\
+	$\vec{E(M')} = \vec{E(M)}$\\
+	Par conséquent, on a que pour tout $z_0$, 
+	$\vec{E(x, y, z + z_0)} = \vec{E(x, y, z)}$
+	$\vec{E}$ ne dépend donc pas de la variable $z$
+\end{ex}
+
+\subsection{invariance des sources par rotation autour d'un axe}
+	Soit une distribution $\Sigma$ de charges uniformément réparties telle que toute section perpendiculaire à une direction est circulaire.\\
+	Effectuons une rotation d'angle $\varphi$ autour d'un axe.\\
+	%$\Sigma' = \RRR(\Sigma) \conj \Sigma$
+	$\rho'(I) = \rho(I)$\\
+	d'où $\vec{E'(M')} = \vec{E(M)}$\\
+	Par conséquent, $\forall \varphi_0, \ \vec{E(r, \theta,\varphi)} = \vec{E(r, \theta, \varphi + \varphi_0)}$\\
+	$\vec{E}$ est donc indépendant de la variable $\varphi$ par le principe de Curie.\\
+
+\subsection{Lois physiques et symétries par rapport à un plan}
+	Soit une opération de symétrie par rapport à un plan.\\
+	Soit une charge $q$, placée au point $P$ et une charge $M$ où je regarde le champ.\\
+	%###schéma
+	Faisons un symétrie par rapport au plan $(xOy)$\\
+	%$$P \to\limits_{q \conj q'}^{S/p} P'$$
+	%$$M \to\limits^{S/p} M'$$
+	$$\vec{E(M')} ) \frac{q'}{4\pi\varepsilon_0} \frac{\vec{P'M'}}{P'M'^3}$$
+	$$\vec{P'M'}_{x \text{ ou } y} = \vec{PM}_{x \text{ ou } y}$$
+	$$\vec{P'M'}_{z} = \vec{PM}_{z}$$
+	Ainsi:
+%	$$E'_x(M') = E_x(M)$$
+	$$E'_y(M') = E_y(M)$$
+	$$E'_z(M') = -E_z(M)$$
+	%###schéma
+
+\subsection{Distribution ayant un plan de symétrie de charges}
+	Soit une distribution de charges ayant un plan de symétrie.\\
+	%$$\Sigma \to\limits^{S/p} \Sigma' = \Sigma$$
+	alors,
+	$$\rho'(P) = \rho(P)$$
+
+
+	Si %$M \conj M'$ (les deux appartenant au plan)\\
+	alors $Em(M) = 0$, 
+	le champ en un point $M$ d'un plan de symétrie de $\Sigma$ est contenu dans le plan.
+
+\subsection{Distribution de charges dans un plan d'antisymétrie}
+	Par un raisonnement identique au précédent, on montre que %$\vec{E(M \in Q)} perpendiculaire Q$
+	$\vec{E(M \in P)} \subset P$
+
+En un point d'un plan d'antisymétrie, le champ est perpendiculaire au plan.
+
+
+
+
+\end{document}

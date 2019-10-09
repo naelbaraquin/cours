@@ -1,0 +1,55 @@
+\documentclass[../main.tex]{subfile}
+
+%page cours du 8 octobre
+
+\begin{document}
+
+\section{Matrice d'application linéaire}
+
+Soit $f : E \to E'$, une application linéaire.\\
+Soit $\BBB = (e_1, ..., e_n)$, une base de $E$\\
+Soit $\BBB' = (e_1', ..., e_p')$, une base de $E'$\\
+
+On écrit $f(e_1), ..., f(e_n)$ dans la base $\BBB'$\\
+
+$$
+\begin{aligned}
+	f(e_1) &= a_{11}e'_1 + ... + a_{p1}e'_p\\
+	f(e_2) &= a_{12}e'_2 + ... + a_{p2}e'_p\\
+	...\\
+	f(e_n) &= a_{1n}e'_n + ... + a_{pn}e'_p\\
+\end{aligned}
+$$
+
+On définit la matrice de $f$ relativement aux bases $\BBB$ et $\BBB'$ par:
+$$
+Mat(f)_{\BBB\BBB'} =
+\left(
+\begin{array}{cccc}
+	a_{11} & a_{12} & ... & a_{1n}\\
+	a_{21} & a_{22} & ... & a_{2n}\\
+	...\\
+	a_{p1} & a_{p2} & ... & a_{pn}\\
+\end{array}
+\right)
+$$
+
+\begin{ex}
+	Pour l'application:
+	$$
+\begin{aligned}
+	f :\phantom{......} \RR^2 &\to \RR^2\\
+	 (x,y) &\mapsto (-x+6y , -x+4y)
+\end{aligned}
+	$$
+
+	$\BBB_1 = (e_1, e_2) = ((1, 0), (0, 1))$ est la base canonique de $\RR^2$.\\
+	$\BBB_2 = (e'_1, e'_2) = ((3, 1), (2, 1))$\\
+
+	Alors :\\
+\begin{itemize}	
+	\item $Mat(f)_{\BBB_1\BBB_1} = $
+\end{itemize}
+\end{ex}
+
+\end{document}
