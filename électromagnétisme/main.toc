@@ -25,3 +25,12 @@
 \contentsline {section}{\numberline {9}Relations entre $\mathaccentV {vec}17E{E}$ et $V$}{10}% 
 \contentsline {subsection}{\numberline {9.1}Forme int\IeC {\'e}grale}{10}% 
 \contentsline {subsection}{\numberline {9.2}Forme locale}{10}% 
+\contentsline {part}{IV\hspace {1em}Propri\IeC {\'e}t\IeC {\'e}s de sym\IeC {\'e}trie de $\mathaccentV {vec}17E{E}$}{11}% 
+\contentsline {section}{\numberline {10}Invariance des lois de l'\IeC {\'e}lectrostatique au cours d'un d\IeC {\'e}placement}{11}% 
+\contentsline {section}{\numberline {11}Influence de la sym\IeC {\'e}trie de la source}{11}% 
+\contentsline {subsection}{\numberline {11.1}Principe de Curie:}{11}% 
+\contentsline {subsection}{\numberline {11.2}invariances des sources par translation}{11}% 
+\contentsline {subsection}{\numberline {11.3}invariance des sources par rotation autour d'un axe}{12}% 
+\contentsline {subsection}{\numberline {11.4}Lois physiques et sym\IeC {\'e}tries par rapport \IeC {\`a} un plan}{12}% 
+\contentsline {subsection}{\numberline {11.5}Distribution ayant un plan de sym\IeC {\'e}trie de charges}{12}% 
+\contentsline {subsection}{\numberline {11.6}Distribution de charges dans un plan d'antisym\IeC {\'e}trie}{13}% 

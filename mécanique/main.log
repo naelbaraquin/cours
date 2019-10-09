@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  1 OCT 2019 07:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  1 OCT 2019 09:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1024,50 +1024,49 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 40.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 41.
- (./main.toc
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 4.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+ (./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [2] (./p1.tex
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./p1.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 22.
 
 Overfull \hbox (3.41982pt too wide) in paragraph at lines 22--22
 []\T1/futs/b/n/12 différence entre le mou-ve-ment d'un point et le mou-ve-ment 
 d'un
  []
 
-[3]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 37.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 37.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 37.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 37.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 37.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 37.
+[2]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 113.
 
-) [4] [5] (./p2.tex
+) [3] [4] (./p2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-[6]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
@@ -1087,17 +1086,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
-[7]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-[8]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
-[9]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
@@ -1107,36 +1106,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
-[10]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 313--316
 
  []
 
-[11]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 322--327
 
  []
 
-) 
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+
+ []
+
+)
+
+Package lastpage Warning: Rerun to get the references right on input line 60.
+
+
 AED: lastpage setting LastPage
-[12] (./main.aux) ) 
+[12] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  18079 strings out of 492623
  311190 string characters out of 6135670
- 448645 words of memory out of 5000000
+ 448631 words of memory out of 5000000
  21729 multiletter control sequences out of 15000+600000
  622570 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,9n,63p,428b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sha
-re/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texmf-dist
-/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texmf-dist/fonts/type1/
-public/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourier
-/fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.
-pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texm
-f-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/a
-dobe/utopia/putri8a.pfb>
-Output written on main.pdf (12 pages, 96584 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
+ts/type1/public/fourier/fourier-mcl.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/fourier/fourier-mex.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fo
+urier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
+></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/t
+exmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-dist/fonts/type
+1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putri
+8a.pfb>
+Output written on main.pdf (12 pages, 97999 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream

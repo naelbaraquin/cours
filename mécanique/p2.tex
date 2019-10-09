@@ -335,9 +335,73 @@ $$\vec{GM_1}(t + dt) - \vec{GM_1(t)} = \vec{v(M_1)}dt = \vec{\Omega} \wedge \vec
 \subsubsection{Le pendule}
 %### les schémas.............................
 
+Des systèmes comme le pendule :
+\begin{itemize}
+	\item le crayon qui tombe
+	\item la machine à laver
+\end{itemize}
+\subsubsection{Cylindre qui roule}
+%encore des schémas...
+On cherche à determiner $\vec{\Omega}$ et $\vec{P}$.\\
+Il n'existe \textit{a priori} pas de point de vitesse nulle.\\
+Dans le ref. barycentrique, $\vec{v^*(G)} = \vec{0}$.
+%toujours des schémas...
+
+\subsubsection{Tige qui tombe}
+%plus de mots...
+pas de point dont la vitesse est nulle, on se place donc dans le ref barycentrique.\\
+Dans $\mathcal{R}^*$, on se ramène au cas du pendule d'où $\vec{\Omega} = \dot{\theta} \vec{u_z}$
+
+\subsubsection{Demi cylindre}
+Dans le réferenciel barycentrique, on retrouve encore le cas du pendule
+
+
+\subsection{Exemples de champs des vitesses}
+\subsubsection{La roue qui roule sur le plan horizontal}
+%schéma de la roue
+
+$$
+\begin{aligned}
+	\vec{V(A)} &= \vec{V(G)} + \vec{\Omega} \wedge \vec{GA}\\
+	&= \dot{x}\vec{u_x} + \left( 0 ,\ 0 ,\ \dot{\theta}\right) \wedge \left( r \cos\alpha ,\ r \sin\alpha ,\ 0\right)\\
+	&= \dot{x}\vec{u_x} - r \dot{\theta} \sin\alpha \vec{u_x} + r \dot{\theta} \cos\alpha \vec{u_y}
+\end{aligned}
+$$
+$$\vec{V(M)} = \vec{V(G)} + \vec{\Omega} \wedge \vec{GM} = \left( \dot{x} - R \dot{\theta} \sin\theta ,\ R\dot{\theta} \cos\theta ,\ 0\right)$$
+où $M$  est à la périphérie
 \end{document}
 
+%### à finir
 
+\section{Changements de réferentiel}
+On se donne donc deux réferentiel $(R)$ et $(R')$ de même horloge et de bases respectives $(\vec{u_x}, \vec{u_y}, \vec{u_z})$ et 
+
+
+
+\subsection{Dérivtion d'un vecteur dans espace mobile}
+
+
+\section{Contact entre deux solides}
+\subsection{Vitesse de glissement}
+Soient deux solides $S_1$ et $S_2$ en contact en un point $I$ au temps $t$.\\
+On définit $I_1$ et $I_2$, appartenant respectivement aux solides $1$ et $2$, 
+qui coïncident avec le point $I$ à l'instant $t$.
+
+vitesse de glisement de $S_1$ par rapport à $S_2$:
+$$\vec{V_g(S_1/S_2)} = \vec{V(I_1)} - \vec{V(I_2)}$$
+Si cette vitesse est nulle, on dit qu'il n'y a pas de glissements, sinon, 
+on dit qu'il y a du glissement.
+
+exemples de la roue qui tourne sur le sol et de deux roues en contact
+
+
+\part{Moment d'inertie}
+\begin{defi}
+	Moment d'inertie par rapport à un axe:\\
+	$$J_\Delta = \iiint \rho(M) HM^2 dv$$
+	où $J_\Delta$ est le moment d'inertie du solide $S$ constitué de points $M$\\
+	$H$ est le projeté de $M$ sur $\Delta$
+\end{defi}
 
 
 

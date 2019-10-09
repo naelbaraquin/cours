@@ -15,3 +15,7 @@
 \contentsline {subsection}{\numberline {3.2}Exemples de dimensions (et bases)}{12}% 
 \contentsline {subsection}{\numberline {3.3}rang d'une famille de vecteurs}{13}% 
 \contentsline {subsection}{\numberline {3.4}Somme directe}{13}% 
+\contentsline {part}{III\hspace {1em}Applications lin\IeC {\'e}aires}{14}% 
+\contentsline {section}{\numberline {4}D\IeC {\'e}finitions et exemples}{14}% 
+\contentsline {section}{\numberline {5}Image, noyau et image d'une famille de vecteurs}{15}% 
+\contentsline {section}{\numberline {6}Matrice d'application lin\IeC {\'e}aire}{16}% 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  26 SEP 2019 11:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  8 OCT 2019 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -870,60 +870,60 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 40.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 43.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 43.
 
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 40.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 40.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 43.
 
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 40.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 40.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 43.
 
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 40.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 43.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 40.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 43.
 
 (/usr/share/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-LaTeX Info: Redefining \degres on input line 40.
-LaTeX Info: Redefining \dots on input line 40.
-LaTeX Info: Redefining \up on input line 40.
+LaTeX Info: Redefining \degres on input line 43.
+LaTeX Info: Redefining \dots on input line 43.
+LaTeX Info: Redefining \up on input line 43.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 40.
+(lastpage)             ! on input line 43.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -991,39 +991,39 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 42
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 45
 .
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 42.
+(Font)              scaled to size 11.03998pt on input line 45.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 42.
+(Font)              scaled to size 8.27998pt on input line 45.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 42.
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+(Font)              scaled to size 6.43999pt on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 45.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 45.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 42.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 45.
 
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 42.
+(Font)              scaled to size 11.03998pt on input line 45.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 42.
+(Font)              scaled to size 8.27998pt on input line 45.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 42.
+(Font)              scaled to size 6.43999pt on input line 45.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 43.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 46.
  (./main.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
@@ -1088,34 +1088,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
+Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--204
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
 
  []
 
 [8]
-Overfull \hbox (11.14911pt too wide) in paragraph at lines 239--240
+Overfull \hbox (11.14911pt too wide) in paragraph at lines 250--251
 \T1/futs/b/n/10 DÈfinition 7. \T1/futs/m/it/10 Une com-bi-nai-son li-nÈaire de 
 $\FML/futmi/m/it/10 v[]; :::; v[]$ \T1/futs/m/it/10 est un ÈlÈ-ment de la forme
  $[] \FML/futmi/m/it/10 ^^U[]v[] \FMS/futm/m/n/10 Å
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
 
-Overfull \hbox (1.6474pt too wide) in paragraph at lines 251--252
+Overfull \hbox (1.6474pt too wide) in paragraph at lines 262--263
 \T1/futs/b/n/10 Exemple. \T1/futs/m/it/10 Dans $\U/futm/m/n/10 K\T1/futs/m/n/10
  [\FML/futmi/m/it/10 X\T1/futs/m/n/10 ] \FMS/futm/m/n/10 Å f\T1/futs/m/n/10 1\F
 ML/futmi/m/it/10 ; X; X[]; :::; X[]; :::\FMS/futm/m/n/10 g$\T1/futs/m/it/10 , u
@@ -1123,38 +1123,38 @@ ne com-bi-nai-son li-naire est un po-ly-nÙme.
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 282--287
+Underfull \hbox (badness 10000) in paragraph at lines 293--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
 
-Overfull \hbox (6.09949pt too wide) in paragraph at lines 294--295
+Overfull \hbox (6.09949pt too wide) in paragraph at lines 305--306
 []\T1/futs/m/n/10 Intersection des sous es-paces vec-to-riels est so-lu-tion de
  chaque Èqua-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 [10]
-Overfull \hbox (6.96082pt too wide) in paragraph at lines 343--344
+Overfull \hbox (6.96082pt too wide) in paragraph at lines 354--355
 \T1/futs/b/n/10 DÈfinition 10. \T1/futs/m/it/10 On dit que $\T1/futs/m/n/10 (\F
 ML/futmi/m/it/10 v[]; :::; v[]\T1/futs/m/n/10 )$ \T1/futs/m/it/10 est une fa-mi
 lle gÈ-nÈ-ra-trice de $\FML/futmi/m/it/10 E$ \T1/futs/m/it/10 si $\FML/futmi/m/
@@ -1163,7 +1163,7 @@ MS/futm/m/n/10 Å
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--366
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
 
  []
 
@@ -1172,12 +1172,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
 
-[11]
+
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
@@ -1207,23 +1207,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
-[13]) 
+[13]) (./p4.tex [14]
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+
+ []
+
+) (./p5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+) 
 AED: lastpage setting LastPage
-[14] (./main.aux)
+[16] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 18103 strings out of 492623
- 311570 string characters out of 6135670
- 450667 words of memory out of 5000000
- 21754 multiletter control sequences out of 15000+600000
- 644010 words of font info for 137 fonts, out of 8000000 for 9000
+ 18113 strings out of 492623
+ 311629 string characters out of 6135670
+ 450679 words of memory out of 5000000
+ 21756 multiletter control sequences out of 15000+600000
+ 644427 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,63p,271b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
@@ -1234,10 +1266,10 @@ rier-mex.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
 exmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-dist/fonts/type
 1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putri
 8a.pfb>
-Output written on main.pdf (14 pages, 105860 bytes).
+Output written on main.pdf (16 pages, 113167 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

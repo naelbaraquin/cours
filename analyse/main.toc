@@ -1,8 +1,12 @@
 \babel@toc {french}{}
-\contentsline {part}{I\hspace {1em}S\IeC {\'e}ries num\IeC {\'e}riques}{2}% 
-\contentsline {section}{\numberline {1}Quelques rappels et compl\IeC {\'e}ments sur les suites}{2}% 
-\contentsline {part}{II\hspace {1em}S\IeC {\'e}ries num\IeC {\'e}riques}{3}% 
-\contentsline {section}{\numberline {2}S\IeC {\'e}ries \IeC {\`a} termes positifs}{4}% 
-\contentsline {subsection}{\numberline {2.1}Comparaison entre s\IeC {\'e}ries et int\IeC {\'e}grales g\IeC {\'e}n\IeC {\'e}ralis\IeC {\'e}es}{4}% 
-\contentsline {subsection}{\numberline {2.2}Crit\IeC {\`e}res de comparaison}{5}% 
-\contentsline {subsection}{\numberline {2.3}Comparaison avec une suite g\IeC {\'e}om\IeC {\'e}trique}{6}% 
+\contentsline {part}{I\hspace {1em}S\IeC {\'e}ries num\IeC {\'e}riques}{1}% 
+\contentsline {section}{\numberline {1}Quelques rappels et compl\IeC {\'e}ments sur les suites}{1}% 
+\contentsline {part}{II\hspace {1em}S\IeC {\'e}ries num\IeC {\'e}riques}{2}% 
+\contentsline {section}{\numberline {2}S\IeC {\'e}ries \IeC {\`a} termes positifs}{3}% 
+\contentsline {subsection}{\numberline {2.1}Comparaison entre s\IeC {\'e}ries et int\IeC {\'e}grales g\IeC {\'e}n\IeC {\'e}ralis\IeC {\'e}es}{3}% 
+\contentsline {subsection}{\numberline {2.2}Crit\IeC {\`e}res de comparaison}{3}% 
+\contentsline {subsection}{\numberline {2.3}Comparaison avec une suite g\IeC {\'e}om\IeC {\'e}trique}{4}% 
+\contentsline {subsection}{\numberline {2.4}S\IeC {\'e}ries \IeC {\`a} termes de signe quelconque}{5}% 
+\contentsline {subsubsection}{\numberline {2.4.1}S\IeC {\'e}ries absolument convergentes}{5}% 
+\contentsline {subsubsection}{\numberline {2.4.2}S\IeC {\'e}ries altern\IeC {\'e}es}{6}% 
+\contentsline {subsubsection}{\numberline {2.4.3}R\IeC {\`e}gle d'Abel}{6}% 

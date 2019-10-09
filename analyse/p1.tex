@@ -312,6 +312,118 @@ et si $\alpha \leq 1$, $\sum u_n$ diverge\\
 \end{proof}
 
 
+\subsection{Séries à termes de signe quelconque}
+\subsubsection{Séries absolument convergentes}
+\begin{defi}
+	On dit que la série $\sum\limits_{n\geq 0} u_n$ est absolument convergente si $\sum\limits_{n\geq 0} |u_n|$ converge.
+\end{defi}
+
+\begin{theo}
+	Si la série $\sum\limits_{n \geq 0} u_n$ converge absolument alors elle converge.
+\end{theo}
+
+\begin{proof}
+	$\sum\limits_{n \geq 0} |u_n|$ convergeant, la série vérifie le critère de Cauchy :\\
+	Si on prend $\varepsilon > 0$, il existe $N \in \NN$ tel que :
+	$$\forall n \geq N, \ \forall p \in \NN, \ \left| \sum\limits_{k = n}^{n+p} |u_k| \right| < \varepsilon$$
+	On a donc, pour tout $n \geq N$, et pour tout $p \in \NN$, 
+	$$\left| \sum\limits_{k=n}^{n+p} u_k \right| \leq \sum\limits_{k=n}^{n+p} |u_k| < \varepsilon$$
+	Donc la série $\sum\limits_{n \geq 0}u_n$ vérifie le critère de Cauchy,
+	donc elle converge.
+\end{proof}
+
+\begin{rema}
+	Attention, la réciproque est fausse :\\
+\begin{ex}	
+	$u_n = \frac{(-1)^n}{n}$\\
+	$\sum\limits_{n\geq 1} \frac{(-1)^n}{n}$ converge\\
+	mais $\sum\limits_{n\geq 1} \left| \frac{(-1)^n}{n}\right|$ converge\\
+\end{ex}
+\end{rema}
+
+\subsubsection{Séries alternées}
+	Ce sont des séries de la forme $\sum\limits_{n \geq 0} (-1)^na_n$ où $a_n \geq 0$ pour tout $n \in \NN$.
+
+\begin{theo}	
+	Si la suite $(a_n)_{n\in \NN}$ est décroissante et converge vers $0$, alors $\sum\limits_{n \geq 0} (-1)^n a_n$ converge. \\
+	De plus, si on note $R_n = \sum\limits_{k = n + 1}^{\infty} (-1)^ka_k$, 
+	alors on a $|R_n| \leq a_{n+1}$
+\end{theo}
+
+\begin{proof}
+	La preuve sera faite en exercice
+\end{proof}
+
+\begin{ex}
+	$\sum\limits_{n\geq 1} \frac{(-1)^n}{n}$ converge.\\
+\end{ex}
+
+\subsubsection{Règle d'Abel}
+\begin{theo}
+	Soient deux suites $(\alpha_n)_{n \in \NN}$ et $(u_n)_{n \in \NN}$ qui vérifient :
+\begin{enumerate}	
+	\item $(\alpha_n)_{n \in \NN}$ est positive, décroissante et converge vers $0$.
+	\item Il existe $M > 0$ tel que 
+	$$\forall n \in \NN, \ \left| \sum\limits_{k = 0}^n u_k \right| \leq M$$
+\end{enumerate}
+	Alors $\sum\limits_{n \geq 0} \alpha_n u_n$ converge.
+\end{theo}
+
+\begin{proof}
+	La preuve sera faite en exercice
+\end{proof}
+
+\begin{ex}
+	$\sum\limits_{n \geq 1} \frac{\cos n}{n}$\\
+	On a $\frac{\cos n}{n} = \frac{1}{n} \cos n$.\\
+\begin{itemize}	
+	\item $(\frac{1}{n})_{n \geq 1}$ est positive, décroissante et converge vers $0$.
+	\item On montre qu'il existe $M > 0$ tel que pour tout $n \in \NN^*$, on a :
+	$$\left| \sum\limits_{k =1}^n \cos(k) \right| \leq M$$
+
+	On écrit $\cos(k) = \Re (e^{ik})$\\
+	Donc, 
+	$$
+\begin{aligned}
+	\left| \sum\limits_{k=1}^n \cos(k) \right| &= \left| \sum\limits_{k=1}^n \Re(e^{ik}) \right|\\
+	&= \left| \Re(\sum\limits_{k=1}^n e^{ik}) \right|\\
+	&= \left| \Re(\sum\limits_{k=0}^n e^{ik}) -1 \right|\\
+\end{aligned}
+	$$
+	On sait aussi que 
+	$$\sum\limits_{k=0}^n e^{ik} = \sum\limits_{k=0}^n (e^i)^k = frac{1 - e^{i(n+1)}}{1 - e^i}$$
+\begin{rap}	
+	Si $z \in \CC$, alors, $|\Re(z)\| \leq |z|$ et $|\Im(z)| \leq |z|$
+\end{rap}
+	On en déduit :
+	$$\left| \sum\limits_{k=1}^n \cos(k) \right| 
+	\leq \left| \Re(\sum\limits_{k=0}^n e^{ik}) \right| + 1
+	\leq \left| \sum\limits_{k=0}^n e^{ik} \right| + 1 $$
+
+	Donc:
+	$$\left| \sum\limits_{k=1}^n \cos(k) \right| 
+	\leq \left| frac{1 - e^{i(n+1)}}{1 - e^i} \right| + 1
+	\leq frac{|1 - e^{i(n+1)}|}{|1 - e^i|} + 1
+	\leq frac{|1| + |e^{i(n+1)}|}{|1 - e^i|} + 1
+	\leq frac{2}{|1 - e^i|} + 1
+	$$
+\end{itemize}
+\end{ex}
+
+\begin{exerc}	
+	Utilisation du Théorème d'Abel pour montrer le théorème des séries alternées:
+	$$\sum\limits_{n \geq 0} (-1)^n a_n$$
+	avec $(a_n)_{n \in \NN}$ décroissante et converge vers $0$.\\
+
+	Il suffit de vérifier qu'il existe $M > 0$ tel que 
+	$$\forall n \in \NN, \ \left| \sum\limits_{k=0}^n (-1)^k \right| \leq M$$
+
+	Selon la parité de $n$,	$\left| \sum\limits_{k=0}^n (-1)^k \right|$ vaut $0$ ou $1$.\\
+	Donc $\left| \sum\limits_{k=0}^n (-1)^k \right| \leq 1$ pour tout $n \in \NN$
+
+\end{exerc}
+
+
 
 \end{document}
 
