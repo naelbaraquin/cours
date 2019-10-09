@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  3 OCT 2019 10:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  9 OCT 2019 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -273,6 +273,17 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip53
 \dth@everypar=\toks23
 )
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
 (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
@@ -797,10 +808,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
-
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
+)
 \Gin@req@height=\dimen179
 \Gin@req@width=\dimen180
 )
@@ -870,60 +878,57 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 43.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 44.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 44.
 
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 43.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 43.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 44.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 44.
 
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 43.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 43.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 44.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 44.
 
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 43.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 44.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 43.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 44.
 
 (/usr/share/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-LaTeX Info: Redefining \degres on input line 43.
-LaTeX Info: Redefining \dots on input line 43.
-LaTeX Info: Redefining \up on input line 43.
-Package lastpage Info: Please have a look at the pageslts package at
-(lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 43.
+LaTeX Info: Redefining \degres on input line 44.
+LaTeX Info: Redefining \dots on input line 44.
+LaTeX Info: Redefining \up on input line 44.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -989,211 +994,155 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 44.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 45
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 46
 .
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 45.
+(Font)              scaled to size 11.03998pt on input line 46.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 45.
+(Font)              scaled to size 8.27998pt on input line 46.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 45.
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+(Font)              scaled to size 6.43999pt on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 45.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 46.
 
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 45.
+(Font)              scaled to size 11.03998pt on input line 46.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 45.
+(Font)              scaled to size 8.27998pt on input line 46.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 45.
+(Font)              scaled to size 6.43999pt on input line 46.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 47.
  (./main.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 6.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 6.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 6.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 6.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 6.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 6.
 )
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./p1.tex
-Overfull \hbox (78.91083pt too wide) in paragraph at lines 10--12
-[]\T1/futs/m/n/10 cours sur : http ://www.math.univ-toulouse.fr/ jraim-bau/Ense
-ignement/theorie_des_groupes.html 
- []
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./p5.tex
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 9.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 9.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 9.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 9.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 9.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 9.
 
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 12.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-
-Overfull \hbox (11.57376pt too wide) in paragraph at lines 51--52
-[]\T1/futs/m/it/10 Toute ap-pli-ca-tion $\FML/futmi/m/it/10 f \FMS/futm/m/n/10 
-2 \FML/futmi/m/it/10 Isom\T1/futs/m/n/10 (\FML/futmi/m/it/10 T\T1/futs/m/n/10 )
-$ \T1/futs/m/it/10 ad-met une trans-for-ma-tion in-verse $\FML/futmi/m/it/10 f[
-] \FMS/futm/m/n/10 2 \FML/futmi/m/it/10 Isom\T1/futs/m/n/10 (\FML/futmi/m/it/10
- T\T1/futs/m/n/10 )$ 
- []
-
-[2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 135--138
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--161
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
+
+(./fig51stralg.pdf_tex
+<fig51stralg.pdf, id=8, page=1, 537.72115pt x 300.9783pt>
+File: fig51stralg.pdf Graphic file (type pdf)
+<use fig51stralg.pdf, page 1>
+Package pdftex.def Info: fig51stralg.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 103.50105pt x 57.93045pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+[2 <./fig51stralg.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 106--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+(./fig52stralg.pdf_tex
+<fig52stralg.pdf, id=22, page=1, 647.16286pt x 393.99185pt>
+File: fig52stralg.pdf Graphic file (type pdf)
+<use fig52stralg.pdf, page 1>
+Package pdftex.def Info: fig52stralg.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 103.50105pt x 63.00992pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+[4 <./fig52stralg.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--182
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
 
-[4]
-
-Package amsmath Warning: Foreign command \over;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 197.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--212
-
- []
-
-[5]
-Overfull \hbox (1.40948pt too wide) in paragraph at lines 247--255
-[]\T1/futs/m/n/10 On sup-pose que $\FML/futmi/m/it/10 H$ \T1/futs/m/n/10 sa-tis
--fait les deux points de la pro-priété ci-dessus. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
-
- []
-
-) [6] (./p2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 27--29
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 84--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 168--172
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
-
- []
-
-) (./p3.tex
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-) (./p4.tex [11]
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
-
- []
-
-) 
+[5]) 
 AED: lastpage setting LastPage
-[12] (./main.aux) ) 
+[6] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18085 strings out of 492623
- 311208 string characters out of 6135670
- 449687 words of memory out of 5000000
- 21736 multiletter control sequences out of 15000+600000
- 628576 words of font info for 120 fonts, out of 8000000 for 9000
+ 18119 strings out of 492623
+ 311947 string characters out of 6135670
+ 451876 words of memory out of 5000000
+ 21770 multiletter control sequences out of 15000+600000
+ 607551 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,9n,63p,271b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sha
-re/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texmf-dist/
-fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/
-fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.p
-fb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf
--dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/ad
-obe/utopia/putri8a.pfb>
-Output written on main.pdf (12 pages, 100575 bytes).
+ 42i,14n,63p,271b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/shar
+e/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texmf-dist/f
+onts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/fourier/fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/
+fourier-ms.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr
+/share/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fo
+nts/type1/adobe/utopia/putri8a.pfb>
+Output written on main.pdf (6 pages, 76251 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 58 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

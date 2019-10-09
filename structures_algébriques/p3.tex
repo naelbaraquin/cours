@@ -1,0 +1,76 @@
+\documentclass[../main.tex]{subfile}
+
+%suite cours 26/09 page x
+
+\begin{document}
+
+\begin{rap}
+	Pour $\varphi : G \to \Gamma$, un isomorphisme 
+	($\forall g, h \in G, \ \varphi(gh) = \varphi(g) \varphi(h)$)\\
+	$\varphi$ est un isomorphisme si et seulement s'il est un morphisme bijectif.
+\end{rap}
+
+\begin{prop}
+	Soit $\varphi : G \to Gamma$, un isomorphisme:\\
+\begin{enumerate}	
+	\item Si $G$ est abélien, alors $\Gamma$ est abélien.
+	\item Si $g \in G$ est d'ordre $n$, alors $\varphi(g) \in \Gamma$ est d'ordre $n$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\begin{enumerate}	
+	\item Soient $\gamma_1 = \varphi(g_1), \gamma_2 = \varphi(g_2) \in \Gamma(g_1, g_2 \in G)$
+	$$
+\begin{aligned}
+	\gamma_1\gamma_2 &= \varphi(g_1)\varphi(g_2)\\
+	&= \varphi(g_1g_2)\\
+	&= \varphi(g_2g_1)\\
+	&= \varphi(g_2)\varphi(g_1)\\
+	&= \gamma_2\gamma_1
+\end{aligned}
+	$$
+	Donc $\Gamma$ est abélien.
+
+	\item Soit $g \in G$ d'ordre $n$, c'est-à-dire que $n$ est le plus petit entier naturel
+	non nul tel que $g^n = e^g$.\\
+	On veut montrer que $\varphi(g)$ est d'ordre $n$. 
+\begin{itemize}	
+	\item 
+	$$
+\begin{aligned}
+	\varphi(g)^n &= \varphi(g^n)\\
+	&= \varphi(e_G)\\
+	&= e_\Gamma
+\end{aligned}
+	$$
+	\item Il reste à montrer que $\forall k \in \ZZ, \ 0<k<n, \ \varphi(g)^k \neq e_\Gamma$\\
+	$$\varphi(g)^k = \varphi(g^k) = e_\Gamma \Leftrightarrow g^k \in ker(\varphi) = \{e_G\}$$
+	Donc $\varphi(g)^k = e_\Gamma$ si et seulement si $g^k = e_G$\\
+	Ainsi, $\varphi(g)$ et $g$ ont le même ordre.
+\end{itemize}
+\end{enumerate}
+\end{proof}
+
+\begin{ex}
+\begin{enumerate}	
+	\item $\ZZ/6\ZZ$ n'est pas isomorphe à $Isom(T)$\\
+\begin{itemize}	
+	\item $\ZZ/6\ZZ$ contient un élément d'ordre $G$
+	et les ordres possibles pour les éléments de $Isom(T)$ sont $1$, $2$ et $3$.
+	\item $\ZZ/6\ZZ$ est abélien mais $Isom(T)$ ne l'est pas.
+\end{itemize}
+	\item $\ZZ/4\ZZ$ (d'ordre 4) n'est pas isomorphe à $\ZZ/2\ZZ \times \ZZ/2\ZZ$ (dont l'ordre maximal est 2).\\
+	Si $G$ est cyclique d'ordre $n$, alors il existe un $g \in G$ d'ordre $n$.\\
+	Donc $\varphi(g)$ est d'ordre $n$. \\
+	Ainsi, si $\varphi$ est bijective, $\Gamma$ est d'ordre $n$.
+\end{enumerate}
+\end{ex}
+
+\begin{rema}
+	De façon générale, si $\varphi : G \to \Gamma$, est un isomorphisme et $G$, un groupe cyclique, 
+	alors $\Gamma$ est aussi un groupe cyclique.
+\end{rema}
+
+
+\end{document}

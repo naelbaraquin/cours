@@ -1,0 +1,275 @@
+\documentclass[../main.tex]{subfile}
+
+%page 5 action de groupe
+
+\begin{document}
+\section{Groupe opérant sur un ensemble (action de groupe)}
+
+\begin{defi}
+	Soient $G$, un groupe et $X$, un ensemble.\\
+	On appelle \emph{action (ou opération) à gauche de $G$ sur $X$} toute application:
+	$$
+\begin{aligned}
+	\cdot : G \times X &\to X\\
+	(g, x) &\mapsto g \cdot x
+\end{aligned}
+	$$
+	qui satisfait les deux conditions suivantes:\\
+\begin{itemize}	
+	\item $\forall g, h \in G, \ \forall x \in X, \ g \cdot (h \cdot x) = (g \cdot h) \cdot x$
+	\item $\forall x \in X, \ e \cdot x = x$
+\end{itemize}
+\end{defi}
+
+\begin{defi}{Opération à droite}
+	$$
+\begin{aligned}
+	\cdot : G \times X &\to X\\
+	(g, x) &\mapsto g \cdot x
+\end{aligned}
+	$$
+	avec:\\
+\begin{itemize}	
+	\item $\forall g, h \in G, \ \forall x \in X, \ g \cdot (h \cdot x) = (g \cdot h) \cdot x$
+	\item $\forall x \in X, \ e \cdot x = x$
+\end{itemize}
+\end{defi}
+
+\begin{ex}
+\phantom{a}
+\begin{itemize}	
+	\item $\ZZ/3\ZZ$ agit par rotation sur $\RR^2 = \CC$.\\
+	$\forall z = re^{i\phi} \in \CC, \ \forall \bar{k} \in \ZZ/3\ZZ, \ \bar{k} \cdot z = re^{i\phi + \frac{2\pi k}{3}}$\\
+
+\begin{center}	
+	\def\svgwidth{0.3\textwidth}
+	\input{fig51stralg.pdf_tex}
+\end{center}
+
+	\item $\RR$ agit par translation sur $\RR^2$\\
+	$\forall r \in \RR, \ \forall (x, y) \in \RR^2, \ r \cdot (x, y) = (x+r, y)$
+
+	\item $\RR^2$ agit par translation sur $\RR^2$\\
+	$\forall (\alpha, \beta) \in \RR^2, \ \forall (x, y) \in \RR^2, \ (\alpha, \beta) \cdot (x, y) = (\alpha + x, \beta + y)$
+
+	\item Si $G$ et un groupe et $X = G$, alors on a l'opération de $G$ sur lui-même:\\
+	\begin{enumerate}	
+		\item par translation à gauche:
+		$$
+	\begin{aligned}
+		\cdot : G \times G &\to G\\
+		(g, x) &\mapsto g \cdot x
+	\end{aligned}
+		$$
+
+		\item par conjugaison:
+		$$
+	\begin{aligned}
+		\cdot : G \times G &\to G\\
+		(g, x) &\mapsto g \cdot x \cdot g^{-1}
+	\end{aligned}
+		$$
+	\end{enumerate}
+
+	\item L'action triviale de $G$ sur $X$ est donnée par :\\
+	$g \cdot x = x, \ \forall g \in G, \forall x \in X$
+\end{itemize}
+\end{ex}
+
+\begin{prop}
+	Soit $G$, un groupe et $X$, un ensemble.\\
+	Il y a une correspondance bijective et naturelle entre les actions (à gauche) de $G$ sur $X$ et les morphisme de $G$ vers $Bij (X)$.
+\end{prop}
+
+\begin{proof}
+\begin{itemize}
+	\item Soit $\diamond$, une action de $G$ sur $X$.\\
+	$\forall g \in G$, on considère l'application 
+		$$
+	\begin{aligned}
+		\sigma_g : X &\to X\\
+		x &\mapsto g \diamond x
+	\end{aligned}
+		$$
+	\'Etant donné que :
+	$$
+\begin{aligned}
+	g^{-1} \diamond (g \diamond x) &= (g^{-1}g) \diamond x \\
+	&= x\\
+	&= (gg^{-1}) \diamond x\\
+	&= g \diamond (g^{-1} \diamond x)
+\end{aligned}
+	$$
+	On a :
+	$$\sigma_{g^{-1}} \circ \sigma_g = Id_X = \sigma_g \circ \sigma_{g^{-1}}$$
+
+	Donc $\sigma_g \in Bij(X)$\\
+	De plus, étant donné que $g_1 \diamond (g_2 \diamond x) = (g_1g_2) \diamond x$, \\
+	on a $\sigma_{g_1} \circ \sigma_{g_2} = \sigma_{g_1g_2}$\\
+
+	Donc l'application :
+		$$
+	\begin{aligned}
+		\sigma_\diamond : G &\to Bij(X)\\
+		g &\mapsto \sigma_g
+	\end{aligned}
+		$$
+	est un morphisme.
+
+
+	\item Soit $\Psi : G \to Bij(X)$, un morphisme.\\
+	On obtient l'action $\diamond_\Psi$ de $G$ sur $X$ pour $g \diamond_\Psi x = \Psi(g)(x)$
+	On vérifie que c'est une action de groupe.\\
+	La correspondance bijective vient de $\Psi_{\diamond_\Psi} = \Psi$ et $\diamond_{\Psi_\diamond} = \diamond$
+\end{itemize}
+\end{proof}
+
+\begin{defi}
+	Soit $G$ opérant sur $X$ et $x \in X$.\\
+	L'orbite de $x$ sous $G$ est :
+	$$Orb(x) = \{g \cdot x \ | \ g \in G\} \subset X$$
+\end{defi}
+
+\begin{prop}
+	Soit $G$ opérant sur $X$.\\
+	Soit $\sim$, la relation sur $X$ définie par 
+	$$x \sim y \Leftrightarrow x \in Orb(y)$$
+	Alors $\sim$ est une relation d'équivalence sur $X$ dont les classes d'équivalences sont les orbites.
+\end{prop}
+
+\begin{corrol}
+	Les orbites des éléments de $X$ sous l'action de $G$ forment une partition de $X$.\\
+	On note $G \backslash X$ %(###  à reprendre notation d'un quotient à l'envers)
+	l'ensemble quotient $X / \sim$
+\end{corrol}
+
+\begin{proof}
+	On montre que $\sim$ est une relation d'équivalence:\\
+\begin{itemize}	
+	\item Réflexivité: $\forall x \in X, \ e \cdot x = x$, par conséquent, $x \in Orb(x)$ et $x \sim x$.
+	\item Symétrie: Supposons $x \sim y$, \textit{i.e.} $\exists g \in G \ / \ x = g \cdot y \Leftrightarrow x \in Orb(y)$\\
+	Donc $g^{-1} \cdot x = g^{-1} \cdot (g \cdot y)^{-1} = (g^{-1}g) \cdot y = e \cdot y = y$\\
+	par conséquent, $y = Orb(x)$\\
+	Ainsi $y \sim x$
+	\item transitivité: Supposons $x \sim y$ et $y \sim z$, \textit{i.e.} $\exists g, h \in G \ / \ x = g \cdot y \ \text{et} \ y = h \cdot z$\\
+	Donc $x = g \cdot y = g \cdot (h \cdot z) = (gh) \cdot z$\\
+	par conséquent, $x \in Orb(z)$,\\
+	ainsi, $x \sim z$
+\end{itemize}
+	La classé d'équivalence d'un $z \in X$ est $Orb(z)$
+\end{proof}
+
+\begin{ex}
+\begin{itemize}	
+	\item Les orbites pour $\ZZ/3\ZZ$ opérant sur $\CC$ par rotation :
+	$$Orb(z) = \{z, e^{\frac{2\pi}{3}}z, e^{\frac{4\pi}{3}}z\}$$
+	Comporte $3$ éléments si $z \neq 0$\\
+	Sinon (pour $z = 0$), $Orb(0) = \{0\}$
+
+	\item Pour $\RR$ opérant sur $\RR^2$,\\
+	$$r \cdot (x,y) \to (x + r , y)$$
+	$$Orb((x,y)) = \{r \cdot (x,y) \ | \ r \in \RR\} = \{(x + r, y) \ | \ r \in \RR\} = \{(\lambda, y) \ | \ \lambda \in \RR\}$$
+	Ce qui correspond aux droites horizontales passant par $(0, y)$
+\begin{center}	
+	\def\svgwidth{0.3\textwidth}
+	\input{fig52stralg.pdf_tex}
+\end{center}
+
+	\item $\RR^2$ opérant par translation sur $\RR^2$, \textit{i.e.} $\exists (\alpha, \beta), (x, y) \in \RR^2$
+	$$Orb(x,y) = \{(\alpha + x , \beta + y) \ | \ (\alpha, \beta) \in \RR^2\} = \{(s,t) \ | \ (s,t) \in \RR^2\} = \RR^2$$
+	On a donc qu'une seule orbite
+
+	\item $G$ opérant par translation sur $G$ tel que $g \cdot x$
+	$$Orb(e) = \{g \cdot e \ | \ g \in G\} = \{ g | g \in G\} = G$$
+	Donc, $\forall h \in G, \ Orb(h) = Orb(e) = G$.\\
+	Il n'y a donc qu'une seule orbite.
+\end{itemize}
+\end{ex}
+
+\begin{defi}
+	L'action $G$ opérant sur $X$ est transitive s'il existe exactement une orbite dans $X$.
+\end{defi}
+
+\begin{defi}	
+	Soit $G$ opérant sur $X$, une action de groupe.\\
+\begin{itemize}	
+	\item \emph{Le stabilisateur de $x \in X$ dans $G$} est le sous groupe
+	$$Stab(x) = \{g \in G \ | \ g \cdot x = x\} \subset G$$
+
+	\item \emph{Les points fixés par $g \in G$} sont définis par :
+	$$Fig(g) = \{x \in X \ | \ g \cdot x = x\}$$
+
+	\item $x \in X$ est un \emph{point fixe} sous l'action de $G$ si $\forall g \in G, \ g \cdot x = x (\Leftrightarrow Stab(x) = G \Leftrightarrow Orb(x) = \{x\})$
+\end{itemize}
+\end{defi}
+
+\begin{prop}
+	Soit $G$ opérant sur $X$, une action de groupe.\\
+	Si $x$ et $y$ sont dans la même orbite, \textit{i.e.} $Orb(x) = Orb(y)$, 
+	alors $Stab(x)$ et $Stab(y)$ sont conjugués.
+\end{prop}
+
+\begin{proof}
+	Supposons $y=g \cdot x$.
+	Alors 
+	$$g^{-1} \cdot y = g^{-1} \cdot (g \cdot x) = (g^{-1}g) \cdot x = e \cdot x = x$$
+	On va montrer que $g Stab(x) g^{-1} = Stab(y)$.\\
+\begin{itemize}	
+	\item Soit $h \in Stab(x)$, \textit{i.e.} $ghg^{-1} \in g Stab(x) g^{-1}$\\
+	On souhaite montrer que $ghg^{-1} \in Stab(y)$
+	$$(ghg^{-1}) \cdot y = g \cdot (h \cdot (g^{-1} \cdot y)) = g \cdot (h \cdot x) = g \cdot x = y$$
+	Donc $ghg^{-1} \in Stab(y)$ et donc $g Stab(y) g^{-1} \subseteq Stab(y)$
+
+	\item L'argument précédent, en échangeant $x$ par $y$ et $g$ par $g^{-1}$, nous donne:\\
+	$$g^{-1} Stab(y) g \subseteq Stab(x)$$
+	$$Stab(y) \subseteq g Stab(x) g^{-1}$$
+\end{itemize}
+\end{proof}
+
+\begin{theo}
+	Soit $G$ opérant sur $X$ une action de groupe.\\
+	Soit, de plus, $x \in X$.\\
+	Il y a une bijection entre $Orb(x)$ et $G/Stab(x)$ (les classes d'équivalence à gauche de $Stab(x)$).
+	En particulier, si $Orb(x)$ est fini, alors $Stab(x)$ est d'indice fini dans $G$ et $|Orb(x)| = [G \cdot Stab(x)]$
+\end{theo}
+
+\begin{proof}
+	On veut définir la fonction:
+	$$
+\begin{aligned}
+	f : \phantom{...} Orb(x) &\to G/Stab(x) = \{g Stab(x) \ | \ g \in G\}
+	g \cdot x &\mapsto g Stab(x)
+\end{aligned}
+	$$
+\begin{itemize}	
+	\item
+	$f$ est en effet une fonction.\\
+	Soient $g,h \in G$\\
+	$$
+\begin{aligned}
+	g \cdot x = h \cdot x &\Leftrightarrow h^{-1} \cdot (g \cdot x) = h^{-1} \cdot (h \cdot x)\\
+	&\Leftrightarrow (h^{-1} \cdot g) \cdot x = (h^{-1} \cdot h) \cdot x\\
+	&\Leftrightarrow (h^{-1} \cdot g) \cdot x = x\\
+	&\Leftrightarrow h^{-1} \cdot g \in Stab(x)\\
+	&\Leftrightarrow \exists s \in Stab(x), \ h^{-1}g = s \ \text{autrement dit} \ g = hs\\
+	&\Leftrightarrow g Stab(x) = h Stab(x)
+\end{aligned}
+	$$
+
+	\item $f$ est injective car $g Stab(x) = h Stab(x) \Rightarrow gx = hx$
+
+	\item $f$ est surjective car $\forall g Stab(x) \in G / Stab(x), \ f(g \cdot x) = g Stab(x)$
+\end{itemize}
+\end{proof}
+
+\begin{corrol}{Formule de classes}
+	Si $G$ est un groupe fini, alors 
+	$$\forall x \in X, \ |G| = |Stab(x)| \cdot |Orb(x)|$$
+\end{corrol}
+
+\begin{proof}
+	Si $G$ est fini, alors $Orb(x)$ est fini et 
+	$$|orb(x)| = [G : Stab(x)] = \frac{|G|}{|Stab(x)|}$$
+\end{proof}
+
+\end{document}

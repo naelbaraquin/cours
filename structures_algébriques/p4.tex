@@ -1,0 +1,50 @@
+\documentclass[../main.tex]{subfile}
+
+%cours du 3 octobre
+
+\begin{document}
+\begin{theo}{de Lagrange}
+	Soit $G$, un groupe d'ordre fini et $H < G$, \\
+	alors $|H|$ divise $|G|$.\\
+	En particulier, $\forall g \in G$, $|g| = |<g>|$ divise $|G|$
+\end{theo}
+
+\begin{corrol}
+	Tout groupe d'ordre premier $p$ est isomorphe à $\ZZ/p\ZZ$.
+\end{corrol}
+
+\begin{proof}
+	Soit $G$ tel que $|G| = \emptyset$\\
+	Soit $g \in G$, $g \neq e$.\\
+	On a l'ordre de $|G| = p$ (donné par le théorème de Lagrange)\\
+	Donc $|g|$ vaut $1$ ou $p$.\\
+	\'Etant donné que $g \neq e$, on a $|g| = p$\\
+	Donc $|<g>| = p$. On a $<g> < G$ et $|G| = p$\\
+	Donc $<g> = G$\\
+	Donc $G$ est cyclique d'ordre $p$\\
+	Donc $G \cong \ZZ/p\ZZ$
+\end{proof}
+
+\begin{theo}{Identité de Bézout}
+	Soient $m, n \in \ZZ$, tels que $PGCD(m,n) = k$\\
+	Alors, $\exists u, v \in \ZZ$, tels que $mu + nv = k$
+\end{theo}
+
+\begin{proof}
+	$|x| = m$, $|y| = n$, $PGCD(m,n) = 1$\\
+	$mu + nv = 1$\\
+	$$
+\begin{aligned}
+	(xy)^{nv} &= x^{nv}y^{nv}\\
+	&= x^{nv}(y^n)^v\\
+	&= x^{nv}e\\
+	&= x^{nv}\\
+	&= x^{1 - mu}\\
+	&= x(x^m)^{-u}\\
+	&= x
+\end{aligned}
+	$$
+\end{proof}
+
+
+\end{document}

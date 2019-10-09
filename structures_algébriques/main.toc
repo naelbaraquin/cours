@@ -1,7 +1,2 @@
 \babel@toc {french}{}
-\contentsline {section}{\numberline {1}informations utiles}{2}% 
-\contentsline {part}{I\hspace {1em}Th\IeC {\'e}ories des groupes}{2}% 
-\contentsline {section}{\numberline {2}Les sous-groupes}{5}% 
-\contentsline {section}{\numberline {3}Sous-groupe engendr\IeC {\'e}}{6}% 
-\contentsline {subsection}{\numberline {3.1}Produit de groupes}{7}% 
-\contentsline {subsection}{\numberline {3.2}Morphismes}{7}% 
+\contentsline {section}{\numberline {1}Groupe op\IeC {\'e}rant sur un ensemble (action de groupe)}{2}% 
