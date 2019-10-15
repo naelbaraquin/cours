@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  1 OCT 2019 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.4)  11 OCT 2019 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -55,11 +55,6 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \c@tracingmulticols=\count91
-
-
-Package multicol Warning: May not work with the twocolumn option on input line 
-141.
-
 \mult@box=\box27
 \multicol@leftmargin=\dimen111
 \c@unbalance=\count92
@@ -105,7 +100,8 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \mult@nat@firstbox=\box51
 \colbreak@box=\box52
 \mc@col@check@num=\count99
-) (/usr/share/texmf-dist/tex/latex/comment/comment.sty
+)
+(/usr/share/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment') (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
@@ -1000,31 +996,31 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: landscape 
-* h-part:(L,W,R)=(126.75832pt, 591.5302pt, 126.75833pt)
-* v-part:(T,H,B)=(71.70166pt, 418.25368pt, 107.55254pt)
-* \paperwidth=845.04684pt
-* \paperheight=597.50787pt
-* \textwidth=591.5302pt
-* \textheight=418.25368pt
-* \oddsidemargin=54.48833pt
-* \evensidemargin=54.48833pt
-* \topmargin=-37.56833pt
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=4.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -1152,7 +1148,9 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- (./p1.tex
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./p1.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 7.
 
@@ -1161,46 +1159,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 24--24
-[]\T1/futs/b/n/14.4 Quelques rap-pels et com-plé-ments sur les
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/futs/m/n/10 On dit que la suite $(\FML/futmi/m/it/10 u[]\T1/futs/m/n/10 )[]
-$ est une suite de Cau-chy si
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 38--41
-\T1/futs/m/n/10 Cependant, $(\FML/futmi/m/it/10 v[]\T1/futs/m/n/10 )[]$ est plu
-s ra-pide que $(\FML/futmi/m/it/10 u[]\T1/futs/m/n/10 )[]$. Les équi-va-lents
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
- []
-
-
-Underfull \hbox (badness 1430) in paragraph at lines 43--45
-\T1/futs/b/n/10 Définition 1. \T1/futs/m/it/10 Deux suites $\T1/futs/m/n/10 (\F
-ML/futmi/m/it/10 u[]\T1/futs/m/n/10 )[]$ \T1/futs/m/it/10 et $\T1/futs/m/n/10 (
-\FML/futmi/m/it/10 v[]\T1/futs/m/n/10 )[]$ \T1/futs/m/it/10 sont équi-va-lentes
- si
  []
 
 
@@ -1218,7 +1188,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
@@ -1238,7 +1208,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[2]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 142--146
 
  []
@@ -1248,16 +1218,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--160
-\T1/futs/m/n/10 Si $[][] \FML/futmi/m/it/10 f\T1/futs/m/n/10 (\FML/futmi/m/it/1
-0 t\T1/futs/m/n/10 )\FML/futmi/m/it/10 dt$ \T1/futs/m/n/10 converge, alors, $[]
- [][] \FML/futmi/m/it/10 f\T1/futs/m/n/10 (\FML/futmi/m/it/10 t\T1/futs/m/n/10 
-)\FML/futmi/m/it/10 dt \FMS/futm/m/n/10 2 \U/futm/m/n/10 R$ \T1/futs/m/n/10 et 
-donc
- []
-
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 164--167
 
  []
@@ -1267,12 +1228,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
@@ -1287,7 +1248,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
-[4]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 293--295
 
  []
@@ -1302,12 +1263,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 338--341
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
@@ -1317,48 +1278,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 377--379
 
  []
 
-
-Overfull \hbox (205.50984pt too wide) detected at line 409
-[] \FMS/futm/m/n/10 ^^T [] € \T1/futs/m/n/10 1 \FMS/futm/m/n/10 ^^T \FML/futmi/
-m/it/10 frac[][] \FMS/futm/m/n/10 € \T1/futs/m/n/10 1 \FMS/futm/m/n/10 ^^T \FML
-/futmi/m/it/10 frac[][] \FMS/futm/m/n/10 € \T1/futs/m/n/10 1 \FMS/futm/m/n/10 ^
-^T \FML/futmi/m/it/10 frac\T1/futs/m/n/10 2[] \FMS/futm/m/n/10 € \T1/futs/m/n/1
-0 1
- []
-
-
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 415--417
 
  []
 
-[6]) (./p2.tex) 
+) [9] (./p2.tex) 
 AED: lastpage setting LastPage
-[7
-
-] (./main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
  18676 strings out of 492623
  319948 string characters out of 6135670
- 471583 words of memory out of 5000000
+ 467502 words of memory out of 5000000
  22317 multiletter control sequences out of 15000+600000
  620833 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,9n,63p,292b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/fourier/fourier-bb.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/fourier/fourier-mex.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fou
-rier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb>
-</usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-di
-st/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe
-/utopia/putri8a.pfb>
-Output written on main.pdf (7 pages, 87692 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/te
+xmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texmf-dist/fonts
+/type1/public/fourier/fourier-mex.pfb></usr/share/texmf-dist/fonts/type1/public
+/fourier/fourier-mlit.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fou
+rier-ms.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/sh
+are/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts
+/type1/adobe/utopia/putri8a.pfb>
+Output written on main.pdf (9 pages, 88801 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
