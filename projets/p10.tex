@@ -1,0 +1,70 @@
+\documentclass[../main.tex]{subfile}
+
+%page x
+
+\begin{document}
+\part{Diagonalisation}
+
+%###
+
+\begin{theo}
+	Soit $f \in \LLL(E)$, \\
+	$f$ est diagonalisable si :
+\begin{itemize}	
+	\item $\khi_f$ est scindé
+	\item pour toute valeur propre $\lambda$, la dimension de $E_\lambda(f)$ est la multiplicité de $\lambda$ dans $khi_f$.
+\end{itemize}
+\end{theo}
+
+\begin{rap}
+	Soit $P \in \KK[X]$, \\
+	$P$ est scindé si
+	$$\exists a_1, ..., a_n \in \KK \ \text{et } \ \exists \alpha_1, ..., \alpha_n \in \NN^*, \ / \ P = k \prod\limits_{i=1}^n (X-a_i)^{\alpha_i}$$
+	avec $k$, une constante
+\end{rap}
+
+
+%###un exemple 
+\begin{proof}
+	Si $f$ est diagonalisable, on a 
+	$$\exists \BBB \ / \ A = Mat_\BBB(f) = 
+\begin{bmatrix}
+	\lambda & 0 & ... & 0\\
+	0 & \lambda & ... & 0\\
+	... \\
+	0 & 0 & ... & \lambda
+\end{bmatrix}
+	$$
+
+	Alors $\Khi_f = \Prod(X - \lambda_i)^{\alpha_i}$, avec $\alpha_i$, la multiplicité
+	%###
+
+\begin{lemme}
+	Les sous espaces vectoriels propres sont en somme directe.
+\end{lemme}
+
+\begin{proof}
+	Pour tout $i$, soit $x_i \in E_{\lambda_i}$\\
+	on suppose $x_1 + x_2 + ... + x_n = 0$\\
+	on applique $f$, ainsi:
+	$$\lambda_1x_1 + \lambda_2x_2 + ... + \lambla_nx_n = 0$$
+	$$(\lambda_1 - \lambda_n)x_1 + (\lambda_2 - \lambda_n)x_2 + ... + (\lambla_n - \lambda_n)x_n = 0$$
+\end{proof}
+%###fin de la preuve du théorème 
+\end{proof}
+
+%si le polynome carac possède des racines...
+
+\begin{rema}
+	En particulier, pour diagonaliser, on trouve une base pour chaque sous espace propre avant de réunir les bases.
+\end{rema}
+
+\begin{prop}
+	Pour tout $i$, $1 \leq dim E_{\lambda_i}(f) \leq \alpha_i$\\
+	($\apha_i$ étant la multiplicité de $\lambda_i$ dans $\Khi_f$)
+\end{prop}
+
+\begin{proof}
+	%### à refaire
+\end{proof}
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[../main.tex]{subfile}
+
+%page x
+
+\begin{document}
+\part{Applications linéaires}
+\section{Définitions et exemples}
+\begin{defi}
+	Soient $E$ et $E'$, deux $\KK$ espaces vectoriels.\\
+	$f: E \to E'$ est linéaire si :
+	$$\forall u, v \in E, \ \forall \lambda, \mu \in \KK, \ f(\lambda u + \mu v) = \lambda f(u) + \mu f(v)$$
+\end{defi}
+
+\begin{rema}
+	Dans ce cas, on a forcement $f(0) = 0$.
+\end{rema}
+
+\begin{vocab}
+\begin{itemize}	
+	\item Si $E = E'$, $f$ est un endomorphisme.
+	\item Si $f$ est bijective, $f$ est un isomorphisme.
+\end{itemize}
+\end{vocab}
+
+\begin{rema}
+	Si $f : E \to E'$, linéaire, est bijective, \\
+	$f^{-1} : E' \to E$, est aussi linéaire
+\end{rema}
+
+\begin{ex}
+	%reprendre les exemples
+\end{ex}
+
+\section{Image, noyau et image d'une famille de vecteurs}
+\begin{nota}
+	$\LLL(E, E') = \{f: E \to E', \ f \text{ linéaire}\}$ est un $\KK$ espace vectoriel.
+\end{nota}
+
+\begin{defi}
+	Soit $f \in \LLL(E, E')$\\
+\begin{itemize}	
+	\item $f(E)$ est un sous espace vectoriel de $E'$, noté $Im \ f$, prononcé image de $f$.
+	\item $\{x \in E \ / \ f(x) = 0\}$ est un sous espace vectoriel de $E$, noté $Ker \ f$, prononcé noyau de $f$.
+	\item on note $rg(f) = dim \ Im \ f$ (pour une dimension finie)
+\end{itemize}
+\end{defi}
+
+\begin{proof}
+	Soient $u', v' \in f(E)$ et $\lambda, \mu \in \KK$.\\
+	Montrons que $\lambda u' + \mu v' \in E$
+	%###finir la démo
+\end{proof}
+
+\begin{rema}
+	Si $E = vect(e_1, ..., e_n)$, 
+	alors $f(E) = vect(f(e_1), ..., f(e_n))$\\
+	Donc $rg(f) = rg(f(e_1), ..., f(e_n))$
+\end{rema}
+
+\begin{prop}
+	$f: E \to E$ est injective si et seulement si $Ker \ f = \{0\}$\\
+\end{prop}
+
+\begin{rap}
+	$f : E \to E'$ est injective si et seulement si $\forall u, v \in E, \ f(u) = f(v) \Rightarrow u = v$\\
+	Dont la contraposée est $\forall u, v \in E, \ u \neq v \Rightarrow f(u) \neq f(v)$
+\end{rap}
+
+\begin{proof}
+	Si $f$ est injective , %### à finir
+\end{proof}
+
+\begin{prop}
+	Caractérisation d'une application linéaire par l'image d'une base.\\
+	Soit $(e_1, ..., e_n)$, une base de $E$, soient $b_1, ..., b_n \in E'$\\
+	$$\exists! f \in \LLL(E, E') , \ \forall i, \ f(e_i) = b_i$$
+	Par ailleurs :
+\begin{enumerate}	
+	\item $(b_1, ..., b_n)$ est libre si et seulement si $f$ est injective
+	\item $(b_1, ..., b_n)$ est génératrice si et seulement si $f$ est surjective
+	\item $(b_1, ..., b_n)$ est une base si et seulement si $f$ est un isomorphisme
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+	Analyse:\\
+	Supposons que $f$ existe:\\
+	%### à finir
+\end{proof}
+\end{document}

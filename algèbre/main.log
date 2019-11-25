@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.2)  5 NOV 2019 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.2)  13 NOV 2019 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,8 +718,7 @@ Type  H <return>  for immediate help.
                                                   
 l.201 ...athopen}{symbols}{153}{largesymbols}{133}
                                                   
-? q
-OK, entering \batchmode...
+? 
 
 ! LaTeX Error: Command `\rrbracket' already defined.
 
@@ -729,10 +728,7 @@ Type  H <return>  for immediate help.
                                                   
 l.202 ...thclose}{symbols}{154}{largesymbols}{134}
                                                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 210.
 LaTeX Font Info:    Redeclaring math delimiter \vert on input line 215.
 LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 217.
@@ -764,6 +760,7 @@ LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 
+
 LaTeX Warning: Command \underbar  has changed.
                Check if current package is valid.
 
@@ -774,7 +771,8 @@ LaTeX Warning: Command \underline  has changed.
 ) (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (/usr/share/texmf-dist/tex/latex/tools/array.sty
+)
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen165
 \ar@mcellbox=\box51
@@ -783,15 +781,18 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \extratabsurround=\skip71
 \backup@length=\skip72
 \ar@cellbox=\box52
-) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+)
+(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip73
 \multirow@cntb=\count274
 \multirow@dima=\skip74
 \bigstrutjot=\dimen167
-) (/usr/share/texmf-dist/tex/latex/tabu/tabu.sty
+)
+(/usr/share/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
- (/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box53
 \sift@deathcycles=\count275
@@ -820,13 +821,17 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@hleads=\box56
 \tabu@vleads=\box57
 \tabu@cellskip=\skip75
-) (/usr/share/texmf-dist/tex/latex/subfiles/subfiles.sty
+)
+(/usr/share/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2019/10/25 v1.4 Multi-file projects (package)
-) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
@@ -836,18 +841,22 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 )
 \Gin@req@height=\dimen179
 \Gin@req@width=\dimen180
-) (/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+)
+(/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen181
 \WF@size=\dimen182
 \c@WF@wrappedlines=\count282
 \WF@box=\box58
 \WF@everypar=\toks34
 Package: wrapfig 2003/01/31  v 3.6
-) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+)
+(/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2019/09/01 v1.3a Sub-captions (AR)
- (/usr/share/texmf-dist/tex/latex/caption/caption.sty
+
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2019/09/01 v3.3d Customizing captions (AR)
- (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen183
@@ -864,9 +873,11 @@ Package caption Info: wrapfig package is loaded.
 )
 \c@subfigure=\count285
 \c@subtable=\count286
-) (/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+)
+(/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+)
+(/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2019/10/08 v1.6180339 publication quality tables
 \heavyrulewidth=\dimen190
 \lightrulewidth=\dimen191
@@ -912,34 +923,39 @@ LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 48.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
 48.
- (/usr/share/texmf-dist/tex/latex/fourier/fmlfutm.fd
+
+(/usr/share/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
 48.
- (/usr/share/texmf-dist/tex/latex/fourier/fmsfutm.fd
+
+(/usr/share/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
 48.
- (/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
+
+(/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
 8.
- (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Trying to load font information for T1+futs on input line 4
 8.
- (/usr/share/texmf-dist/tex/latex/fourier/t1futs.fd
+
+(/usr/share/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -955,20 +971,22 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 \MPnumerator=\count303
 \makeMPintoPDFobject=\count304
 \everyMPtoPDFconversion=\toks36
-)
-(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
- (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
@@ -984,7 +1002,8 @@ Package ifluatex Info: LuaTeX not detected.
 (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
- (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -1015,7 +1034,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  50.
- (/usr/share/texmf-dist/tex/latex/fourier/fmlfutmi.fd
+
+(/usr/share/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1026,17 +1046,20 @@ LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 50.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
 
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
 
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
 0.
- (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+
+(/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 11.03998pt on input line 50.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
@@ -1086,7 +1109,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
- [4]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
@@ -1103,17 +1126,17 @@ Overfull \hbox (6.91003pt too wide) in paragraph at lines 177--183
 o-lu-tions (Seule-
  []
 
- [5]) [6] (./p2.tex
+[5]) [6] (./p2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
- [7]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
- [8]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
  []
@@ -1123,7 +1146,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--215
 
  []
 
- [9]
+[9]
 Overfull \hbox (11.14911pt too wide) in paragraph at lines 250--251
 []\T1/futs/b/n/10 Définition 7. []\T1/futs/m/it/10 Une com-bi-nai-son li-néaire
  de $\FML/futmi/m/it/10 v[]; :::; v[]$ \T1/futs/m/it/10 est un élé-ment de la f
@@ -1148,7 +1171,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--278
 
  []
 
- [10] (./fig21.pdf_tex
+[10] (./fig21.pdf_tex
 <fig21.pdf, id=42, page=1, 451.96707pt x 181.37396pt>
 File: fig21.pdf Graphic file (type pdf)
 <use fig21.pdf, page 1>
@@ -1191,7 +1214,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
- [11 <./fig21.pdf> <./fig22.pdf
+[11 <./fig21.pdf> <./fig22.pdf
 
 pdfTeX warning: pdflatex (file ./fig22.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
@@ -1232,7 +1255,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
- [12]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
@@ -1242,7 +1265,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
- [13]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
@@ -1252,7 +1275,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
- [14]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
  []
@@ -1267,12 +1290,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
- [15]) (./p4.tex
+[15]) (./p4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
- [16]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -1292,7 +1315,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
- [17]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
@@ -1312,7 +1335,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--109
 
  []
 
- [19]) (./p8.tex
+[19]) (./p8.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
@@ -1322,7 +1345,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
- [20]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
@@ -1332,9 +1355,48 @@ Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 59.
 
- [21]) 
+[21]) (./p10.tex
+! Undefined control sequence.
+<recently read> \khi 
+                     
+l.14 	\item $\khi
+                 _f$ est scindÃ©
+? 
+! Undefined control sequence.
+<recently read> \Khi 
+                     
+l.39 	Alors $\Khi
+                 _f = \Prod(X - \lambda_i)^{\alpha_i}$, avec $\alpha_i$, la ...
+
+? 
+! Undefined control sequence.
+l.39 	Alors $\Khi_f = \Prod
+                           (X - \lambda_i)^{\alpha_i}$, avec $\alpha_i$, la ...
+
+? 
+! Undefined control sequence.
+l.50 ...lambda_1x_1 + \lambda_2x_2 + ... + \lambla
+                                                  _nx_n = 0$$
+? 
+! Undefined control sequence.
+l.51 ...\lambda_2 - \lambda_n)x_2 + ... + (\lambla
+                                                  _n - \lambda_n)x_n = 0$$
+? 
+! Undefined control sequence.
+<recently read> \apha 
+                      
+l.64 	($\apha
+             _i$ Ã©tant la multiplicitÃ© de $\lambda_i$ dans $\Khi_f$)
+? 
+! Undefined control sequence.
+<recently read> \Khi 
+                     
+l.64 ...la multiplicitÃ© de $\lambda_i$ dans $\Khi
+                                                  _f$)
+? 
+[22]) 
 AED: lastpage setting LastPage
- [22] (./main.aux)
+[23] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
@@ -1344,10 +1406,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 19287 strings out of 492167
- 330750 string characters out of 6131558
+ 19293 strings out of 492167
+ 330779 string characters out of 6131558
  481358 words of memory out of 5000000
- 23367 multiletter control sequences out of 15000+600000
+ 23371 multiletter control sequences out of 15000+600000
  644427 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,14n,67p,271b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1359,10 +1421,10 @@ rier-mex.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><
 exmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf-dist/font
 s/type1/adobe/utopia/putb8a.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia
 /putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (22 pages, 132244 bytes).
+Output written on main.pdf (23 pages, 135655 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 122 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

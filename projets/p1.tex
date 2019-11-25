@@ -1,0 +1,228 @@
+\documentclass[../main.tex]{subfile}
+
+%page 1
+
+\begin{document}
+\part{Systèmes d'équations linéaires}
+
+Soit $\KK$, un corps.
+\begin{defi}
+	Un système d'équations linéaires à $n$ inconnues et $p$ équations est un système d'équations de la forme :
+	$$
+	(S)
+	\left\{
+	\begin{array}{l}
+		a_{1,1}x_1 + ... + a_{1,n}x_n = b_1\\
+		a_{2,1}x_1 + ... + a_{2,n}x_n = b_2\\
+		...\\
+		a_{p,1}x_1 + ... + a_{p,n}x_n = b_p
+	\end{array}
+	\right.
+	$$
+	avec avec $a_{i,j}$ et $b_i$ des éléments de $\KK$\\
+	et $x_j$ sont les inconnues.
+\end{defi}
+
+\begin{defi}
+	Une solution est le $n$-uplet $(x_1, ..., x_n)$ tel que $x_1, ..., x_p$ sont solutions de toutes les équations.
+\end{defi}
+
+\begin{defi}
+	Les $b_1, ..., b_p$ sont appelés seconds membres.
+\end{defi}
+
+\begin{rema}
+	\textit{a priori}, $n \neq p$\\
+	Les inconnues peuvent être notées différemment ($(x, y, z, t)$, $(\lambda_1, \lambda_2, ...)$)
+\end{rema}
+
+\begin{ex}
+	$$
+	(S)
+	\left\{
+	\begin{array}{l}
+		x + 2y = 1\\
+		2x + 5y = 2
+	\end{array}
+	\right.
+	$$
+	Dont l'unique solution est $(0, 1)$
+\end{ex}
+
+\begin{rema}
+	Résoudre un système consiste à trouver toutes les solutions ou à montrer qu'il n'y en a aucune.
+\end{rema}
+
+\section{Résolution}
+\subsection{\'Equivalence de systèmes}
+Pour résoudre, on se ramène à un système équivalent plus simple :
+$$
+(S) \Leftrightarrow (S') 
+	\left\{
+	\begin{array}{l}
+		a_{1,1}x_1 + ... + a_{1,n}x_n = b_1\\
+		a_{2,1}x_1 + ... + a_{2,n}x_n = b_2\\
+		...\\
+		a_{p,1}x_1 + ... + a_{p,n}x_n = b_p
+	\end{array}
+	\right.
+$$
+$(S) \Leftrightarrow (S')$ signifie que les deux systèmes ont les mêmes solutions.
+
+\subsection{Méthode du pivot de Gauss}
+On ne change pas les solutions en faisant une des trois opérations suivantes:
+\begin{itemize}
+	\item changer l'ordre des équations
+	\item multiplier une équation par un élément $\lambda \in \KK \backslash \{0\}$
+	\item Ajouter à une équation un multiple d'une autre
+\end{itemize}
+ou toute opération qui peut se décomposer en une série de telles opérations
+
+\begin{ex}
+$$
+\begin{aligned}
+	&(S)\left\{
+	\begin{array}{rclr}
+		x_1 + x_2 + 2x_3 - x_4 &=& 1 & L_1\\
+		2x_1 + 2x_2 + 3x_3 + x_4 &=& 2 & L_2\\
+		x_1 + x_2 + 4x_3 - 6x_4 &=& 2 & L_3\\
+	\end{array}
+	\right.\\
+	&\Leftrightarrow \left\{
+	\begin{array}{rclr}
+		x_1 + x_2 + 2x_3 - x_4 &=& 1 & L_1\\
+		- x_3 + 3x_4 &=& 0 & L_2 - 2L_1 \to L_2\\
+		2x_3 - 5x_4 &=& -1 & L_3 - L_1 \to L_3\\
+	\end{array}
+	\right.\\
+	&\Leftrightarrow \left\{
+	\begin{array}{rclr}
+		x_1 + x_2 + 2x_3 - x_4 &=& 1 & L_1\\
+		- x_3 + 3x_4 &=& 0 & L_2\\
+		x_4 &=& 1 & L_3 + 2L_2 \to L_3\\
+	\end{array}
+	\right.
+\end{aligned}
+$$
+\begin{rema}
+	Erreur possible:\\
+	$$
+	(S') \left\{
+	\begin{array}{rclr}
+		-2x_3 - 5x_4 &=& 1 & L_1 - L_3 \to L_1\\
+		- x_3 + 3x_4 &=& 2 & L_2\\
+		2x_3 - 5x_4 &=& 1 & L_3 - L_1 \to L_3\\
+	\end{array}
+	\right.\\
+	$$
+	Il n'y a pas ici d'équivalence avec le système précédent, juste une implication:\\
+	Il n'est ici pas possible de décomposer ces opération en une série d'opérations de Gauss 
+	(il n'est plus possible, après ces opération, de retrouver les lignes $L_1$ et $L_3$ d'origine)
+\end{rema}
+	
+\end{ex}
+
+Méthode du pivot de Gauss:\\
+\begin{enumerate}
+	\item
+\begin{itemize}
+	\item Si $a_{1,1} \neq 0$, on remplace, pour tout $i$ supérieur à $1$, $L_i$ par $L_i - \frac{a_{i, 1}L_1}{a_{1,1}}$ 
+	(ce qui correspond à l'annulation des coefficients devant $x_1$ dans les $L_i$)
+	\begin{nota}
+		$a_{1,1}$ est alors appelé le pivot
+	\end{nota}
+
+	\item Si $a_{1,1} = 0$, mais qu'il existe une autre ligne sur laquelle $a_{i,1} \neq 0$, 
+	alors on échange $L_1$ et $L_i$ et on est ramené au cas précédent.
+
+	\item Si, à toutes les lignes, $a_{i,1} = 0$, 
+	alors on prend $j_1$ le plus petit indice tel que $\exists i \ / \ q_{j_1} \neq 0$ et on reprend à l'étape précédente.
+\end{itemize}
+
+	\item Ensuite, on ne touche plus à la première équation et on résout le système en continuant l'algorithme sur les autres équations.
+
+	\item \`A la fin, on obtient un système dit échelonné, c'est-à-dire de la forme:\\
+	$$
+	\left\{
+	\begin{array}{rcl}
+		a'_{1, j_1}x_{j_1} + ... + a'_{1, n}x_n &=& b'_1\\
+		a'_{2, j_2}x_{j_2} + ... + a'_{2, n}x_n &=& b'_2\\
+		...\\
+		a'_{r, j_r}x_{j_r} &=& b'_r\\
+		...\\
+		0 &=& b'_{n-1}\\
+		0 &=& b'_n\\
+	\end{array}
+	\right.
+	$$
+	avec $1 \leq j_1 \leq j_2 \leq ... \leq j_r \leq n$\\
+\begin{rema}	
+	Les dernières équation dont le premier membre est nul peuvent apparaître 
+	si on élimine toutes les inconnues avant d'arriver à la dernière équation.
+\end{rema}
+	Plusieurs cas sont alors possibles:
+\begin{itemize}	
+	\item Si $r$ est différent de $n$, alors :
+\begin{itemize}	
+	\item Si $\exists i > n, \ b'_i \neq 0$, on est face à une contradiction, 
+	le système n'a donc pas de solutions.
+	\item Si $\forall i > n, \ b'_i = 0$, on peut retirer $b$, 
+	les équations sont inutiles.
+\end{itemize}
+	\item Si $r$ et $n$ sont égaux, alors :
+\begin{itemize}	
+	\item Si $(j_1, ..., j_n) = (1, ..., n)$, le système est dit de Cramer
+	\item Si pour tout second membre, il existe une unique solution, 
+	on réinjecte cette solution à partir de la dernière équation.
+	\item Si $(j_1, ..., j_n) \neq (1, ..., n)$, les $x_{j_1}, ..., x_{j_n}$ sont appelées les inconnues principales.
+	Les autres variables s'appellent les variables libres dans le second membre, 
+	et il reste un système de Cramer avec les inconnues $(x_{j_1}, ..., x_{j_n})$.\\
+	Donc, pour chaque valeurs prisent par les variables libres, on a une unique solution, 
+	le système admet alors une infinité de solutions (Seulement si $\KK$ est infini, sinon,
+	il y a $q^{n-r}$ solutions).
+\end{itemize}
+\end{itemize}
+\end{enumerate}
+
+\begin{ex}
+$$
+	(S) \left\{
+	\begin{array}{rcl}
+		x_1 + x_2 + 2x_3 - x_4 &=& 1 \\
+		- x_3 + 3x_4 &=& 0 \\
+		x_4 &=& 1 \\
+	\end{array}
+	\right.
+$$	
+	$x_1, x_2, x_3$ sont les inconnues principales\\
+	$j_1=1, j_2=3, j_3=4$\\
+	$x_2$ est la variable libre.
+$$
+\begin{aligned}
+	&(S) \left\{
+	\begin{array}{rcl}
+		x_1 + x_2 + 2x_3 - x_4 &=& 1 \\
+		- x_3 + 3x_4 &=& 0 \\
+		x_4 &=& 1 \\
+	\end{array}
+	\right.\\
+	&\Leftrightarrow \left\{
+	\begin{array}{rcl}
+		x_1 + 2x_3 - x_4 &=& 1 - x_2\\
+		- x_3 + 3x_4 &=& 0 \\
+		x_4 &=& 1 \\
+	\end{array}
+	\right.\\
+	&\Leftrightarrow \left\{
+	\begin{array}{rcl}
+		x_1 &=& 1 - x_2 - 6 + 1 = -4 - x_2\\
+		x_3 &=& 3 \\
+		x_4 &=& 1 \\
+	\end{array}
+	\right.
+\end{aligned}
+$$	
+	Les solutions de ce système sont donc les éléments de la forme 
+	$(-4 - \lambda, \lambda, 3, 1)$ avec $\lambda \in \KK$
+\end{ex}
+\end{document}

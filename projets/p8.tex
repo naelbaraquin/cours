@@ -1,0 +1,90 @@
+\documentclass[../main.tex]{subfile}
+
+%page x
+
+\begin{document}
+
+\begin{rap}
+	Soit $A$, une matrice, \\
+	on note $A_{ij}$, la matrice obtenue en ne considérant ni la $i$-ème ligne ni la $j$-ème colonne.\\
+	On a alors le cofacteur:\\
+	$$C_{ij}(A) = (-1)^{i+j} det(A_{ij})$$
+	La comatrice $Com(A)$ est alors la matrice des cofacteurs
+	$$Com(A) = \left[(-1)^{i+j} det(A_{ij})\right]$$
+\end{rap}
+
+\begin{prop}
+	$$A \cdot ^tcom A = ^tcom A \cdot A = det A \cdot I_n$$
+	ainsi, si le déterminant, $A^{-1}=\frac{1}{det A} (^tcom A)$
+\end{prop}
+\begin{rema}
+	cette formule est utile si $n = 2$, bof pour $n=3$ et à fuir si $n>3$\\
+	Mais elle possède un intérêt théorique.
+\end{rema}
+
+\begin{proof}
+	ne pas oublier la démo
+\end{proof}
+
+\section{Applications}
+\subsection{Systèmes linéaires}
+Dans un système de $n$ équations et $n$ inconnues pouvant être rapporté à une équation matricielle $AX=B$\\
+\begin{prop}
+	Il existe une unique solution si et seulement si $det A$ est non nul.
+\end{prop}
+
+Dans le cas où $det A \neq 0$, \\
+on a les formules de Cramer:
+$$x_i = \frac{1}{det A} det A_i$$
+où $A_i$ est la matrice obtenue en remplaçant la i-ème colonne de $A$ par $B$.\\
+
+\begin{proof}
+	Si $det A \neq 0$, $A$ est inversible donc $X = AB^{-1}$\\
+	Sinon :
+	$f: \KK^n \to \KK^n$...%###à finir
+\end{proof}
+
+\subsection{Endomorphisme}
+\begin{defi}
+	Soit $E$, un $\KK$ espace vectoriel de dimension $n$.\\
+	Soient de plus $f \in \LLL(E)$ et $\BBB$ une base de $E$.
+	Alors, $det(Mat(f)_\BBB)$ ne dépend pas du choix de $\BBB$, on l'appelle déterminant de $f$.
+\end{defi}
+
+\begin{proof}
+	$M = Mat (f)_\BBB$\\
+	$\BBB'$, une autre base\\
+	$M' = Mat(f)_\BBB'$\\
+	alors $M'=P^{-1}MP$ avec $P$ la matrice de passage de $\BBB$ à $\BBB'$.\\
+	or $detM' = det P^{-1} det M det P = det M$ ($det P^{-1} = 1 \over det P$)
+\end{proof}
+
+\begin{rema}
+	Un autre invariant de $f$ est la trace de $f$:
+	$$Tr(f) = Tr(Mat_\BBB f)$$
+	La trace ne dépend pas du choix de $\BBB$
+\end{rema}
+%###
+
+
+\subsection{Rang}
+\begin{defi}
+	Soit $A$, une matrice $A \subset M_{np}(\KK)$\\
+	Une mineur d'ordre $n$ de $A$ est le déterminant d'une sous matrice carrée de $A$ de taille $r$.\\
+	Un bordant d'un mineur $\delta$ d'ordre $r$ est un mineur d'ordre $r+1$ qui contient $\delta$. 
+\end{defi}
+
+\begin{ex}
+	%###
+\end{ex}
+
+\begin{theo}
+	Soit $A$, une matrice\\
+	alors 
+	$$rg A = r $$ si et seulement s'il existe $r \neq 0$ et tous les mineurs d'ordre $n+1$ sont nuls.\\
+	si et seulement s'il existe un mineur $\delta$ d'ordre $r$ non nul et tous les bordants de $\delta$ sont nuls
+\end{theo}
+
+exemples d'application
+%les reprendre correctement
+\end{document}

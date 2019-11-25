@@ -1,0 +1,395 @@
+\documentclass[../main.tex]{subfile}
+
+%page 2 (espaces vectoriels)
+
+\begin{document}
+\part{Chapitre 2 : Espaces vectoriels}
+Soit $\KK$, un corps ($\RR$, $\CC$, ou autre)
+
+\section{Notion d'espace vectoriel}
+\subsection{Définitions}
+\begin{defi}{(non formelle)}
+	Un $\KK$-espace vectoriel est un ensemble d'éléments appelés vecteurs 
+	tels qu'on puisse les additionner entre eux et les multiplier par des scalaires, 
+	c'est-à-dire des éléments de $\KK$ avec des relations naturelles de compatibilité.
+\end{defi}
+
+\begin{defi}
+	Un $\KK$-espace vectoriel est un ensemble $E$ muni de deux lois:\\
+\begin{itemize}
+	\item une loi de composition interne:
+	$$
+\begin{aligned}
+	+ : E \times E &\to E \\
+	(u,v) &\mapsto u + v
+\end{aligned}
+	$$
+
+	\item une loi de composition externe:
+	$$
+\begin{aligned}
+	\cdot : \KK \times E &\to E \\
+	(\lambda, u) &\mapsto \lambda \cdot v
+\end{aligned}
+	$$
+\end{itemize}
+	Ces lois vérifient:
+\begin{description}
+	\item[A1 :] $\forall u, v, w \in E, \ (u + v) + w = u + (v + w)$ \\
+	la loi $+$ est donc associative
+
+	\item[A2 :] : $\forall u, v \in E, \ u + v = v + u$\\
+	la loi $+$ est donc commutative
+
+	\item[A3 :] $\exists 0_E \in E, \ \forall u \in E, \ u + 0_E = 0_E + u = u$\\
+	la loi $+$ admet un élément neutre
+
+	\item[A4 :] $\forall u \in E, \ \exists v \in E, \ u+v = v+u = 0_E$\\
+	chaque élément de $E$ admet, par $+$, un inverse ou opposé
+
+	\item[B1 :] $\forall \lambda, \mu \in \KK, \ \forall u \in E, \ \lambda \cdot (\mu \cdot u) = (\lambda \cdot \mu) \cdot u$\\
+	la loi $\cdot$ est associative
+
+	\item[B2 :] $\forall \lambda, \mu \in \KK, \ \forall u \in E, \ (\lambda + \mu) \cdot u = \lambda \cdot u + \mu \cdot u$\\
+	la loi $\cdot$ est distributive à gauche
+
+	\item[B3 :] $\forall \lambda \in \KK, \ \forall u, v \in E, \ (u + v) \cdot \lambda = \lambda \cdot u + \lambda \cdot v $\\
+	la loi $\cdot$ est distributive à droite
+
+	\item[B4 :] $\forall u \in E, \ 1 \cdot u = u$\\
+	la loi $\cdot$ admet un élément neutre
+\end{description}
+\end{defi}
+
+\begin{rema}
+	Dans l'axiome A3, l'élément neutre est unique.\\
+	Dans l'axiome A4, le vecteur $v$ est en fait unique, on le note $-u$.
+\end{rema}
+
+\begin{prop}
+	On a également, $\forall u \in E, \ \forall \lambda \in \KK$:
+\begin{enumerate}
+	\item $\lambda \cdot 0_E = 0_E$
+	\item $0_{\KK} \cdot u = 0_E$
+	\item $\lambda \cdot u = 0_E \Rightarrow \lambda = 0_\KK \ \text{ou} \ u = 0_E$
+	\item $(-\lambda) \cdot u = \lambda \cdot (-u) = - (\lambda \cdot u)$
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$\phantom{a}$
+\begin{enumerate}
+	\item 
+$$
+\begin{aligned}
+	\lambda \cdot 0_E &= \lambda \cdot (0_E + 0_E)\\
+	&= \lambda \cdot 0_E + \lambda \cdot 0_E\\
+	&= \lambda \cdot 0_E + 0_E\\
+	\lambda \cdot 0_E = O_E
+\end{aligned}
+$$
+	\item 
+$$
+\begin{aligned}
+	0_\KK \cdot u &=   (0_\KK + 0_\KK) \cdot u\\
+	&= 0_\KK \cdot u + 0_\KK \cdot u\\
+	&= 0_\KK \cdot u + 0_\KK\\
+	0_\KK \cdot u = O_\KK
+\end{aligned}
+$$
+	\item Si $\lambda = 0_\KK$, cf. 2\\
+	Si $\lambda \neq 0$, alors $\lambda^{-1} \in \KK$,\\
+$$
+\begin{aligned}
+	0 &= \lambda^{-1} \cdot 0 \\
+	&= \lambda^{-1} (\lambda \cdot u) \\
+	&= (\lambda^{-1} \cdot \lambda) \cdot u \\
+	&= 1 \cdot u \\
+	&= u
+\end{aligned}$$
+
+\end{enumerate}
+\end{proof}
+
+\begin{nota}
+	On note souvent :
+\begin{itemize}
+	\item $0_E = 0$ et $0_\KK = 0$
+	\item $u - v = u + (-v)$
+\end{itemize}
+\end{nota}
+
+\begin{lemme}
+	$\forall u, v, w \in E, u + w = v + w \Rightarrow u = v$
+\end{lemme}
+
+\begin{proof}
+	$$
+\begin{aligned}
+	v &= (u + w) - w\\
+	&= u + (w - w)\\
+	&= u + 0_E\\
+	&= u
+\end{aligned}
+	$$
+	donc $v = u$
+\end{proof}
+
+\begin{rema}
+$\phantom{a}$
+\begin{itemize}
+	\item Pour $\lambda \in \KK$ et $u \in E$
+	$u \cdot \lambda$ ne veut rien dire.
+
+	\item Pour $u, v \in E$
+	$u \cdot v$ ne veut rien dire
+\end{itemize}
+\end{rema}
+
+\begin{ex}
+$\phantom{a}$\\
+	1/ Pour les lois de compositions internes et externes usuelles, 
+\begin{itemize}
+	\item $\KK$ est un $\KK$-espace vectoriel
+	\item $\KK^n$ est un $\KK$-espace vectoriel 
+	\item plus généralement, si $E_1$ et $E_2$ sont des $\KK$ espaces vectoriels, $E_1 \times E_2$ est un $\KK$-espace vectoriel.
+\end{itemize}
+	2/ Soit $E$, un $\KK$-espace vectoriel et $A$, un ensemble qualconque, 
+\begin{itemize}
+	\item $\mathcal{F}(A, E)$, l'ensemble des applications de $A$ dans $E$, est un $\KK$-espace vectoriel
+		$$
+		\forall f_1, f_2 \in \mathcal{F}(A, E), \ \forall \lambda \in \KK,
+		$$
+		$$
+		\begin{aligned}
+			f_1 + f_2 : A &\to E\\
+			a &\mapsto f_1(a) + f_2(a)
+		\end{aligned}
+		$$
+		$$
+		\begin{aligned}
+			\lambda \cdot f_1 : A &\to E\\
+			a &\mapsto \lambda \cdot f_1(a) 
+		\end{aligned}
+		$$
+	\item Si $\KK = \RR$ et $A = I \subset \RR$, un intervalle, on peut avoir $\mathcal{F}(I, \RR)$
+	\item Si $\KK = \RR$ et $A = \NN$, on a $\mathcal{F}(\NN, \RR)$, l'ensemble des suites numériques
+\end{itemize}
+	3/ $\KK[X]$, l'ensemble des polynômes\\
+	4/ $M_{n,p}(\KK)$, l'ensemble des matrices à coefficient dans $\KK$, à $n$ lignes et $p$ colonnes.
+\end{ex}
+
+\begin{rema}
+	$\RR^2$, munit de la loi $+$ usuelle et $\lambda \cdot (x_1, x_2) = (\lambda \cdot x_1, 0)$\\
+	n'est pas un $\KK$-espace vectoriel, pourquoi?
+\end{rema}
+
+\subsection{Sous-espace vectoriel}
+
+\begin{defi}
+	Soit $E$, un $\KK$-espace vectoriel, et $F \subset E$.\\
+	$F$ est un sous espace vectoriel de $E$ s'il s'agit d'un $\KK$-espace vectoriel pour les lois $+$ et $\cdot$ de $E$.
+\begin{itemize}
+	\item $\forall u, v \in F, \ u + v \in F$
+	\item $\forall \lambda \in \KK, \ \forall u \in F, \ \lambda \cdot u \in F$
+	\item $+$ et $\cdot$ vérifient les propriétés des lois de composition interne et externe des espaces vectoriels
+\end{itemize}
+\end{defi}
+
+\begin{propri}
+	$F$ est un sous-espace vectoriel de $E$ si:
+\begin{itemize}
+	\item $F \neq \emptyset$
+	\item $\forall u, v \in F, \ u+v \in F$
+	\item $\forall u \in F, \ \forall \lambda \in \KK, \ \lambda \cdot u \in F$
+\end{itemize}
+\end{propri}
+
+\begin{proof}
+	Pour montrer que les sous espaces vectoriels vérifient les axiomes A1 à B4:\\
+	La vérification des axiomes A1, A2, B1, B2, B3 et B4 est immédiate.\\
+	Pour A3:\\
+	$$\exists 0_F \subset F, \ \forall u \in F, \ u+0_F = 0_F + u = u$$
+	Il suffit alors de montrer que $0_E \in F$, \\
+	or, $F \neq \emptyset$, donc, $\exists u \in F, \ 0 \cdot u = 0_E \in F$\\
+
+	Pour A4:\\
+	Il suffit alors de montrer que $\forall u \in F, \ -u \in F$:\\
+	$-u = (-1) \cdot u$ où $-u \in F$ par hypothèse.
+\end{proof}
+
+\begin{rema}
+\begin{itemize}	
+	\item On a vu que $0_E \in F$
+	\item Les deux derniers points de la définition de sous-espace vectoriel sont équivalents à :
+	$$\forall u, v \in F, \ \forall \lambda, \mu \in \KK, \ \lambda u + \mu v \in F$$
+	ou encore à:
+	$$\forall u, v \in F, \ \forall \lambda \in \KK, \ \lambda u + v \in F$$
+\end{itemize}
+\end{rema}
+
+\begin{rema}
+	Dans la plupart des cas, pour montrer qu'un ensemble (avec les lois $+$, $\cdot$) est un espace vectoriel, on montre qu'il s'agit d'un sous-espace vectoriel d'un $\KK$-espace vectoriel connu.
+\end{rema}
+
+\begin{ex}
+\begin{itemize}	
+	\item $\{0\}$ et $E$ sont des sous-espace vectoriels de $E$.
+	\item $F = \mathcal{C}(I, \RR)$, l'ensemble des fonctions continues sur un intervalle $I$ de $\RR$.\\
+	$F$ est sous-espace vectoriel de $\mathcal{F}(I, \RR)$, l'ensemble des fonctions de $I$ sur $\RR$:\\
+	La fonction nulle est continue.\\
+	$\forall f, g \in \mathcal{C}(I, \RR), \ \forall \lambda, \mu \in \RR$, $\lambda f + \mu g$ est continue, donc $\lambda f + \mu g \in F$.
+	\item $E = \KK^n$ et $a_1, ..., a_n \in \KK$\\
+	$F = \{(x_1, ..., x_n) \ | \ a_1x_1 + ... + a_nx_n = 0\}$ est un sous-espace vectoriel de $E$.
+	\item $\KK[X]$, les suites de $\KK$ nulles à partir d'un certain rang, est un sous-espace vectoriel de l'ensemble des suites de $\KK$
+\end{itemize}
+\end{ex}
+
+\subsection{Sous espace engendré}
+\begin{defi}
+	Une combinaison linéaire de $v_1, ..., v_p$ est un élément de la forme $\sum\limits_{i=1}^p \lambda_i v_i = \lambda_1 v_1 + ... + \lambda_p v_p$ avec $\lambda_1, ..., \lambda_p \in \KK$.\\
+\end{defi}
+
+\begin{ex}
+	Dans $\KK[X]$, une combinaison linéaire est un polynôme.
+\end{ex}
+
+\begin{rema}
+	Une combinaison linéaire de $(v_i)_{i \in I}$ est une combinaison linéaire au sens précédent d'une sous famille finie.
+\end{rema}
+
+\begin{ex}
+	Dans $\KK[X] = \{1, X, X^2, ..., X^n, ...\}$, une combinaison linaire est un polynôme.
+\end{ex}
+
+\begin{defi}
+	Soient $v_1, ..., v_p \in E$\\
+	$vect(v_1, ..., v_p) = \{\text{combinaisons linéaires de $v_1, ..., v_p$}\} = \{\sum\limits_{i=1}^p \lambda_i v_i \ / \ \lambda_1, ..., \lambda_p \in \KK\}$
+\end{defi}
+
+\begin{prop}
+	$vect(v_1, ..., v_p)$ est un sous espace vectoriel de $E$.
+\end{prop}
+
+\begin{ex}
+	Cas particulier:\\
+	$p = 1$, $vect(v_1)$ est alors une droite vectorielle.\\
+	%fig 21
+\begin{center}	
+	\def\svgwidth{0.3\textwidth}
+	\input{fig21.pdf_tex}
+\end{center}
+	$p=2$, si $v_2$ n'appartient pas à $vect(v_1)$, alors $vect(v_1, v_2)$ est un plan vectoriel
+	%fig 22
+\begin{center}	
+	\def\svgwidth{0.3\textwidth}
+	\input{fig22.pdf_tex}
+\end{center}
+\end{ex}
+
+\begin{prop}
+	$vect(v_1, ..., v_p)$ est un sous espace vectoriel de $E$.
+\end{prop}
+
+\subsection{Intersections}
+\begin{prop}
+	Soient $F_1, F_2$ des sous-espaces vectoriels de $E$, 
+	alors, $F_1 \cap F_2$ est un sous espace vectoriel :
+	$$F_1 \cap F_2 = \{x \in E \ / \ x \in F_1 \ \text{ et } \ x \in F_2\}$$
+\end{prop}
+
+\begin{proof}
+\begin{itemize}	
+	\item $0 \in F_1$ et $0 \in F_2$, donc $0 \in F_1 \cap F_2$\\
+	l'intersection est donc non vide
+
+	\item Soient $u, v \in F_1 \cap F_2$ et $\lambda, \mu \in \KK$\\
+	On montre que $\lambda u + \mu v \in F_1 \cap F_2$\\
+	$\lambda u + \mu v \in F_1$ car $F_1$ est un sous espace vectoriel\\
+	$\lambda u + \mu v \in F_2$ car $F_2$ est un sous espace vectoriel\\
+%### manque la fin
+\end{itemize}
+\end{proof}
+
+application:\\
+L'ensemble des solutions d'un système d'équations linéaires homogène (sans second membre) à $n$ inconnues (et $p$ équations) est un sous espace vectoriel de $\KK^n$.\\
+
+\begin{proof}
+	Intersection des sous espaces vectoriels est solution de chaque équations
+\end{proof}
+
+\begin{rema}
+	Attention, \\
+\begin{itemize}	
+	\item En général, l'union de sous espaces vectoriels n'est pas un sous espaces vectoriels (sauf cas triviaux)
+	\item Le complémentaire d'un sous-espace vectoriel n'est jamais un sous-espace vectoriel (étant privé du $0$)
+\end{itemize}
+\end{rema}
+
+\subsection{Somme de sous espaces vefctoriels}
+\begin{defi}
+	Soient $F_1, F_2$, des sous espaces vectoriels, on définit :
+	$$F_1 + F_2 = \{f_1 + f_2 \ / \ f_1 \in F_1 , \ f_2 \in F_2\}$$
+\end{defi}
+
+\begin{rema}
+	$F_1 + F_2$ est un sous-espace vectoriel de $E$
+\end{rema}
+
+\begin{ex}
+	%### reprendre l'exemple
+\end{ex}
+
+\begin{prop}
+	Si $F_1 = vect(v_1, ..., v_{p_1})$ et $F_2 = vect(w_1, ..., w_{p_2})$, alors, \\
+	$$F_1 + F_2 = vect(v_1, ..., v_{p_1}, w_1, ..., w_{p_2})$$
+\end{prop}
+
+\begin{proof}
+	Soit $u \in F_1 + F_2$\\
+	$$\exists f_1 \in F_1, \exists f_2 \in F_2, \ / \ u = f_1 + f_2$$
+	$$\exists f_1 \in F_1, \exists f_2 \in F_2, \ / \ u = f_1 + f_2$$
+	%###finir la démo
+\end{proof}
+
+\begin{rema}
+	$F_1 - F_2$ n'est pas intéressant: $\{f_1 + (-f_2)\ / \ f_1 \in F_1, \ f_2 \in F_2\} = F_1 + F_2$ 
+\end{rema}
+
+\begin{rema}
+	$F_1 + F_2 \neq F_1 \cup F_2$
+\end{rema}
+
+\section{Familles libres, génératrices et bases}
+\subsection{Familles libres, génératrices}
+
+\begin{defi}
+	On dit que $(v_1, ..., v_p)$ est une famille génératrice de $E$ si $vect(v_1, ..., v_p) = E$
+\end{defi}
+
+\begin{vocab}
+	$E$ est dit finiement engendré s'il existe une famille génératrice finie.
+\end{vocab}
+
+\begin{rema}
+	intuitivement, $(v_1, ..., v_p)$ est génératrice si elle "voit" tous les éléments de $E$.
+\end{rema}
+
+\begin{rema}
+	A priori, il peut y avoir plusieurs manières d'écrire un élément de $E$
+\end{rema}
+
+\begin{ex}
+	Pour $E = \RR^2$, $e_1 = (1, 0)$, $e_2=(0, 1)$, $e_3 = (1, 1)$, \\
+	on a $e_3 = e_1 + e_2$
+	la famille $\{e_1, e_2, e_3\}$ est génératrice.
+\end{ex}
+
+calcul pratique:\\
+trouver une famille génératrice d'un sous espace vectoriel défini par des équations.\\
+\begin{ex}
+	$(x, y, z) \in \RR^3 \ / \ x + y + z = 0$\\
+	On résoud le système %###finir le calcul pratique
+\end{ex}
+
+\end{document}

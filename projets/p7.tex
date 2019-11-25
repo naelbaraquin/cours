@@ -1,0 +1,157 @@
+\documentclass[../main.tex]{subfile}
+
+%page déterminants
+
+\begin{document}
+\part{Déterminants}
+\section{Volume orienté du parallélogramme dans le plan}
+
+%###figure du parallélogramme d'aire \ssim(u,v)
+%%%%%%%%$$\ssim(u,v) = 
+%%%%%%%%\left\{
+%%%%%%%%\begin{aligned}	
+%%%%%%%%%	A(u,v) \text{si} \theta .................%###
+%%%%%%%%\end{aligned}
+%%%%%%%%\right.
+%	$$
+
+\begin{prop}
+%	$\ssim$ est bilinéaire et antisymétrique si :
+\begin{itemize}	
+	\item 
+\end{itemize}
+\end{prop}
+
+%### il y a une démo entre temps
+
+\section{Définitions et propriétés}
+\subsection{Définition par récurrence}
+\begin{defi}
+	définition du déterminent d'une matrice par récurrence (la définition est facile mais la preuve est pénible)
+\end{defi}
+
+\subsection{définition par forme multilinéaire alternée}
+\begin{rap}
+	Une permutation de $\{1, ..., n\}$ est une bijection de $\{1, ..., n\}$ dans lui-même.
+\end{rap}
+
+\begin{ex}
+	$$
+\begin{aligned}
+	1 &\to 2\\
+	2 &\to 1\\
+	3 &\to 3\\
+\end{aligned}
+	$$
+	est une permutation.
+\end{ex}
+
+\begin{nota}
+	$S_n$ est l'ensemble des permutations de $\{1, ..., n\}$
+\end{nota}
+
+\begin{rema}
+	$S_n$ contient $n!$ éléments
+\end{rema}
+
+\begin{defi}
+	une transposition $(ij)$ est la permutation qui échange $i$ et $j$.
+\end{defi}
+
+\begin{rema}
+	toute permutation est une composée de transpositions.
+\end{rema}
+
+\begin{defi}
+	La signature $\varepsilon(\sigma)$ pour $\sigma \subset S_n$ est le nombre de transpositions pour avoir $\sigma$. 
+\end{defi}
+
+\begin{defi}
+	Soit $A = \left[a_{ij}\right]_{i,j \in \{1, ..., n\}}$ une matrice dans $\mathcal{M}_n(\KK)$.\\
+	On pose le déterminant 
+	$$det(A) = \sum\limits_{\sigma \in S_n} \varepsilon(\sigma)a_{\sigma_{1,1}} $$%###
+\end{defi}
+
+\begin{rema}
+	Pour $n=2$ ou $n=3$, on obtient les formules usuelles.
+\end{rema}
+
+\begin{defi}
+	Soit $E$, un $\KK$-espace vectoriel de dimension $n$ et 
+	$$
+\begin{aligned}
+	f : \phantom{....} E^n &\to \KK\\
+	(v_1,...,v_n) &\mapsto f(v_1, ..., v_n)
+\end{aligned}
+	$$
+
+	$f$ est multilinéaire si elle est linéaire par rapport à chaque $v_i$ (quand les autres termes sont constants)
+\end{defi}
+
+%### fin du cours du 22/10
+
+\begin{rema}
+	$det(Id) = 1$ \'Etant donné que la seule manière d'avoir des termes non nuls dans le produit (de la formule du déterminant) est de prendre $\sigma = Id$
+\end{rema}
+
+\begin{prop}
+	Soit $f:E^n \to \KK$, une application multilinéaire.\\
+	Alors, si $\KK$ est tel que $1 + 1 = 2 \neq 0$, 
+	$f$ est alternée si et seulement si $f$ est antisymétrique.
+\end{prop}
+
+\begin{proof}
+	On prend $n = 2$ pour simplifier les notations.\\
+	Si $f$ est antisymétrique, \\
+	$f(v, v) = -f(v, v)$ (on permute les $v$)\\
+	Donc $2f(v,v) = 0$\\
+	donc $f(v,v) = 0$ car $2 \neq 0$.\\
+
+	Si $f$ est alternée, alors,
+	$$
+\begin{aligned}
+	0 &= f(v_1 + v_2, v_1 + v_2)\\
+	&= f(v_1, v_1 + v_2) + f(v_2, v_1 + v_2)\\
+	&= f(v_1, v_1) + f(v_1, v_2) + f(v_2, v_1) + f(v_2, v_2)\\
+	&= 0 + f(v_1, v_2) + f(v_2, v_1) + 0\\
+\end{aligned}
+	$$
+	D'où 
+	$$f(v_1, v_2) = -f(v_2, v_1)$$
+\end{proof}
+
+\begin{theo}
+	$A \mapsto det(A)$ est multilinéaire et alternée par rapport aux volumes de la matrice.
+\end{theo}
+
+\begin{proof}
+%###finir la démo
+\begin{itemize}	
+	\item $A \mapsto a_{\sigma_{(1)1}} ... a$
+\end{itemize}
+\end{proof}
+%###finir aussi la demo
+
+\begin{corrol}{Conséquences pratiques}
+\begin{itemize}	
+	\item Le déterminant ne change pas quand on ajoute à une colonne un multiple d'une autre.
+	\item le déterminant est multiplié par $-1$ si on permute deux colonnes.
+\end{itemize}
+\end{corrol}
+
+\begin{theo}
+	Soient $A = \left[a_{ij}\right]{(i,j)}$ et sa transposée $\phantom{A}^tA = \left[a_{ji}\right]_{(i,j)}$\\
+	$det(A) = det(\phantom{A}^tA)$\\
+	$det(\phantom{A}^tA) = \sum\limits_\sigma \varepsilon(\sigma) \prod\limits_{i=1}^n a_{i\sigma(i)}$
+\end{theo}
+%###écrire les théorèmes impossibles
+
+\begin{lemme}
+	$det \left(
+\begin{bmatrix} a & b \\ c & d \end{bmatrix}
+	\right)
+	$
+\end{lemme}
+
+
+\end{document}

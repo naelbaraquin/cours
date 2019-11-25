@@ -1,0 +1,140 @@
+\documentclass{article}
+%\usepackage{fullpage}
+\usepackage{comment}
+\usepackage{color}
+\usepackage{lipsum}
+\usepackage{natbib} 
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsthm} %principalement pour les démonstrations avec l'environnement {proof}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{ulem}
+\usepackage{stmaryrd} %pour faire des bornes d'intervalles d'entiers
+\usepackage{import, fancyhdr, lastpage, sectsty, url, array, multirow, tabu, subfiles, graphicx, wrapfig, subcaption, setspace, booktabs}
+
+\date{}
+\author{}
+\title{Algèbre linéaire}
+
+\newtheorem{defi}{Définition}
+\newtheorem*{ex}{Exemple}
+\newtheorem*{exerc}{Exercice}
+\newtheorem{rema}{Remarque}
+\newtheorem*{nota}{Notation}
+\newtheorem{rap}{Rappel}
+\newtheorem{prop}{Proposition}
+\newtheorem{propri}{Propriété}
+\newtheorem*{theo}{Théorème}
+\newtheorem{corrol}{Corrolaire}
+\newtheorem*{mthd}{Méthode}
+\newtheorem*{vocab}{Vocabulaire}
+\newtheorem{lemme}{Lemme}
+
+\newcommand\NN{\mathbb{N}}
+\newcommand\QQ{\mathbb{Q}}
+\newcommand\RR{\mathbb{R}}
+\newcommand\CC{\mathbb{C}}
+\newcommand\KK{\mathbb{K}}
+
+\newcommand\LLL{\mathcal{L}}
+\newcommand\BBB{\mathcal{B}}
+
+%\newcommand\ssim{\accentset{\sim}{A}}
+
+\newcommand\ssi{\Leftrightarrow}
+
+\begin{document}
+
+\begin{theo}{Théorème des polynômes annulateurs}
+$$\phantom{a}$$
+Un endomorphisme $f$ est diagonalisable si et seulement s'il existe un polynôme scindé à racines simples annulant $f$.\\
+\end{theo}
+
+$$\phantom{a}$$
+
+\begin{proof}
+$\phantom{a}$
+	\section{sens direct}
+	Soit $f$, un endomorphisme de polynôme caractéristique 
+	$$\chi_f(X) = (-1)^n \prod\limits_{i=1}^p (X - \lambda_i)^{\alpha_i}$$
+
+$\phantom{a}$\\[5mm]
+
+	En supposant $f$ diagonalisable, il existe une base $\BBB = \{v_1, ..., v_n\}$ formée de vecteurs propres de $f$.\\
+	{\tiny par définition d'une application diagonalisable}
+
+$\phantom{a}$\\[1cm]
+
+
+	Si $\{\lambda_i\}_{i \in \llbracket 1, p \rrbracket}$ sont \textbf{les} valeurs propres de $f$ alors, pour tout vecteur $v \in \BBB$, il existe $\lambda_j \in \{\lambda_i\}$ telle que $(f - \lambda_j Id) (v) = 0$\\
+
+$\phantom{a}$\\[1cm]
+
+\newpage
+	Donc, $\forall v \in \BBB$, \\
+	$(f-\lambda_1 Id) \circ ... \circ (f-\lambda_p Id)(v) = 0$ par commutativité des $(f - \lambda_k Id)$\\ 
+	{\tiny
+	$(f-\lambda_1 Id) \circ ... \circ (f-\lambda_{j-1} Id) \circ (f-\lambda_{j+1} Id) \circ ... \circ (f-\lambda_p Id) \circ (f-\lambda_j Id)(v) = 0$
+\begin{rema}	
+	commutativité des polynômes d'endomorphismes:\\
+	Soient $P(X) = \sum\limits_{i=1}^n a_iX^i$ et $Q(X) = \sum\limits_{j=1}^m b_jX^j$
+	$$
+\begin{aligned}
+	P(f) \circ Q(f) &= \sum_{i=1}^n a_if^i \circ \sum_{j=1}^m b_jf^j\\
+	&= \sum_{i,j} a_ib_jf^i \circ f^j\\
+	&= \sum_{i,j} a_ib_jf^{i+j}\\
+	&= \sum_{i,j} b_ja_if^j \circ f^i\\
+	&= \sum_{j=1}^m b_jf^j \circ \sum_{i=1}^n a_if^i\\
+	&= Q(f) \circ P(f)
+\end{aligned}
+	$$
+\end{rema}}
+
+$\phantom{a}$\\[1cm]
+
+	Comme on a $(f-\lambda_1 Id) \circ ... \circ (f-\lambda_p Id)(v) = 0$ % faire un renvoie
+	sur la base $\BBB$, cette égalité se vérifie aussi sur $E$
+	{\tiny tout vecteur de $E$ étant une combinaison linéaire de vecteurs de $\BBB$}\\
+
+	$(f-\lambda_1 Id) \circ ... \circ (f-\lambda_p Id)(v) = 0$
+
+$\phantom{a}$\\[5mm]
+
+	Donc $Q(X) = \prod\limits_{i=1}^p (X-\lambda_i)$, qui est scindé et à racines simples, annule $f$.
+
+$\phantom{a}$\\[1cm]
+$\phantom{a}$\\[1cm]
+\newpage
+	\section{sens indirect}
+	On peut écrire un polynôme scindé à racines simples sous la forme:
+	$$Q(X) = \prod\limits_{i=1}^p (X - \lambda_i)$$
+	où les $\lambda_i$ sont différents deux à deux.
+	{\tiny les termes de ce produit sont donc premiers entre eux (les racines étant différentes)}
+	
+$\phantom{a}$\\[5mm]
+
+	En appliquant $Q$ à un endomorphisme $f$, on a:
+	$$Q(f) = \prod\limits_{i=1}^p (f - \lambda_i Id)$$
+
+$\phantom{a}$\\[1cm]
+
+	En supposant maintenant que $Q$ annule $f$, on a, d'après le lemme des noyaux %(que nina vient de démontrer)
+	$$E = \bigoplus\limits_{i=1}^p ker(f - \lambda_i Id)$$
+	{\tiny le noyau de cet endomorphisme correspond aux vecteurs pour lesquels $f(v) = \lambda_i v$, \textit{i.e.} les vecteurs de $E$ ayant pour valeur propre $\lambda_i$}
+
+$\phantom{a}$\\[1cm]
+
+	D'où $E = \bigoplus_{i=1}^p E_{\lambda_i}$
+
+$\phantom{a}$\\[1cm]
+
+	$f$ est donc diagonalisable.
+	{\tiny par le théorème 1 vu dans le cours}
+\end{proof}
+
+
+
+
+\end{document}
