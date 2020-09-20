@@ -1,0 +1,809 @@
+\documentclass[../main.tex]{subfile}
+
+\begin{document}
+
+\part{Rudiments de mécanique quantique et d'atomistique}
+\subsection{Les postulats de la mécanique quantique}
+
+La mécanique quantique est basée sur six postulats, en voici quatre :\\
+\begin{enumerate}
+         \item L'état d'un système à un instant $t$ est complètement définit par la connaissance de sa fonction d'onde, notée $\Psi(\vec{r}, t)$\\
+            Dans un cas à $n$ particules, on a $\Psi(\vec{r_1}, \vec{r_2}, ..., \vec{r_n}, t)$
+            $\vec{r}$ est alors la variable d'espace.
+         \item \`A toute grandeur physique $A$ mesurable, on associe un opérateur linéaire et hermitique noté $\hat{A}$.
+         \item L'évolution d'un état d'un système est régie par l'équation de Schrödinger dépendante du temps:
+            $$\hat{H}\Psi(\vec{r}, t) = i\hbar \frac{\partial \Psi (\vec{r}, t)}{\partial t}$$
+         \item Les valeurs de $A$ mesurables expérimentalement ne peurvent être que les valeurs propres associées à $\hat{A}$
+\end{enumerate}
+
+\paragraph{Postulat 1}
+
+\begin{itemize}
+         
+   \item La fonction d'onde n'a aucun sens physique.\\
+
+   \item On a $d P(\vec{r}, t) = \Psi^*(\vec{r}, t) \Psi(\vec{r}, t) dV = |\Psi(\vec{r}, t)|^2$\\
+   (où $\Psi^*$ est le conjugué complexe de $\Psi$)\\
+      $dP(\vec{r}, t)$ est alors la probabilité infinitésimale de trouver la particule dans le volume $dV$ centré en $(\vec{r}, t)$\\
+
+   $d P(\vec{r}, t)$ correspond à la probabilité de trouver une particule dans le volume $dV$ autour de $\vec{r}$ à l'instant $t$.\\
+
+   \item On a donc :
+   $$\frac{dP(\vec{r}, t)}{dV} = \Psi^*(\vec{r}, t) \cdot \Psi(\vec{r}, t)$$
+   (la densité de probabilité $\frac{dP(\vec{r}, t)}{dV}$ est donc égale au carré module de la fonction d'onde $\Psi(\vec{r}, t)$)
+
+   \item La fonction d'onde est normée :
+      $$
+      \begin{aligned}
+         P(t) &= \int_x \int_y \int_z dP(\vec{r}, t)\\
+         &=\int_x \int_y \int_z \Psi^*(\vec{r}, t) \cdot \Psi(\vec{r}, t)\\
+         &=\int_x \int_y \int_z |\Psi(\vec{r}, t)|^2\\
+         &= 1
+      \end{aligned}
+      $$
+      La fonction d'onde est donc normée, la probabilité de trouver la particule dans l'espace est donc de 1.\\
+      Attention, on intègre dans toutes les directions de l'espace, autant de fois qu'il y a de particules.\\
+      
+
+   \item La fonction d'onde est continue, dérivable et de carré sommable (l'intégrale de son carré converge pour pouvoir valoir 1).\\
+      Sa dérivée première est aussi continue et dérivable. (\emph{elle doit l'être}).
+
+   \item \emph{Notation de Dirac :} 
+      \begin{itemize} 
+         \item à $\Psi(\vec{r}, t)$, on associe un "ket", noté $|\Psi(t)>$
+         \item à $\Psi^*(\vec{r}, t)$, on associe un "bra", noté $<\Psi(t)|$
+      \end{itemize}
+
+      On a donc $P(t) = <\Psi(t) | \Psi(t) > = 1$
+
+
+   \item On définit le produit scalaire entre deux fonctions d'onde par :
+      $$\int_x \int_y \int_z \Psi^*(\vec{r}, t) \cdot \Phi(\vec{r}, t) dV = <\Psi(t) | \Phi(t)>$$
+      \begin{ex} 
+         $\phantom{a}$
+         \begin{itemize} 
+            \item (fig1) $\Psi^*(x) \cdot \Psi(x) = |\Psi(x)|^2$
+               Il s'agit de la probabilité de trouver la particule en $x$ (probabilité infinitésimale).\\
+               $|\Psi(x)|^2 dx$ est alors la probabilité de trouver la particule sur le segment de longueur $dx$
+            
+            \item (fig2) $\int_a^b dP(x) = P$\\
+               $\int_a^b |\Psi(x)|^2$ est alors la probabilité de trouver la particule sur le segment $[a,b]$
+         \end{itemize}
+      \end{ex}
+\end{itemize}
+
+\paragraph{Postulat 2}
+
+\begin{itemize}
+
+   \item Les opérateurs agissent sur les fonctions d'onde : $\hat{A} \Psi(\vec{r}, t) = \Phi(\vec{r}, t)$.\\
+  \begin{ex} 
+     Soit $\hat{A} = \frac{\partial}{\partial x}$ et $\Psi(x) = exp(-2x^2)$\\
+     On a alors $ \hat{A} \Psi(x) = \frac{\partial exp(-2x^2)}{\partial x} = -4x \Psi(x)$
+  \end{ex}
+
+  \item \emph{Cas particulier :} si $\hat{A} \Psi(\vec{r}, t) = \lambda \Psi(\vec{r}, t)$ (où $\lambda$ est un scalaire),\\
+     on dit que : 
+   
+      \begin{itemize} 
+               \item $\lambda$ est une valeur propre de $\hat{A}$
+               \item $\Psi(\vec{r}, t)$ est vecteur propre de $\hat{A}$ associé à la valeur propre $\lambda$
+               \item On parle alors d'une équation aux valeurs propres.\\
+                  Dans une équation aux valeurs propres, on a toujours un couple $(\lambda, \Psi(\vec{r}, t))$.\\
+                  L'équation de Schrödinger est une équation aux valeurs propres.
+      \end{itemize}
+
+   \item \emph{Notion de dégénérescence :} deux fonctions propres différentes donnent, pour un même opérateur donné, la même valeur propre, on dit alors qu'elles sont dégénérée.
+      \begin{ex} 
+            $sin$ et $cos$ sont des fonctions propres dégénérées de la dérivée seconde:
+            $$\frac{\partial^2}{\partial x^2}(cos(kx)) = -k^2 cos(kx)$$
+            $$\frac{\partial^2}{\partial x^2}(sin(kx)) = -k^2 sin(kx)$$
+            La valeur propre commune est alors $-k^2$
+
+      \end{ex}
+
+   \item \emph{Algèbre des opérateurs :}
+
+      \begin{itemize} 
+            \item Somme $\hat{S} = \hat{A} + \hat{B}$\\
+               $$\hat{S} \Psi(\vec{r}, t) = (\hat{A} + \hat{B}) \Psi(\vec{r}, t) = \hat{A} \Psi{\vec{r}, t} + \hat{B} \Psi(\vec{r}, t)$$
+               \begin{ex} 
+                  $\hat{A} = x$, $\hat{B} = -ih\frac{\partial}{\partial x}$, $\Psi(\vec{r}, t) = e^{-2x}$ \\
+                  $$
+                    \begin{aligned} 
+                       \hat{S} \Psi(\vec{r}, t) &= (x - ih\frac{\partial}{\partial x}) \Psi(\vec{r}, t)\\
+                       &= x \Psi(\vec{r}, t) - ih\frac{\partial}{\partial x} (\Psi(\vec{r}, t)\\
+                       &= xe^{-2x}-ih\frac{\partial}{\partial x} (e^{-2x})
+                       &= (x+2i\hbar)e^{-2x}
+                    \end{aligned}
+                  $$
+               \end{ex}
+
+            \item Produit $\hat{P} = \hat{A} \cdot \hat{B}$ (Il s'agit de la composition dans l'espace des fonctions.)\\
+               Attention, le produit d'opérateurs n'est pas commutatif.\\
+               $$\hat{P} \Psi(x) = (\hat{A} \cdot \hat{B}) \Psi(x) = \hat{A} (\hat{B} \Psi(x))$$
+
+               Le produit n'étant pas commutatif, on en profite pour introduire le commutateur :
+               $[\hat{A}, \hat{B}] = \hat{A} \hat{B} - \hat{B} \hat{A}$\\
+               Si ce commutateur est nul, alors les deux opérateurs commutent, dans le cas contraire, ils ne commutent pas.\\
+              \begin{rema} 
+                  Deux opérateurs qui commutent admettent un même ensemble de vecteurs propres.\\
+              \end{rema}
+
+            \item Linéaire : un opérateur $\hat{A}$ est linéaire si : 
+               $$\hat{A}(\alpha \Psi(\vec{r}, t) + \beta \Phi(\vec{r}, t)) = \alpha \hat{A} \Psi(\vec{r}, t) + \beta \hat{A} \Phi(\vec{r}, t)$$
+               Toute combinaison linéaire de fonctions propres dégénérées d'un opérateur est également fonction propre de cet opérateur avec la même valeur propre (qui est alors un scalaire).\\
+               On retrouve cette propriété dans la théorie des orbitales atomiques hybrides.\\
+
+      \end{itemize}
+      
+   \item \emph{Hermiticité :} Si $\hat{A}$ est hermitique, alors ses valeurs propres sont réelles et ses vecteurs propres sont orthogonaux.\\
+
+   \item En mécanique quantique, tout opérateur peut être construit à partir des opérateurs position et quantité de mouvement, c'est le \emph{principe de correspondance} :
+      \begin{itemize} 
+         \item \emph{Opérateur position :} associé à la coordonnée $q_i$ (où $q_i$ peut correspondre à $x$, $y$ ou $z$) d'une particule, il consiste à multiplier par la variable $q_i$.\\
+            $$\hat{q_i} = q_i \cdot $$
+
+            Pour l'opérateur $\hat{x}$, on a :
+            $$\hat{x} = x \cdot$$
+         \item \emph{Opérateur quantité de mouvement :} associé à la coordonnée $q_i$, il s'exprime $p_i = mv_i$; il consiste à dériver par rapport à cette coordonnée et à multiplier par $-i\hbar$ :\\
+            $$\hat{p_i} = -i\hbar \frac{\partial}{\partial q_i}$$
+            Dans le cas tridimensionnel, on a :
+            $$\hat{p} = -i\hbar \nabla = -i \hbar (\frac{\partial}{\partial x} + \frac{\partial}{\partial y} + \frac{\partial}{\partial z}) $$
+
+            \begin{ex}[pour une onde de matière mono-dimensionnelle]
+               $\phantom{a}$\\
+               $\Psi(x, t) =\Psi_0 e^{i(kx - \omega t)}$
+               \begin{itemize} 
+                        \item \emph{opérateur quantité de mouvement associé à $\Psi(x, t)$:} \\
+                           $\hat{p_x} \Psi(x, t) = \frac{\partial \Psi(x, t)}{\partial x} (-i \hbar)$\\
+                           D'où :
+                           $$
+                             \begin{aligned} 
+                                 \hat{p_x} \Psi(x, t) 
+                                 &= -i \hbar i k \Psi_0 e^{i(kx- \omega t)}\\
+                                 &= \hbar k \Psi_0 e^{i(kx- \omega t)}\\
+                                 &= k \hbar \Psi(x, t)
+                             \end{aligned}
+                           $$
+                           $\hbar k$ est alors la valeur propre associée à la fonction d'onde, elle correspond à la quantité de mouvement.
+
+                     \item \emph{opérateur énergie cinétique :} \\
+                        $$E_c = \frac{1}{2} mv^2 = \frac{p^2}{2m} = \frac{(\hbar k)^2}{2m}$$
+                        $$\hat{T} \Psi(x, t) = \frac{(\hbar k)^2}{2m} \Psi(x, t)$$
+                        (l'opérateur énergie cinétique est noté $\hat{T}$)
+                        $$\hat{T} = -\frac{\hbar^2}{2m} \frac{d^2}{dx^2}$$ 
+                        Car $-\frac{\hbar^2}{2m} \frac{d^2}{dx^2}\Psi_0 e^{i(kx - \omega t)} = -\frac{\hbar^2}{2m}i^2\hbar^2 \Psi_0 e^{i(kx - \omega t)} = \frac{(\hbar k)^2}{2m}$
+               \end{itemize}
+            \end{ex}
+         \item \emph{opérateur énergie cinétique et laplacien :}\\
+            Dans le cas d'une onde : $\Psi(x, t) = \Psi_0 e^i{i(xk-\omega t)}$\\
+
+            Dans le cas tridimensionnel :
+            $\hat{T} = \frac{-\hbar^2}{2m} \Delta = \frac{-\hbar^2}{2m} (\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2})$\\
+
+            Expression de l'opérateur énergie d'une particule de masse $m$ qui se déplace dans les trois directions de l'espace et d'énergie potentielle $V(\vec{r})$ :
+            $\hat{H} = \hat{T} + \hat{V} = \frac{-\hbar^2}{2m} \Delta + \hat{V(\vec{r})}$\\
+
+            $\hat{H}$ est appelé opérateur Hamiltonien.\\
+      \end{itemize}
+\end{itemize}
+
+\paragraph{Postulat 3 :} \emph{L'équation de Schrödinger}\\
+
+$$\hat{H} \Psi(\vec{r}, t) = i \hbar \frac{\partial \Psi(\vec{r}, t)}{\partial t}$$
+
+   Lorsque le potentiel agissant sur le système $V(\vec{r})$ ne dépend pas du temps, la fonction d'onde qui décrit le système ne dépend pas du temps.\\
+   Le système est alors dans un \emph{état stationnaire}.\\
+
+   La fonction d'onde est alors obtenue par la résolution de l'équation de Schrödinger indépendante du temps :
+   $$\hat{H} \Psi(\vec{r}) = E \Psi(\vec{r})$$
+
+   Les états stationnaires d'un système sont aussi appelés \emph{états propres}, ils sont en effet les vecteurs propres associés à l'opérateur hamiltonien.\\
+
+  \begin{rema} 
+   Dès qu'un système quantique est soumis à une perturbation dépendante du temps, il n'est plus dans un état propre. Il se retrouve dans un état superposé qui est une combinaison linéaire des états propres.\\
+  \end{rema}
+
+\paragraph{Postulat 4 :} \emph{mesures physiques :}\\
+
+   Soit une grandeur physique $A$ associée à l'opérateur $\hat{A}$, tel que :\\
+   $$\hat{A} \Psi_n(\vec{r}) = a_n \Psi_n(\vec{r})$$
+
+  \begin{itemize} 
+         \item Alors seules les valeurs propres $a_n$ peuvent être mesurées pour la propriété $A$.\\
+  \end{itemize}
+
+   Soit un système décrit par $\Psi(\vec{r})$, une fonction d'onde quelconque :
+
+  \begin{itemize} 
+     \item si $\Psi(\vec{r})$ est une fonction propre de $\hat{A}$ associé à la valeur propre $\lambda$, alors toute mesure de la propriété $A$ conduira à $\lambda$.\\
+
+     \item si $\Psi(\vec{r})$ n'est pas une fonction propre de $\hat{A}$, alors la valeur moyenne d'une série de mesures expérimentales sur la grandeur physique sera :
+        $$<A> = \frac{\iiint_V \Psi^*(\vec{r}) \hat{A} \Psi(\vec{r}) dV}{\iiint_V \Psi^*(\vec{r})\Psi(\vec{r}) dV} = \frac{<\Psi | \hat{A} | \Psi >}{<\Psi | \Psi >}$$
+  \end{itemize}
+
+  Ayant définit la valeur moyenne d'une mesure, nous pouvons également définir la dispersion des résultats (l'écart type):
+  $$\Delta A = \sqrt{<A^2> - <A>^2}$$
+
+ \begin{ex} 
+      Avec $\hat{A}\Psi(x)$, \\
+      $$
+    \begin{aligned}
+       <A> &= \int_x \Psi^*(x) \hat{A} \Psi(x) dx\\
+       &= \lambda \int_x \Psi^*(x) \Psi(x)dx\\
+       &= \lambda
+    \end{aligned}
+      $$
+
+      $$
+     \begin{aligned} 
+         <A^2> &= \int_x \Psi^*(x) \hat{A}^2 \Psi(x)dx \\
+         &= \int_x \Psi^*(x) \lambda^2 \Psi(x)dx\\
+         &= \lambda \int_x \Psi^*(x) \lambda \Psi(x)dx\\
+         &= \lambda^2
+     \end{aligned}
+      $$
+
+      $$\Delta A = \sqrt{\lambda^2 - \lambda^2} = 0$$
+
+      La moyenne est donc égale à $\lambda$ et la dispertion est égale à $0$
+ \end{ex}
+ 
+ \subsection{Applications des postulats}
+ \subsubsection{Application 1: particule dans une boîte 1D}
+
+ %fig3
+
+\begin{rap} 
+      $$\sin a \sin b = \frac{\cos (a-b) - \cos (a+b)}{2}$$
+\end{rap}
+
+Ensemble des vecteurs et valeurs propres de la fonction d'onde :\\
+$$\hat{H} \Psi(x) = E \Psi (x)$$
+
+$\hat{H} = \hat{T} + \hat{V}$\\
+où $\hat{T} = \frac{- \hbar^2}{2m} \Delta = \frac{-\hbar^2}{2m} \frac{\partial^2}{\partial^2 x}$,\\
+et $\hat{V} = 0$, car dans ce cas, la particule n'a pas de potentiel.\\
+
+Donc $\hat{H} = \frac{-\hbar^2}{2m} \frac{d^2}{d x^2}$\\
+D'où, 
+$$
+\begin{aligned}
+      \hat{H} \Psi(x) &= E \Psi(x)\\
+      \Rightarrow \frac{-\hbar^2}{2m} \frac{d^2}{d x^2} \Psi(x) &= E \Psi(x)\\
+      \Rightarrow \frac{-\hbar^2}{2m} \frac{d^2}{d x^2} \Psi(x) - E \Psi(x) &= 0\\
+      \Rightarrow \frac{d^2 \Psi(x)}{d x^2} + \frac{2mE}{\hbar^2} \Psi(x) = 0
+\end{aligned}
+$$
+
+En posant $\frac{2mE}{\hbar^2} = k^2$, on a une équation différentielle du second ordre à coefficient constant homogène de la forme:
+      $$\frac{d^2 \Psi(x)}{d x^2} + k^2 \Psi(x) = 0$$
+
+      Dont la solution homogène est (forme d'une solution homogène d'oscillateur harmonique):
+      $\Psi(x) = A\sin{kx} + B\cos(kx)$\\
+
+      On détermine ensuite $A$ et $B$:\\
+      $\Psi$ étant continue, dérivable et de carré sommable, elle est nulle en ses limites $0$ et $L$.\\
+      en $x=0$:
+      $$
+     \begin{aligned} 
+        \Psi(0) = 0 &\Leftrightarrow A \sin(k \cdot 0) + B \cos(k \cdot 0) = 0\\
+        &\Rightarrow B = 0
+     \end{aligned}
+      $$
+
+      Donc $\Psi(x) = A\sin(kx)$\\
+      en $x=L$:
+      $$
+\begin{aligned}
+   \Psi(L) = 0 &\Leftrightarrow A\sin(kL) = 0\\
+   &\Rightarrow \sin(kL) = 0 \text{ ou } A = 0\\
+   \text{A ne pouvant être nul car la particule existe}\\
+   &\Rightarrow kL = n\pi \text{ avec } n \in \ZZ^*\\
+   &\Leftrightarrow k = \frac{n\pi}{L}\\
+\end{aligned}
+      $$
+
+      On a donc $k^2 = \frac{n^2\pi^2}{L^2} = \frac{2mE}{\hbar^2}$\\
+
+      D'où $E_n = \frac{\hbar^2 n^2 \pi^2}{L^2 2m}$ avec $n \in \ZZ^*$\\
+      L'énergie est quantifiée car $n$ ne peut prendre que des valeurs entières donc discrètes.\\
+
+      Donc $\Psi_n(x) = A\sin(k_n x)$\\
+
+      Avec la condition de normalisation, on détermine $A$, \\
+      $$\int_x \Psi_n^*(x) \Psi_n(x) dx = 1$$
+
+      Avec $\Psi_n(x) = A \sin(k_n x)$ et ($\Psi$ étant réelle), $\Psi_n^*(x) = \Psi_n(x) = A \sin(k_n x)$\\
+      On a :
+      $$
+\begin{aligned}
+   \int_x \Psi_n^2(x)dx &= A^2 \int_x \sin^2(kx)dx\\
+   &= A^2 \int_0^L sin(kx) sin(kx) dx\\
+   &= A^2 \int_0^L \frac{1}{2} (cos(kx - kx) - cos(kx + kx)) dx\\
+   &= A^2 \int_0^L \frac{1}{2} - cos(2kx) dx\\
+   &= A^2 (\int_0^L \frac{1}{2}dx - \int_0^L cos(2kx) dx)\\
+   &= A^2 (\frac{L}{2} - [\frac{sin(2k_nx)}{4k_n}]_0^L)\\
+   &= A^2 (\frac{L}{2} - [\frac{sin(2\frac{n\pi}{L}x)}{4k_n}]_0^L)\\
+   & 2\frac{n\pi}{L}x \text{ étant toujours nulle, son sinus le sera aussi}\\
+   &= A^2(\frac{L}{2} - 0 - 0) = 1
+\end{aligned}
+      $$
+
+      D'où $A^2 = \frac{2}{L}$ et $A = \pm \sqrt{\frac{2}{L}}$\\
+      Le $\pm$ correspond au fait que les orbitales soient définis au signe près.\\
+
+     \begin{rema} 
+         $n$ ne peut être nul car la particule ne peut être à l'arrêt.
+     \end{rema}
+
+     \emph{Exercice :} Montrer que l'inégalité d'Heisenberg est vérifiée : $\Delta p \cdot \Delta q \geq \frac{\hbar}{2}$
+
+
+     \subsubsection{Application 2 : particule dans une boîte 2D}
+     %fig4 (page 12)
+
+     On cherche l'ensemble des vecteurs et valeurs propres de la fonction d'onde $\hat{H} \Psi(x, y) = E \Psi(x, y)$.\\
+
+     $$
+\begin{aligned}
+     & \hat{H} \Psi(x, y) = E \Psi(x, y)\\
+     &\Rightarrow \frac{-\hbar^2}{2m} \Delta \Psi(x, y) = E \Psi(x, y)\\
+     &\Rightarrow \frac{-\hbar^2}{2m} (\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}) \Psi(x, y) = E \Psi(x, y)\\
+     & \Rightarrow -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} \Psi(x, y) - \frac{\hbar^2}{2m}\frac{\partial^2}{\partial y^2}\Psi(x, y) = E \Psi(x, y)
+\end{aligned}
+     $$
+
+
+     \emph{Méthode de séparation des variables :}\\
+     Soit $\hat{A_{a,b}}$ (où $a$ et $b$ sont les variables) qui s'écrit comme la somme de deux opérateurs,
+     chacun s'appliquant sur une variable telle que 
+     $\hat{A_{a,b}} = \hat{h_a} + \hat{h_b}$ 
+     alors le produit des vecteurs propres de $\hat{h_a}$ et $\hat{h_b}$ est vecteur propre de $\hat{A_{a,b}}$.\\
+
+     La somme des valeurs propres de $\hat{h_a}$ et $\hat{h_b}$ est valeur propre de $\hat{A_{a,b}}$.\\
+
+     On a alors:\\
+     $$\hat{H} \Psi(x) + \hat{H} \Psi(y) = E \Psi(x, y)$$
+     avec $\hat{A} = \hat{h_a} + \hat{h_b}$ et $\hat{h_a} \Psi(a) = \alpha \Psi(a)$, $\hat{h_b} \Phi(b) = \beta \Phi(b)$\\
+
+     On a ainsi:
+     $$
+\begin{aligned}
+      \hat{A} \Psi(a) \Phi(b) &= (\hat{h_a} + \hat{h_b}) \Psi(a) \Phi(b)\\
+      &= \hat{h_a} \Psi(a) \Phi(b) + \hat{h_b} \Psi(a) \Phi(b)\\
+      &= \Phi(b) \hat{h_a} \Psi(a) + \Psi(a) \hat{h_b} \Phi(b)\\
+      &= \Phi(b) \alpha \Psi(a) + \Psi(a) \beta \Phi_(b)\\
+      &= (\alpha + \beta) \Psi(a) \Phi(b)\\
+      &= \hat{A} \Psi(a) \Phi(b)
+\end{aligned}
+     $$
+
+     Les solutions $\Psi_{n_1, n_2}(x, y) = \pm \sqrt{\frac{2}{Lx}} \sqrt{\frac{2}{Ly}} \sin(k_{n_1}x) \sin(k_{n_2}y)$
+     car on se ramène à deux problèmes en 1D et on les multiplies, ainsi :
+     $$E_{n_1, n_2} = \frac{\pi^2 \hbar^2}{2m} (\frac{n_1^2}{L^2 x} + \frac{n_2^2}{L^2 y})$$
+
+
+     De manière analogue, en 3D, on a :
+     $$\Psi_{n_1, n_2, n_3}(x, y, z) = \pm \sqrt{\frac{2}{Lx}} \sqrt{\frac{2}{Ly}} \sqrt{\frac{2}{Lz}}\sin(k_{n_1}x) \sin(k_{n_2}y) \sin(k_{n_3} z)$$
+   
+   \subsubsection{Application 3 : particule sur une sphère}
+
+   Soit une particule de masse $\mu$ évoluant à une distance $r$ constante de l'origine du repère.\\
+
+   Le problème présente une symétrie sphérique, nous allons donc utiliser le système de coordonnées sphérique.\\
+
+  \begin{rema} 
+      \it{cf} cahier de TD, relations entre coordonnées cartésiennes et sphériques.\\
+
+      Élément de volume et couverture de l'espace :
+      $$dV = r^2dr \cdot \sin(\theta) d\theta \cdot d\rho$$
+
+      Condition de normalisation :
+      $$<\Psi | \Psi> = \int_0^\infty \int_0^\pi \int_0^{2\pi} \Psi^*(r, \theta, \rho) \Psi(r, \theta, \rho) r^2 \sin\theta dr d\theta d\rho$$
+  \end{rema}
+
+  \emph{Hamiltonien du système :}\\
+  Seul l'opérateur énergie cinétique est pris en compte : $\hat{H} = \frac{-\hbar^2}{2\mu}\Delta = \frac{-\hbar^2}{2\mu} (\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2})$
+
+  En coordonnées sphériques :
+  $$\Delta = \frac{1}{r^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} + \frac{1}{\sin \theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial}{\partial \theta} + \frac{1}{\sin^2\theta}\frac{\partial^2}{\partial \rho^2})$$
+
+  Où encore en utilisant l'opérateur de Legendre :
+  $$\Delta = \frac{1}{r^2}(\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} + \Lambda)$$
+
+  Donc $\hat{H} = \frac{-\hbar^2}{2\mu r^2} \Lambda$ (étant donné $r$ constant).\\
+
+
+
+  \emph{Résolution de l'équation aux valeurs propres :}\\
+
+  Les fonctions propres de $\Lambda$ sont les harmoniques sphériques $Y_{l,m}(\theta, \rho)$ associées aux valeurs propres $-l(l+1)$.\\
+
+  $$
+\begin{aligned}
+   \Lambda Y_{l,m}(\theta, \rho) &= -l(l+1) Y_{l,m}(\theta, \rho)\\
+   \hat{H} Y_{l,m}(\theta, \rho) &= \frac{\hbar^2}{2\mu r^2}l(l+1) Y_{l,m}(\theta, \rho)
+\end{aligned}
+  $$
+
+  \emph{L'expression générale des harmoniques sphériques :}\\
+
+  $$Y_{l,m}(\theta, \rho) = (\frac{(2l+1)(l-|m|)!}{4\pi(l-|m|)!})^{1\over 2} e^{i\cdot m \cdot \rho}\cdot P_l^m(\cos \theta)$$
+  où $P_l^m (\cos \theta)$ est le polynôme de Legendre de degré $l$ avec $l$ et $m$ entiers tels que $l \in \NN$ et $m \in \llbracket -l, l \rrbracket$
+
+ \begin{rema} 
+      \it{cf} tableau des harmoniques sphériques.
+ \end{rema}
+
+ \emph{Exercice :} vérifier la normalisation des harmoniques sphériques du tableau et l'orthogonalité des vecteurs propres.\\
+
+
+ L'énergie du système est quantifiée par le nombre quantique azimutal ($l$).\\
+
+   \`A chaque valeur de $l$ correspondent $2l+1$ fonctions propres différentes (dégénérescence d'ordre $2l+1$) car elles ont le même nombre quantique azimutal donc la même énergie.\\
+
+   \emph{Énergie de rotation d'un corps de masse $\mu$ sur une sphère de rayon $r$ :}
+
+   En classique:
+   $$E_c = \frac{L^2}{2\mu r^2}$$
+   où $L$ est le moment cinétique tel que $L^2 = l(l+1)\hbar^2$\\
+
+
+   En quantique:
+   $$E_c = \frac{\hbar^2}{2\mu r^2} l(l+1)$$
+
+   \emph{Opérateur du moment cinétique au carré en coordonnées sphériques :}
+   $$L^2 = -\hbar^2 \Lambda$$
+
+   Donc $\hat{L_z} Y_{l,m} (\theta, \rho) = m \hbar Y_{l,m} (\theta, \rho)$\\
+
+   La projection du moment cinétique selon $z$ est quantifiée par $m$.\\
+   Pour une valeur de $l$ donnée, on a $2l+1$ valeurs de $m$.\\
+
+   Exemple pour $l=1$:
+   %fig5 (page 16 (spin))
+
+
+\section{Les atomes hydrogénoïdes}
+
+%fig6 (page 16 (atome))
+
+\emph{Énergie du système :} $E = T_e + T_n + V_{e,n}$ (avec $T_e$, l'énergie cinétique de l'électron, $T_n$, celle du noyau, $V_{e,n}$, l'énergie des interactions entre les deux).\\
+
+\emph{Expressions classique :}\\
+$$T_e = \frac{p_e^2}{2m_e}$$
+$$T_n = \frac{p_n^2}{2m_n}$$
+$$V_{e,n} = -\frac{1}{4\pi\epsilon_0} \frac{Z_e^2}{r}$$
+
+\emph{Opérateurs quantiques :}\\
+$$\hat{T_e} = \frac{-\hbar^2}{2m_e} \Delta_e$$
+$$\hat{T_n} = \frac{-\hbar^2}{2m_n} \Delta_n$$
+$$\hat{V_{e,n}} = -\frac{1}{4\pi\epsilon_0} \frac{Z_e^2}{\hat{r}}$$
+
+
+   L'équation dépend du mouvement des deux particules et est donc insolvable.\\
+   On dispose alors de deux approches pour simplifier les équations:\\
+
+   On décompose le mouvement en deux :
+  \begin{itemize} 
+         \item un mouvement de translation de l'atome
+         \item un mouvement relatif de l'électron et du noyau.
+  \end{itemize}
+
+  Introduction d'une particule fictive de masse réduite $\mu$:
+  $$\hat{H} = \hat{T_\mu} + \hat{V_{e,n}} = -\frac{\hbar^2}{2\mu} - \frac{1}{4\pi\epsilon_0} \frac{Z_e^2}{\hat{r}}$$
+  avec $\mu = \frac{m_em_n}{m_e + m_n}$
+
+  Approximation de Born-Oppenheimer : \\
+  Du fait de leur large différence de masse, les électrons s'adaptent de façon instantanée et adiabatique a tout mouvement du noyau :\\
+ \begin{itemize} 
+         \item On considère donc le noyau fixe
+         \item On ne considère plus qu'un hamiltonien électronique :
+            $$\hat{H}= \frac{-\hbar^2}{2m_e} - \frac{1}{4\pi\epsilon_0}\frac{Z_e^2}{\hat{r}}$$
+ \end{itemize}
+
+ Les $\Psi(x,y,z)$ sont les fonctions propres (les états propres).\\
+ On les appelles les orbitales atomiques.\\
+
+ \emph{Exercice :} Montrer que $\hat{H}$ et $\Lambda$ commutent.\\
+
+
+ Étant donné que les deux opérateurs commutent, ils admettent un même jeu de vecteurs propres.\\
+ Les fonctions propres de $\Lambda$ sont les harmoniques sphériques $Y_{l,m}(\theta, \rho)$\\
+ $$\Lambda \alpha Y_{l,m}(\theta, \rho) = -l(l+1) \alpha Y_{l,m}(\theta, \rho)$$
+ où $\alpha$ est une constante réelle.\\
+
+ D'où $\Psi(r, \theta, \rho) = R(r)Y_{l,m}(\theta, \rho)$ ($R(r)$ étant constante pour Legendre)\\
+
+   On a $\hat{H}\Psi = E \Psi$ et $\Psi = R(r)Y(\theta, \rho)$\\
+
+   Donc:
+   $$
+  \begin{aligned} 
+     &\frac{-\hbar^2}{2m_er^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} + \Lambda) R(r) Y_{l,m}(\theta, \rho) \frac{-Z_e^2}{4\pi\epsilon_0} \frac{1}{r} R(r) Y_{l,m}(\theta, \rho) = E R(r) Y_{l,m}(\theta, \rho)\\
+     &\Rightarrow \frac{-\hbar^2}{2m_er^2} (Y_{l,m}(\theta, \rho) \frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} R(r) - R(r) l(l+1) Y_{l,m}(\theta, \rho) - \frac{S_e^2}{4\pi\epsilon_0} \frac{1}{r}R(r) Y_{l,m}(\theta, \rho)) =  E R(r) Y_{l,m}(\theta, \rho)\\
+     &\Rightarrow \frac{-\hbar^2}{2m_er^2} (\frac{\partial}{\partial r} r^2 \frac{\partial}{\partial r} - l(l+1)) R(r) - \frac{Z_e^2}{4\pi\epsilon_0} \frac{1}{r} R(r) = E R(r)
+  \end{aligned}$$
+
+  On obtient alors une expression de la partie radiale de l'équation de Schrödinger.\\
+
+  $R(r)$ a de fortes chances de dépendre de $l$ et $E$ esst liée à la partie radiale.\\
+
+
+  \emph{Fonctions propres de l'équation radiale}.\\
+
+  Les fonctions propres de la partie radiale sont notées $R_{n,l}(r)$ (\it{cf} tableau des expressions des $R_{n,l}(r)$).\\
+
+  \emph{Exercice :} montrer que les parties radiales présentes dans le tableau sont normalisées.\\
+
+
+  \emph{Valeurs propres de l'équation radiale}\\
+
+  Pour les hydrogénoïdes, on a :
+  $$E_n = -\frac{m_ee^4}{(4\pi\epsilon_0)^2\hbar^2} \frac{Z^2}{2n^2}$$
+
+  L'énergie est donc quantifiée et ne dépend que de $n$.\\
+
+  À l'état fondamental $n=1$, on a :
+  $$E_1 = -\frac{Z^2}{2}\frac{m_ee^4}{(4\pi\epsilon_0)^2\hbar^2}$$
+
+  Expression de l'énergie de première ionisation $E_{1|}$:
+  $$E_{1|} = E_\infty - E_1 = -E_1$$
+
+  On a donc les expression de l'énergie suivante :
+  $$E_n = \frac{-E_{i_1}}{n^2} = \frac{E_1}{n^2} = \frac{E_1(H)Z^2}{n^2}$$
+
+
+  On introduit la constante de Rydberg $R_H$
+  $$R_H = \frac{m_ee^4}{8\epsilon_0^2\hbar^3c}$$
+  $R_H$ est en $m^{-1}$\\
+
+
+  Ce qui permet de donner une nouvelle expression de l'énergie à l'état $n$:
+  $$E_n = \frac{-\hbar c R_H}{n^2}$$
+  $E_n$ est en $J$\\
+  $1eV = 1,60 \cdot 10^{-19} J$\\
+
+
+  \emph{Formule de Rydberg :}
+  $$\frac{1}{\lambda} = R_H Z^2 (\frac{1}{n_1^2} - \frac{1}{n_2^2})$$
+
+
+  \emph{Pour les hydrogénoïdes et les états excités :}\\
+  $$E_n = \frac{-13,6}{n^2}Z^2$$
+  (donne une énergie en électron volt)\\
+
+
+\begin{rap}[Système d'unité atomique (u.a.)]
+   $e=1$\\
+   $\hbar = 1$\\
+   $4\pi\epsilon_0 = 1$\\
+   $c = 1$\\
+   $m_e = 1$\\
+   $a_0 = 1$\\
+
+   Les énergies s'écrivent donc sous la forme $E_1(H) = \frac{-1}{2} u.a.$\\
+
+   D'où : $E_n(Z) = - \frac{Z^2}{2n^2} u.a.$
+
+   L'unité atomique d'énergie est le Hartree.\\
+
+   Notation : $\hat{H} = - \frac{1}{2} \Delta - \frac{Z}{r}$
+\end{rap}
+
+\subsection{Orbitale atomique : bilan}
+
+   La forme générale des orbitales atomiques (fonctions propres) est $\Psi_{n,l,m}(r, \theta, \rho) = R_{n,l}(r)Y_{l,m}(\theta, \rho)$.\\
+
+   Les parties $R(r)$ et $Y(\theta, \rho)$ sont normalisées.\\
+
+   $l$ et $m$ caractérisent le moment cinétique de l'électron autour du noyau.\\
+
+  \begin{itemize} 
+         \item un électron dans une OA de nombre quantique $l$ a un moment cinétique de norme $L=\sqrt{l(l+1)}\hbar$.
+         \item un électron dans une OA de nombre quantique $m$ a une composante selon $z$ du moment cinétique égale à $m\hbar$.\\
+  \end{itemize}
+
+ \begin{itemize} 
+         \item $l = 0 \rightarrow $ sous-couche s
+         \item $l = 1 \rightarrow $ sous-couche p
+         \item $l = 2 \rightarrow $ sous-couche d
+         \item $l = 3 \rightarrow $ sous-couche f
+         \item $l = 4 \rightarrow $ sous-couche g
+         \item $l = 5 \rightarrow $ sous-couche h
+ \end{itemize}
+
+
+ Les OA ayant les mêmes nombres quantiques $n$ et $l$ constituent des sous-couches.\\
+
+ $m$ peut prendre $2l+1$ valeurs pour une sous-couche $nl$ donnée, il y a alors $2l + 1$ OA dans une sous-couche.
+
+\begin{itemize}
+         \item $l = 0 \rightarrow $ une OA
+         \item $l = 1 \rightarrow $ trois OA
+         \item $l = 2 \rightarrow $ cinq OA
+\end{itemize}
+
+
+\emph{Forme des OA : partie angulaire}\\
+Pour tous le $l \neq 0$, les harmoniques sphériques sont complexes, \\
+On veut en extraire des fonctions réelles (on utilise alors les formules d'Euler):
+\begin{rap}[Formules d'Euler]
+      $$\frac{e^{i\rho}+e^{-i\rho}}{2}=\cos{\rho}$$
+      $$\frac{e^{i\rho}-e^{-i\rho}}{2i}=\sin{\rho}$$
+\end{rap}
+
+\emph{fonctions réelles :}
+   $$S_{l, |m|}^+ = \frac{Y_{l,m} + Y_{l,-m}}{\sqrt{2}}$$
+   $$S_{l, |m|}^- = \frac{Y_{l,m} - Y_{l,-m}}{i\sqrt{2}}$$
+
+  \begin{ex} 
+      $$
+     \begin{aligned}
+        \frac{Y_{1,1} + Y_{1,-1}}{2} &= \frac{\frac{1}{2}(\frac{3}{2\pi})^{\frac{1}{2}}\sin \theta e^{i\rho}+ e^{-i\rho}}{2}\\
+        &= \frac{1}{2} (\frac{3}{2\pi})^{\frac{1}{2}}\sin \theta \cos \rho
+     \end{aligned}
+      $$
+     \begin{rema} 
+         Attention, cette fonction n'est pas normalisée, d'où le $\sqrt{2}$ dans $S^+$ et $S^-$.
+     \end{rema}
+  \end{ex}
+
+  Toutes les OA de type $s$ sont à symétrie sphérique.\\
+
+  Les trois harmoniques sphériques de type $l=1$ sont équivalentes par rotation de $90°$.
+  C'est-à-dire que les OA correspondantes ont la même forme.\\
+  Seule leur orientation est différente.\\
+  On les note $p_x, p_y, p_z$.\\
+  Chacune des fonctions présente une surface nodale.\\
+
+  Chacune des harmoniques sphériques de type $l=2$ présente deux surfaces nodales.\\
+
+  De manière plus générale, les OA présentent $l$ surfaces nodales.\\
+
+
+\emph{Forme des OA : partie radiale}\\
+
+  \begin{itemize} 
+     \item $1s \rightarrow $ exponentielle décroissante %fig7 (p22, 1s)
+     \item $2s \rightarrow $ s'annule puis croissance en $-e^x$ %fig8 (p22, 2s)
+     \item $3s \rightarrow $ s'annule deux fois puis décroissance exponentielle %fig9 (p22, 3s)
+     \item $2p \rightarrow $ s'annule en $0$, croit puis décroit exponentiellement %fig10 (p22, 2p)
+     \item $3p \rightarrow $ s'annule en 0, est positive, s'annule une seconde fois, décroit puis croit en $-e^x$%fig11 (p22, 3p)
+  \end{itemize}
+
+ \begin{rema} 
+      Chacune des fonctions présente $n-2$ points nodaux.
+ \end{rema}
+
+
+   Étant donné que pour représenter une fonction à trois variables, il est nécessaire d'utiliser quatre dimensions, un ne représente que les isosurfaces des OA, c'est-à-dire des surfaces sur lesquelles l'OA en question a la même valeur.\\
+
+
+   \emph{Exercice :} représenter des isosurfaces des OA $3p$, $5p$, $4d_{x,y}$ et $5d_{z^2}$
+
+
+   \emph{Condition de normalisation en coordonnées sphériques :}\\
+
+   En rappelant $dV = r^2 \sin \theta dr d\theta d\rho$
+   $$
+\begin{aligned}
+      \iiint_V R(r) Y^*(\theta, \rho) R(r) Y(\theta, \rho) dV&= \iiint_V R^2(r) |Y(\theta, \rho)|^2 dV\\
+      &= \int_r R^2(r) r^2dr \cdot \int_\theta \int_\rho |Y(\theta, \rho)|^2 \sin \theta d\theta d\rho\\
+      &= 1 \cdot 1\\
+      &=1
+\end{aligned}
+   $$
+
+
+   $dP(r) = R^2(r)r^2 dr$ : Probilité infinitésimale.\\
+
+   $P(r) = \frac{dP(r)}{dr} = R^2(r) r^2$ : Densité de probabilité radiale.\\
+
+  \begin{ex} 
+      $R_{1,0}(r)$\\
+
+      $R_{1,0}^2(r) r^2 dr = \frac{dP_{1,0}(r)}{dr}$
+      %fig12(p23)
+  \end{ex}
+
+
+  \emph{Distance moyenne électron-noyau : }\\
+  $<r> = \int_r R(r) r R(r) r^2 dr$\\
+  $\Leftrightarrow <r> = \int_r R^2(r) r^3 dr$
+
+ \begin{ex}[Atome d'hydrogène dans son état fondamental $\phantom{a}_1H : 1s^1$]
+    $$R_{1,0}(r) = (\frac{Z}{a_0})^{\frac{3}{2}} 2e^{-\frac{Z_r}{a_0}}$$
+
+    $$P(r) = R_{n,l}^2(r)r^2 \Rightarrow P(r) = (\frac{1}{a_0})^{3} 4 e^{-\frac{2}{a_0}} r^2$$
+      
+    $$\frac{d}{dr} R_{n,l}^2(r) r^2 = 8\frac{1}{a_0^3} r e ^{-\frac{2r}{a_0}} (1-\frac{1}{a_0}r)$$
+
+    $$\frac{d}{dr} = 0 \Rightarrow r=0 \text{ ou } r=a_0$$
+
+    $$
+    \begin{aligned}
+         <r> &= \int_r R_{n,l}^2(r)r^3 dr\\
+         &= \int_r (\frac{1}{a_0})^3 4 e^{-\frac{2r}{a_0}}r^3dr\\
+         &= \frac{4}{a_0^3} \int_r e^{-\frac{2r}{a_0}} r^3 dr \\
+         &= \frac{4}{a_0^3} \frac{3!}{(\frac{2}{a_0})^4}\\
+         &= \frac{4}{a_0^3} \frac{6 a_0^4}{16}\\
+         &= \frac{24 a_0}{16}\\
+         &= \frac{2}{3} a_0
+    \end{aligned}
+    $$
+
+    $$
+    \begin{aligned}
+         <r^2> &= \int_r R_{n,l}^2(r) r^4 dr \\
+         &= \frac{4}{a_0^3} \int_r e^{-\frac{2r}{a_0}} r^4 dr \\
+         &= \frac{4}{a_0^3} \frac{4!}{(\frac{2}{a_0})^5} \\
+         &= \frac{24}{32}a_0^2\\
+         &= 3a_0^2
+    \end{aligned}
+    $$
+
+    \emph{Incertitude sur la mesure :} $\Delta r = \sqrt{<r^2> - <r>^2}$\\
+    $$
+    \begin{aligned}
+         \Delta r &= \sqrt{(3a_0^2) - (\frac{3}{2}a_0)^2}\\
+         &= \sqrt{3a_0^2 - \frac{9}{4}a_0^2}\\
+         &= a_0 \sqrt{\frac{3}{4}} \\
+         &= \frac{\sqrt{3}}{2} a_0
+    \end{aligned}
+    $$
+ \end{ex}
+
+ \emph{Moment cinétique et magnétique :}\\
+
+ Toute particule chargée avec un moment cinétique possède également un moment magnétique $\mu$ associé a ce dernier par :
+ $$\vec{\mu} = \gamma \vec{L} = g \frac{q}{2m} \vec{L}$$
+ où $\gamma$ est le rapport gyromagnétique,\\
+ $g$ dépend de la particule et du type de moment cinétique.\\
+
+
+ \emph{Expérience de Stern et Gerlach (1922)} (étude du spin)\\
+
+ L'électron admet un moment magnétique intrinsèque et donc un moment cinétique intrinsèque : il s'agit du \emph{spin}.\\
+
+ Le spin est une propriété intrinsèque des particules. 
+ Le spin a des propriétés similaires à celes d'un moment cinétique.\\
+
+ \emph{spin de l'électron :}\\
+\begin{itemize} 
+         \item deux nombres quantiques : $s=\frac{1}{2}$ et $m_s = \pm\frac{1}{2}$
+
+         \item norme : 
+            $$\hat{s}^2 | s, m_s> = s(s+1) \hbar^2 | s, m_s>$$
+            $$s = \sqrt{s(s+1)}\hbar = \sqrt{\frac{3}{4} \hbar^2}$$
+
+         \item projection selon $z$ : $s_z = m_s \hbar$\\
+            %fig13(p25)
+\end{itemize}
+
+ \emph{moment cinétique orbital :}\\
+\begin{itemize} 
+         \item deux nombres quantiques : $l$ et $m_l$
+
+         \item norme : 
+            $$\hat{L}^2 | l,m_l> = l(l+1) \hbar^2 | l,m_l$$
+            $$L = \sqrt{l(l+1)}$$
+
+         \item projection selon $z$ : $L_z = m_l \hbar$
+\end{itemize}
+
+Le spin entre dans la description des électrons.\\
+On définit alors des fonction spin-orbitales $\Psi_{n,l,m,m_s}$ :\\
+$$\Psi_{n,l,m,m_s} = \Psi_{n,l,m} \sigma$$
+où $\sigma$ est la fonction de spin\\
+
+Il y a deux fonctions de spin (ou états de spin) possibles :\\
+\begin{itemize}
+         \item état $\alpha$ : $m_s = +\frac{1}{2}$
+         \item état $\beta$ : $m_s = -\frac{1}{2}$
+\end{itemize}
+
+
+\end{document}

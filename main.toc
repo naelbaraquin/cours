@@ -1,0 +1,15 @@
+\babel@toc {french}{}
+\contentsline {part}{I\hspace {1em}Introduction à l'atomistique}{2}%
+\contentsline {section}{\numberline {1}Rappels}{2}%
+\contentsline {part}{II\hspace {1em}Rudiments de mécanique quantique et d'atomistique}{3}%
+\contentsline {subsection}{\numberline {1.1}Les postulats de la mécanique quantique}{3}%
+\contentsline {paragraph}{Postulat 1}{3}%
+\contentsline {paragraph}{Postulat 2}{4}%
+\contentsline {paragraph}{Postulat 3 :}{7}%
+\contentsline {paragraph}{Postulat 4 :}{7}%
+\contentsline {subsection}{\numberline {1.2}Applications des postulats}{8}%
+\contentsline {subsubsection}{\numberline {1.2.1}Application 1: particule dans une boîte 1D}{8}%
+\contentsline {subsubsection}{\numberline {1.2.2}Application 2 : particule dans une boîte 2D}{10}%
+\contentsline {subsubsection}{\numberline {1.2.3}Application 3 : particule sur une sphère}{11}%
+\contentsline {section}{\numberline {2}Les atomes hydrogénoïdes}{13}%
+\contentsline {subsection}{\numberline {2.1}Orbitale atomique : bilan}{16}%
